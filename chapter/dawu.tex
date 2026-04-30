@@ -74,21 +74,22 @@ $\theta=2+3t^3\ \text{(SI单位)}.$
 
 \textbf{1-4题解：}
 \setcounter{equation}{0}
+\renewcommand{\theHequation}{1-4.\arabic{equation}}
 
 \textbf{答案：} B
 
 \textbf{解答过程：}
 质点沿半径为 $R$ 的圆周做匀速率运动，每间隔时间 $T$ 转一圈。
 在 $2T$ 时间间隔内，质点刚好转过两整圈，回到了初始起点位置。
-由于位移 $\Delta \mathbf{r}$ 是从起点指向终点的矢量，回到起点意味着总位移的大小为 $0$。因此，其平均速度大小由公式（1）得出：
-\begin{equation}
+由于位移 $\Delta \mathbf{r}$ 是从起点指向终点的矢量，回到起点意味着总位移的大小为 $0$。因此，其平均速度大小由公式（\ref{eq:1-4-1}）得出：
+\begin{equation}\label{eq:1-4-1}
 	\bar{v} = \frac{|\Delta \mathbf{r}|}{\Delta t} = \frac{0}{2T} = 0
 \end{equation}
-质点在这段时间内通过的路程 $s$ 为两圈的圆周长，即 $s = 2 \times (2\pi R) = 4\pi R$。因此，平均速率由公式（2）得出：
-\begin{equation}
+质点在这段时间内通过的路程 $s$ 为两圈的圆周长，即 $s = 2 \times (2\pi R) = 4\pi R$。因此，平均速率由公式（\ref{eq:1-4-2}）得出：
+\begin{equation}\label{eq:1-4-2}
 	\bar{v}_{speed} = \frac{s}{\Delta t} = \frac{4\pi R}{2T} = \frac{2\pi R}{T}
 \end{equation}
-由公式（1）和公式（2）对比可知，两者的结果完全不同。
+由公式（\ref{eq:1-4-1}）和公式（\ref{eq:1-4-2}）对比可知，两者的结果完全不同。
 
 \textbf{易混淆知识点说明：}
 本题极易混淆\textbf{平均速度（矢量）}与\textbf{平均速率（标量）}的概念。平均速度的大小等于位移大小除以时间，而平均速率等于路程除以时间。在包含往返或曲线运动的过程中，位移大小通常小于路程，两者绝不可等同看待。
@@ -97,6 +98,7 @@ $\theta=2+3t^3\ \text{(SI单位)}.$
 
 \textbf{1-5题解：}
 \setcounter{equation}{0}
+\renewcommand{\theHequation}{1-5.\arabic{equation}}
 
 \textbf{答案：} D
 
@@ -104,11 +106,11 @@ $\theta=2+3t^3\ \text{(SI单位)}.$
 质点做变速圆周运动时，其总加速度 $\mathbf{a}$ 包含两个相互垂直的分量：\\
 1. 切向加速度 $\mathbf{a}_t$，其作用是改变速度的大小，大小计算为 $a_t = \frac{dv}{dt}$。\\
 2. 法向加速度（即向心加速度）$\mathbf{a}_n$，其作用是改变速度的方向，大小计算为 $a_n = \frac{v^2}{R}$。
-由于切向加速度与法向加速度相互垂直，根据矢量的合成法则（勾股定理），总加速度的大小为两者平方和的算术平方根，如公式（1）所示：
-\begin{equation}
+由于切向加速度与法向加速度相互垂直，根据矢量的合成法则（勾股定理），总加速度的大小为两者平方和的算术平方根，如公式（\ref{eq:1-5-1}）所示：
+\begin{equation}\label{eq:1-5-1}
 	a = \sqrt{a_t^2 + a_n^2} = \sqrt{\left(\frac{dv}{dt}\right)^2 + \left(\frac{v^2}{R}\right)^2}
 \end{equation}
-由公式（1）可以看出，总加速度的大小需要同时考虑切向和法向分量。
+由公式（\ref{eq:1-5-1}）可以看出，总加速度的大小需要同时考虑切向和法向分量。
 
 \textbf{易混淆知识点说明：}
 加速度是矢量，在求总加速度大小时不能直接将各个方向加速度的大小进行代数相加（即不能选C）。必须按照矢量运算规则求合成矢量的大小。
@@ -117,6 +119,7 @@ $\theta=2+3t^3\ \text{(SI单位)}.$
 
 \textbf{1-7题解：}
 \setcounter{equation}{0}
+\renewcommand{\theHequation}{1-7.\arabic{equation}}
 
 \textbf{答案：} D
 
@@ -126,11 +129,11 @@ $\theta=2+3t^3\ \text{(SI单位)}.$
 
 (2) $\mathbf{\frac{dr}{dt} = v}$：式中 $r$ 为位置矢量的大小（质点到坐标原点的直线距离）。$\frac{dr}{dt}$ 表示这一距离的变化率，而 $v = \frac{ds}{dt}$ 是质点沿轨迹运动的路程变化率。除非质点严格沿着背离原点的射线做直线运动，否则两者不相等，该式错误。
 
-(3) $\mathbf{\frac{ds}{dt} = v}$：式中 $s$ 是路程，$v$ 是速率。物理学中速率的确切定义就是路程对时间的一阶导数，即公式（1）：
-\begin{equation}
+(3) $\mathbf{\frac{ds}{dt} = v}$：式中 $s$ 是路程，$v$ 是速率。物理学中速率的确切定义就是路程对时间的一阶导数，即公式（\ref{eq:1-7-1}）：
+\begin{equation}\label{eq:1-7-1}
 	v = \frac{ds}{dt}
 \end{equation}
-由公式（1）可知，该定义式完全正确。
+由公式（\ref{eq:1-7-1}）可知，该定义式完全正确。
 
 (4) $\mathbf{\left| \frac{dv}{dt} \right| = a}$：式中 $v$ 为标量，$\left| \frac{dv}{dt} \right|$ 为切向加速度的绝对值。因为曲线运动中必然存在法向加速度 $a_n \neq 0$，所以总加速度 $a = \sqrt{a_t^2 + a_n^2} > |a_t| = \left| \frac{dv}{dt} \right|$，该式错误。（注：只有当表达式为矢量的导数 $\left| \frac{d\mathbf{v}}{dt} \right| = a$ 时才成立）。
 
@@ -145,21 +148,22 @@ $\theta=2+3t^3\ \text{(SI单位)}.$
 
 \textbf{1-12题解：}
 \setcounter{equation}{0}
+\renewcommand{\theHequation}{1-12.\arabic{equation}}
 
 \textbf{答案：} $16t^2 R$ （或 $16Rt^2$）
 
 \textbf{解答过程：}
 已知质点的运动学方程（角位移随时间变化的方程）为 $\theta = 3 + 2t^2$。
-首先，对角位移方程求时间 $t$ 的一阶导数，得到质点做圆周运动的角速度 $\omega$ 的表达式，如公式（1）：
-\begin{equation}
+首先，对角位移方程求时间 $t$ 的一阶导数，得到质点做圆周运动的角速度 $\omega$ 的表达式，如公式（\ref{eq:1-12-1}）：
+\begin{equation}\label{eq:1-12-1}
 	\omega = \frac{d\theta}{dt} = \frac{d}{dt}(3 + 2t^2) = 4t
 \end{equation}
-题目要求的是 $t$ 时刻质点的\textbf{法向加速度（向心加速度）}大小 $a_n$。根据圆周运动的法向加速度推导公式（2）：
-\begin{equation}
+题目要求的是 $t$ 时刻质点的\textbf{法向加速度（向心加速度）}大小 $a_n$。根据圆周运动的法向加速度推导公式（\ref{eq:1-12-2}）：
+\begin{equation}\label{eq:1-12-2}
 	a_n = \omega^2 R
 \end{equation}
-将公式（1）中求得的 $\omega$ 代入公式（2）中，推出最终法向加速度的表达式（3）：
-\begin{equation}
+将公式（\ref{eq:1-12-1}）中求得的 $\omega$ 代入公式（\ref{eq:1-12-2}）中，推出最终法向加速度的表达式（\ref{eq:1-12-3}）：
+\begin{equation}\label{eq:1-12-3}
 	a_n = (4t)^2 R = 16t^2 R
 \end{equation}
 
@@ -170,20 +174,21 @@ $\theta=2+3t^3\ \text{(SI单位)}.$
 
 \textbf{1-18题解：}
 \setcounter{equation}{0}
+\renewcommand{\theHequation}{1-18.\arabic{equation}}
 
 \textbf{解答过程：}
 已知位置矢量 $\mathbf{r} = 4t^2\mathbf{i} + (3 + 2t)\mathbf{j}$。
 
 (1) 求质点的轨迹方程：
-由位置矢量可得运动的参数方程，分别列为公式（1）和公式（2）：
-\begin{equation}
+由位置矢量可得运动的参数方程，分别列为公式（\ref{eq:1-18-1}）和公式（\ref{eq:1-18-2}）：
+\begin{equation}\label{eq:1-18-1}
 	x = 4t^2
 \end{equation}
-\begin{equation}
+\begin{equation}\label{eq:1-18-2}
 	y = 3 + 2t
 \end{equation}
-由公式（2）解得 $t = \frac{y-3}{2}$，代入公式（1）消去时间 $t$，推导出轨迹方程（3）：
-\begin{equation}
+由公式（\ref{eq:1-18-2}）解得 $t = \frac{y-3}{2}$，代入公式（\ref{eq:1-18-1}）消去时间 $t$，推导出轨迹方程（\ref{eq:1-18-3}）：
+\begin{equation}\label{eq:1-18-3}
 	x = 4\left(\frac{y-3}{2}\right)^2 = (y-3)^2
 \end{equation}
 由于 $t \ge 0$，故限制条件为 $y \ge 3, x \ge 0$。
@@ -194,11 +199,11 @@ $t = 1\text{ s}$ 时的位置矢量：$\mathbf{r}_1 = 4(1)^2\mathbf{i} + (3 + 2\
 位移 $\Delta\mathbf{r} = \mathbf{r}_1 - \mathbf{r}_0 = 4\mathbf{i} + (5 - 3)\mathbf{j} = 4\mathbf{i} + 2\mathbf{j}$
 
 (3) 求 $t = 0$ 和 $t = 1\text{ s}$ 两时刻的速度：
-速度是位置矢量对时间的一阶导数，由此建立速度公式（4）：
-\begin{equation}
+速度是位置矢量对时间的一阶导数，由此建立速度公式（\ref{eq:1-18-4}）：
+\begin{equation}\label{eq:1-18-4}
 	\mathbf{v} = \frac{d\mathbf{r}}{dt} = 8t\mathbf{i} + 2\mathbf{j}
 \end{equation}
-将具体时刻代入公式（4）得出：\\
+将具体时刻代入公式（\ref{eq:1-18-4}）得出：\\
 当 $t = 0$ 时，$\mathbf{v}(0) = 2\mathbf{j} \text{ (m/s)}$ \\
 当 $t = 1\text{ s}$ 时，$\mathbf{v}(1) = 8\mathbf{i} + 2\mathbf{j} \text{ (m/s)}$
 
@@ -209,32 +214,33 @@ $t = 1\text{ s}$ 时的位置矢量：$\mathbf{r}_1 = 4(1)^2\mathbf{i} + (3 + 2\
 
 \textbf{1-20题解：}
 \setcounter{equation}{0}
+\renewcommand{\theHequation}{1-20.\arabic{equation}}
 
 \textbf{解答过程：}
 已知位置矢量 $\mathbf{r} = t^2\mathbf{i} + 2t\mathbf{j}$。
 
 (1) 求任一时刻的速度和加速度：
-速度定义如公式（1）：
-\begin{equation}
+速度定义如公式（\ref{eq:1-20-1}）：
+\begin{equation}\label{eq:1-20-1}
 	\mathbf{v} = \frac{d\mathbf{r}}{dt} = 2t\mathbf{i} + 2\mathbf{j}
 \end{equation}
-加速度定义如公式（2）：
-\begin{equation}
+加速度定义如公式（\ref{eq:1-20-2}）：
+\begin{equation}\label{eq:1-20-2}
 	\mathbf{a} = \frac{d\mathbf{v}}{dt} = 2\mathbf{i}
 \end{equation}
 
 (2) 求任一时刻的切向加速度和法向加速度：
-先根据公式（1）求速率 $v$（速度的大小），得到公式（3）：
-\begin{equation}
+先根据公式（\ref{eq:1-20-1}）求速率 $v$（速度的大小），得到公式（\ref{eq:1-20-3}）：
+\begin{equation}\label{eq:1-20-3}
 	v = |\mathbf{v}| = \sqrt{(2t)^2 + 2^2} = \sqrt{4t^2 + 4} = 2\sqrt{t^2+1}
 \end{equation}
-切向加速度 $a_t$ 是速率对时间的导数，对公式（3）求导推出公式（4）：
-\begin{equation}
+切向加速度 $a_t$ 是速率对时间的导数，对公式（\ref{eq:1-20-3}）求导推出公式（\ref{eq:1-20-4}）：
+\begin{equation}\label{eq:1-20-4}
 	a_t = \frac{dv}{dt} = \frac{d}{dt}\left(2(t^2+1)^{\frac{1}{2}}\right) = \frac{2t}{\sqrt{t^2+1}}
 \end{equation}
-由公式（2）可知总加速度的大小 $a = |\mathbf{a}| = 2$。
-由加速度的分解公式 $a^2 = a_t^2 + a_n^2$，结合公式（4）可推导出法向加速度 $a_n$ 的表达式（5）：
-\begin{equation}
+由公式（\ref{eq:1-20-2}）可知总加速度的大小 $a = |\mathbf{a}| = 2$。
+由加速度的分解公式 $a^2 = a_t^2 + a_n^2$，结合公式（\ref{eq:1-20-4}）可推导出法向加速度 $a_n$ 的表达式（\ref{eq:1-20-5}）：
+\begin{equation}\label{eq:1-20-5}
 	a_n = \sqrt{a^2 - a_t^2} = \sqrt{2^2 - \left(\frac{2t}{\sqrt{t^2+1}}\right)^2} = \sqrt{\frac{4t^2+4-4t^2}{t^2+1}} = \frac{2}{\sqrt{t^2+1}}
 \end{equation}
 
@@ -245,33 +251,34 @@ $t = 1\text{ s}$ 时的位置矢量：$\mathbf{r}_1 = 4(1)^2\mathbf{i} + (3 + 2\
 
 \textbf{1-25题解：}
 \setcounter{equation}{0}
+\renewcommand{\theHequation}{1-25.\arabic{equation}}
 
 \textbf{解答过程：}
 已知加速度 $a = 2 + 6x^2$，初始条件 $x=0$ 时，$v_0 = 10 \text{ m/s}$。
-根据加速度的定义，并利用链式求导法则（将对时间的导数转化为对位移的导数），得到公式（1）：
-\begin{equation}
+根据加速度的定义，并利用链式求导法则（将对时间的导数转化为对位移的导数），得到公式（\ref{eq:1-25-1}）：
+\begin{equation}\label{eq:1-25-1}
 	a = \frac{dv}{dt} = \frac{dv}{dx} \cdot \frac{dx}{dt} = v \frac{dv}{dx}
 \end{equation}
-将已知加速度表达式代入公式（1），得到公式（2）：
-\begin{equation}
+将已知加速度表达式代入公式（\ref{eq:1-25-1}），得到公式（\ref{eq:1-25-2}）：
+\begin{equation}\label{eq:1-25-2}
 	v \frac{dv}{dx} = 2 + 6x^2
 \end{equation}
-对公式（2）分离变量可得公式（3）：
-\begin{equation}
+对公式（\ref{eq:1-25-2}）分离变量可得公式（\ref{eq:1-25-3}）：
+\begin{equation}\label{eq:1-25-3}
 	v dv = (2 + 6x^2) dx
 \end{equation}
-对公式（3）的等式两边进行定积分，利用初始条件建立积分公式（4）：
-\begin{equation}
+对公式（\ref{eq:1-25-3}）的等式两边进行定积分，利用初始条件建立积分公式（\ref{eq:1-25-4}）：
+\begin{equation}\label{eq:1-25-4}
 	\int_{10}^{v} v' dv' = \int_{0}^{x} (2 + 6x'^2) dx'
 \end{equation}
 $$ \left[ \frac{1}{2}v'^2 \right]_{10}^{v} = \left[ 2x' + 2x'^3 \right]_{0}^{x} $$
 $$ \frac{1}{2}v^2 - \frac{1}{2}(10^2) = 2x + 2x^3 $$
 $$ v^2 - 100 = 4x + 4x^3 $$
-由公式（4）化简得到公式（5）：
-\begin{equation}
+由公式（\ref{eq:1-25-4}）化简得到公式（\ref{eq:1-25-5}）：
+\begin{equation}\label{eq:1-25-5}
 	v^2 = 4x^3 + 4x + 100
 \end{equation}
-由于质点沿 $x$ 轴运动，在 $x=0$ 处速度为正，且 $a > 0$（速度不断增加），故速度始终为正。由公式（5）最终解得：
+由于质点沿 $x$ 轴运动，在 $x=0$ 处速度为正，且 $a > 0$（速度不断增加），故速度始终为正。由公式（\ref{eq:1-25-5}）最终解得：
 $$ v = \sqrt{4x^3 + 4x + 100} \text{ (m/s)} $$
 
 \textbf{易混淆知识点说明：}
@@ -281,42 +288,43 @@ $$ v = \sqrt{4x^3 + 4x + 100} \text{ (m/s)} $$
 
 \textbf{1-26题解：}
 \setcounter{equation}{0}
+\renewcommand{\theHequation}{1-26.\arabic{equation}}
 
 \textbf{解答过程：}
 已知 $R = 1\text{ m}$，运动学方程 $\theta = 2 + 3t^3$。
-先求角速度 $\omega$ 和角加速度 $\alpha$，分别得到公式（1）和公式（2）：
-\begin{equation}
+先求角速度 $\omega$ 和角加速度 $\alpha$，分别得到公式（\ref{eq:1-26-1}）和公式（\ref{eq:1-26-2}）：
+\begin{equation}\label{eq:1-26-1}
 	\omega = \frac{d\theta}{dt} = 9t^2
 \end{equation}
-\begin{equation}
+\begin{equation}\label{eq:1-26-2}
 	\alpha = \frac{d\omega}{dt} = 18t
 \end{equation}
 
 (1) 求 $t = 2\text{ s}$ 时，质点的切向加速度和法向加速度：
-当 $t = 2\text{ s}$ 时，由公式（1）和公式（2）得 $\omega = 9 \times 2^2 = 36 \text{ rad/s}$，$\alpha = 18 \times 2 = 36 \text{ rad/s}^2$。
-切向加速度由公式（3）计算：
-\begin{equation}
+当 $t = 2\text{ s}$ 时，由公式（\ref{eq:1-26-1}）和公式（\ref{eq:1-26-2}）得 $\omega = 9 \times 2^2 = 36 \text{ rad/s}$，$\alpha = 18 \times 2 = 36 \text{ rad/s}^2$。
+切向加速度由公式（\ref{eq:1-26-3}）计算：
+\begin{equation}\label{eq:1-26-3}
 	a_t = \alpha R = 36 \times 1 = 36 \text{ m/s}^2
 \end{equation}
-法向加速度由公式（4）计算：
-\begin{equation}
+法向加速度由公式（\ref{eq:1-26-4}）计算：
+\begin{equation}\label{eq:1-26-4}
 	a_n = \omega^2 R = 36^2 \times 1 = 1296 \text{ m/s}^2
 \end{equation}
 
 (2) 求加速度方向和半径成 $45^\circ$ 角时，质点偏转的角度：
 总加速度 $\mathbf{a}$ 是切向加速度 $\mathbf{a}_t$ 与法向加速度 $\mathbf{a}_n$ 的矢量和。法向加速度始终沿半径方向指向圆心。
-当总加速度与半径成 $45^\circ$ 角时，说明切向加速度和法向加速度的大小相等，建立等量关系式（5）：
-\begin{equation}
+当总加速度与半径成 $45^\circ$ 角时，说明切向加速度和法向加速度的大小相等，建立等量关系式（\ref{eq:1-26-5}）：
+\begin{equation}\label{eq:1-26-5}
 	a_t = a_n \implies \alpha R = \omega^2 R \implies \alpha = \omega^2
 \end{equation}
-将公式（1）和公式（2）代入等量关系式（5）的表达式中：
+将公式（\ref{eq:1-26-1}）和公式（\ref{eq:1-26-2}）代入等量关系式（\ref{eq:1-26-5}）的表达式中：
 $$ 18t = (9t^2)^2 \implies 18t = 81t^4 $$
 由于 $t > 0$（从 $t=0$ 开始运动后），消去一个 $t$ 得 $t^3 = \frac{2}{9}$。
-此时质点从 $t=0$ 到该时刻的偏转角（即角位移的增量）可由公式（6）计算：
-\begin{equation}
+此时质点从 $t=0$ 到该时刻的偏转角（即角位移的增量）可由公式（\ref{eq:1-26-6}）计算：
+\begin{equation}\label{eq:1-26-6}
 	\Delta\theta = \theta(t) - \theta(0) = (2 + 3t^3) - 2 = 3t^3
 \end{equation}
-将 $t^3 = \frac{2}{9}$ 代入公式（6）推得最终偏转角度：
+将 $t^3 = \frac{2}{9}$ 代入公式（\ref{eq:1-26-6}）推得最终偏转角度：
 $$ \Delta\theta = 3 \times \frac{2}{9} = \frac{2}{3} \text{ rad} $$
 
 \textbf{易混淆知识点说明：}
@@ -397,29 +405,30 @@ $$ \Delta\theta = 3 \times \frac{2}{9} = \frac{2}{3} \text{ rad} $$
 
 \textbf{2-5题解：}
 \setcounter{equation}{0}
+\renewcommand{\theHequation}{2-5.\arabic{equation}}
 
 \textbf{答案：} B
 
 \textbf{解答过程：}
 已知质点运动学方程为 $x = 5t, y = 0.5t^2$。
-对时间 $t$ 求导，分别得到速度的 $x$ 和 $y$ 方向分量，如公式（1）和公式（2）所示：
-\begin{equation}
+对时间 $t$ 求导，分别得到速度的 $x$ 和 $y$ 方向分量，如公式（\ref{eq:2-5-1}）和公式（\ref{eq:2-5-2}）所示：
+\begin{equation}\label{eq:2-5-1}
 	v_x = \frac{dx}{dt} = 5
 \end{equation}
-\begin{equation}
+\begin{equation}\label{eq:2-5-2}
 	v_y = \frac{dy}{dt} = t
 \end{equation}
-结合公式（1）和公式（2），可推导出质点速率的平方表达式（3）：
-\begin{equation}
+结合公式（\ref{eq:2-5-1}）和公式（\ref{eq:2-5-2}），可推导出质点速率的平方表达式（\ref{eq:2-5-3}）：
+\begin{equation}\label{eq:2-5-3}
 	v^2 = v_x^2 + v_y^2 = 25 + t^2
 \end{equation}
-根据动能定理，外力做功等于质点动能的变化量，其基本形式如公式（4）：
-\begin{equation}
+根据动能定理，外力做功等于质点动能的变化量，其基本形式如公式（\ref{eq:2-5-4}）：
+\begin{equation}\label{eq:2-5-4}
 	W = \Delta E_k = \frac{1}{2}mv_2^2 - \frac{1}{2}mv_1^2
 \end{equation}
-在 $t_1 = 2\text{ s}$ 时，由公式（3）得速率平方 $v_1^2 = 25 + 2^2 = 29$，初动能 $E_{k1} = \frac{1}{2} \times 0.5 \times 29 = 7.25\text{ J}$。
+在 $t_1 = 2\text{ s}$ 时，由公式（\ref{eq:2-5-3}）得速率平方 $v_1^2 = 25 + 2^2 = 29$，初动能 $E_{k1} = \frac{1}{2} \times 0.5 \times 29 = 7.25\text{ J}$。
 在 $t_2 = 4\text{ s}$ 时，同理得速率平方 $v_2^2 = 25 + 4^2 = 41$，末动能 $E_{k2} = \frac{1}{2} \times 0.5 \times 41 = 10.25\text{ J}$。
-将初末动能代入公式（4），得到外力做的功：
+将初末动能代入公式（\ref{eq:2-5-4}），得到外力做的功：
 $$W = 10.25 - 7.25 = 3\text{ J}$$
 
 \textbf{易混淆知识点说明：}
@@ -429,17 +438,18 @@ $$W = 10.25 - 7.25 = 3\text{ J}$$
 
 \textbf{2-8题解：}
 \setcounter{equation}{0}
+\renewcommand{\theHequation}{2-8.\arabic{equation}}
 
 \textbf{答案：} $290\text{ J}$
 
 \textbf{解答过程：}
 质点沿 $x$ 轴做直线运动，受到与坐标相关的变力 $F = (4 + 5x)\mathbf{i}$。
-根据变力做功的定义式 $W = \int_{x_1}^{x_2} F_x dx$，对力在位移区间上进行定积分得到公式（1）：
-\begin{equation}
+根据变力做功的定义式 $W = \int_{x_1}^{x_2} F_x dx$，对力在位移区间上进行定积分得到公式（\ref{eq:2-8-1}）：
+\begin{equation}\label{eq:2-8-1}
 	W = \int_{0}^{10} (4 + 5x) dx = \left[ 4x + \frac{5}{2}x^2 \right]_{0}^{10}
 \end{equation}
-将上下限代入公式（1）进行计算，得出最终做功数值（2）：
-\begin{equation}
+将上下限代入公式（\ref{eq:2-8-1}）进行计算，得出最终做功数值（\ref{eq:2-8-2}）：
+\begin{equation}\label{eq:2-8-2}
 	W = \left(4 \times 10 + 2.5 \times 10^2\right) - 0 = 40 + 250 = 290\text{ J}
 \end{equation}
 
@@ -450,24 +460,25 @@ $$W = 10.25 - 7.25 = 3\text{ J}$$
 
 \textbf{2-11题解：}
 \setcounter{equation}{0}
+\renewcommand{\theHequation}{2-11.\arabic{equation}}
 
 \textbf{答案：} $12\text{ J}$
 
 \textbf{解答过程：}
-根据动能定理，合外力做的功等于动能的增量，建立公式（1）：
-\begin{equation}
+根据动能定理，合外力做的功等于动能的增量，建立公式（\ref{eq:2-11-1}）：
+\begin{equation}\label{eq:2-11-1}
 	W_{\text{总}} = \Delta E_k = 24\text{ J}
 \end{equation}
-合外力做的功也等于各个分力单独做功的代数和，由此得出总功分配公式（2）：
-\begin{equation}
+合外力做的功也等于各个分力单独做功的代数和，由此得出总功分配公式（\ref{eq:2-11-2}）：
+\begin{equation}\label{eq:2-11-2}
 	W_{\text{总}} = W_1 + W_2
 \end{equation}
-已知其中一个恒力 $F_1$，它所做的功为力矢量与位移矢量的标量积（点乘），计算过程如公式（3）：
-\begin{equation}
+已知其中一个恒力 $F_1$，它所做的功为力矢量与位移矢量的标量积（点乘），计算过程如公式（\ref{eq:2-11-3}）：
+\begin{equation}\label{eq:2-11-3}
 	W_1 = \mathbf{F}_1 \cdot \Delta\mathbf{r} = (12\mathbf{i} - 3\mathbf{j}) \cdot (3\mathbf{i} + 8\mathbf{j}) = 12 \times 3 + (-3) \times 8 = 36 - 24 = 12\text{ J}
 \end{equation}
-将公式（1）和公式（3）的结果代入公式（2）中，推导出另一个恒力所做的功（4）：
-\begin{equation}
+将公式（\ref{eq:2-11-1}）和公式（\ref{eq:2-11-3}）的结果代入公式（\ref{eq:2-11-2}）中，推导出另一个恒力所做的功（\ref{eq:2-11-4}）：
+\begin{equation}\label{eq:2-11-4}
 	W_2 = W_{\text{总}} - W_1 = 24 - 12 = 12\text{ J}
 \end{equation}
 
@@ -478,35 +489,36 @@ $$W = 10.25 - 7.25 = 3\text{ J}$$
 
 \textbf{2-15题解：}
 \setcounter{equation}{0}
+\renewcommand{\theHequation}{2-15.\arabic{equation}}
 
 \textbf{解答过程：}
 (1) 求速度随时间变化的函数：
 根据牛顿第二定律，子弹受到的合外力仅为阻力 $F = -kv$。
-由 $F = ma = m\frac{dv}{dt}$，建立运动微分方程（1）：
-\begin{equation}
+由 $F = ma = m\frac{dv}{dt}$，建立运动微分方程（\ref{eq:2-15-1}）：
+\begin{equation}\label{eq:2-15-1}
 	m\frac{dv}{dt} = -kv
 \end{equation}
-对公式（1）分离变量并进行定积分，得到公式（2）：
-\begin{equation}
+对公式（\ref{eq:2-15-1}）分离变量并进行定积分，得到公式（\ref{eq:2-15-2}）：
+\begin{equation}\label{eq:2-15-2}
 	\int_{v_0}^{v} \frac{dv}{v} = \int_{0}^{t} -\frac{k}{m} dt
 \end{equation}
 $$\ln v - \ln v_0 = -\frac{k}{m}t \implies \ln\left(\frac{v}{v_0}\right) = -\frac{k}{m}t$$
-解出对应的速度函数表达式（3）：
-\begin{equation}
+解出对应的速度函数表达式（\ref{eq:2-15-3}）：
+\begin{equation}\label{eq:2-15-3}
 	v(t) = v_0 e^{-\frac{k}{m}t}
 \end{equation}
 
 (2) 求子弹进入沙土的最大深度：
 当子弹速度减为 $0$ 时，所经过的路程即为最大深度 $x_{\text{max}}$。
-利用微积分中的链式法则变换加速度式 $a = \frac{dv}{dt} = \frac{dv}{dx}\frac{dx}{dt} = v\frac{dv}{dx}$，代入动力学方程并分离变量，得出微分公式（4）：
-\begin{equation}
+利用微积分中的链式法则变换加速度式 $a = \frac{dv}{dt} = \frac{dv}{dx}\frac{dx}{dt} = v\frac{dv}{dx}$，代入动力学方程并分离变量，得出微分公式（\ref{eq:2-15-4}）：
+\begin{equation}\label{eq:2-15-4}
 	m v \frac{dv}{dx} = -kv \implies \frac{dv}{dx} = -\frac{k}{m}
 \end{equation}
-将速度的上下限（$v_0 \to 0$）和位移的上下限（$0 \to x_{\text{max}}$）代入公式（4）进行积分：
+将速度的上下限（$v_0 \to 0$）和位移的上下限（$0 \to x_{\text{max}}$）代入公式（\ref{eq:2-15-4}）进行积分：
 $$\int_{v_0}^{0} dv = \int_{0}^{x_{\text{max}}} -\frac{k}{m} dx$$
 $$0 - v_0 = -\frac{k}{m} x_{\text{max}}$$
-由此推导出最大深度的最终结果（5）：
-\begin{equation}
+由此推导出最大深度的最终结果（\ref{eq:2-15-5}）：
+\begin{equation}\label{eq:2-15-5}
 	x_{\text{max}} = \frac{mv_0}{k}
 \end{equation}
 
@@ -517,29 +529,30 @@ $$0 - v_0 = -\frac{k}{m} x_{\text{max}}$$
 
 \textbf{2-17题解：}
 \setcounter{equation}{0}
+\renewcommand{\theHequation}{2-17.\arabic{equation}}
 
 \textbf{解答过程：}
 已知质点质量 $m = 2\text{ kg}$，所受合外力 $\mathbf{F} = 4\mathbf{i} - 24t^2\mathbf{j}$。
-由牛顿第二定律，推导出质点的加速度矢量公式（1）：
-\begin{equation}
+由牛顿第二定律，推导出质点的加速度矢量公式（\ref{eq:2-17-1}）：
+\begin{equation}\label{eq:2-17-1}
 	\mathbf{a} = \frac{\mathbf{F}}{m} = 2\mathbf{i} - 12t^2\mathbf{j}
 \end{equation}
-速度是加速度对时间的积分（加上初速度），根据公式（1）进行积分得到速度函数（2）：
-\begin{equation}
+速度是加速度对时间的积分（加上初速度），根据公式（\ref{eq:2-17-1}）进行积分得到速度函数（\ref{eq:2-17-2}）：
+\begin{equation}\label{eq:2-17-2}
 	\mathbf{v}(t) = \mathbf{v}_0 + \int_{0}^{t} \mathbf{a} dt = (3\mathbf{i} + 4\mathbf{j}) + \int_{0}^{t} (2\mathbf{i} - 12t^2\mathbf{j}) dt
 \end{equation}
 $$\mathbf{v}(t) = (3\mathbf{i} + 4\mathbf{j}) + (2t\mathbf{i} - 4t^3\mathbf{j}) = (3 + 2t)\mathbf{i} + (4 - 4t^3)\mathbf{j}$$
-将 $t = 1\text{ s}$ 代入，得出该特定时刻的速度（3）：
-\begin{equation}
+将 $t = 1\text{ s}$ 代入，得出该特定时刻的速度（\ref{eq:2-17-3}）：
+\begin{equation}\label{eq:2-17-3}
 	\mathbf{v}(1) = (3 + 2 \times 1)\mathbf{i} + (4 - 4 \times 1^3)\mathbf{j} = 5\mathbf{i} + 0\mathbf{j} = 5\mathbf{i}\text{ (m/s)}
 \end{equation}
-同时，代入 $t = 1\text{ s}$ 计算此时质点受到的总力矢量（4）：
-\begin{equation}
+同时，代入 $t = 1\text{ s}$ 计算此时质点受到的总力矢量（\ref{eq:2-17-4}）：
+\begin{equation}\label{eq:2-17-4}
 	\mathbf{F}(1) = 4\mathbf{i} - 24(1)^2\mathbf{j} = 4\mathbf{i} - 24\mathbf{j}\text{ (N)}
 \end{equation}
 法向力 $\mathbf{F}_n$ 是\textbf{合外力中与此时速度方向垂直的分量}。
-由公式（3）可知，在 $t = 1\text{ s}$ 时，速度 $\mathbf{v} = 5\mathbf{i}$ 的方向仅沿 $x$ 轴。
-结合公式（4），总力的 $x$ 轴分量 $4\mathbf{i}$ 是\textbf{平行于速度的切向力}，而力的 $y$ 轴分量 $-24\mathbf{j}$ 则是\textbf{垂直于速度的法向力}。
+由公式（\ref{eq:2-17-3}）可知，在 $t = 1\text{ s}$ 时，速度 $\mathbf{v} = 5\mathbf{i}$ 的方向仅沿 $x$ 轴。
+结合公式（\ref{eq:2-17-4}），总力的 $x$ 轴分量 $4\mathbf{i}$ 是\textbf{平行于速度的切向力}，而力的 $y$ 轴分量 $-24\mathbf{j}$ 则是\textbf{垂直于速度的法向力}。
 因此，质点受到的法向力矢量为 $\mathbf{F}_n = -24\mathbf{j}\text{ N}$\textbf{（其大小为 $24\text{ N}$）}。
 
 \textbf{易混淆知识点说明：}
@@ -549,35 +562,36 @@ $$\mathbf{v}(t) = (3\mathbf{i} + 4\mathbf{j}) + (2t\mathbf{i} - 4t^3\mathbf{j}) 
 
 \textbf{2-25题解：}
 \setcounter{equation}{0}
+\renewcommand{\theHequation}{2-25.\arabic{equation}}
 
 \textbf{解答过程：}
 (1) 求子弹走完枪筒全长所需时间：
 已知子弹受到的合力为 $F = a - bt$。
-假设子弹运动到枪口处合力刚好为零，建立受力终点方程（1）：
-\begin{equation}
+假设子弹运动到枪口处合力刚好为零，建立受力终点方程（\ref{eq:2-25-1}）：
+\begin{equation}\label{eq:2-25-1}
 	F(t) = a - bt = 0
 \end{equation}
-由公式（1）解得子弹在枪筒内运动的总时间 $t = \frac{a}{b}$。
+由公式（\ref{eq:2-25-1}）解得子弹在枪筒内运动的总时间 $t = \frac{a}{b}$。
 
 (2) 求子弹所受的冲量：
-根据冲量的定义式 $I = \int F dt$，在时间区间 $[0, \frac{a}{b}]$ 内对合力进行定积分，得到公式（2）：
-\begin{equation}
+根据冲量的定义式 $I = \int F dt$，在时间区间 $[0, \frac{a}{b}]$ 内对合力进行定积分，得到公式（\ref{eq:2-25-2}）：
+\begin{equation}\label{eq:2-25-2}
 	I = \int_{0}^{\frac{a}{b}} (a - bt) dt = \left[ at - \frac{1}{2}bt^2 \right]_{0}^{\frac{a}{b}}
 \end{equation}
-将上下限代入公式（2）进行计算，得出总冲量表达式（3）：
-\begin{equation}
+将上下限代入公式（\ref{eq:2-25-2}）进行计算，得出总冲量表达式（\ref{eq:2-25-3}）：
+\begin{equation}\label{eq:2-25-3}
 	I = a\left(\frac{a}{b}\right) - \frac{1}{2}b\left(\frac{a}{b}\right)^2 = \frac{a^2}{b} - \frac{a^2}{2b} = \frac{a^2}{2b}
 \end{equation}
 
 (3) 求子弹的质量：
-根据动量定理，合外力的冲量等于子弹动量的变化量，由此建立公式（4）：
-\begin{equation}
+根据动量定理，合外力的冲量等于子弹动量的变化量，由此建立公式（\ref{eq:2-25-4}）：
+\begin{equation}\label{eq:2-25-4}
 	I = \Delta p = mv_0 - m(0) = mv_0
 \end{equation}
-将公式（3）求得的冲量结果代入公式（4）中：
+将公式（\ref{eq:2-25-3}）求得的冲量结果代入公式（\ref{eq:2-25-4}）中：
 $$\frac{a^2}{2b} = mv_0$$
-最后解出子弹的质量解析式（5）：
-\begin{equation}
+最后解出子弹的质量解析式（\ref{eq:2-25-5}）：
+\begin{equation}\label{eq:2-25-5}
 	m = \frac{a^2}{2bv_0}
 \end{equation}
 
@@ -588,26 +602,27 @@ $$\frac{a^2}{2b} = mv_0$$
 
 \textbf{2-29题解：}
 \setcounter{equation}{0}
+\renewcommand{\theHequation}{2-29.\arabic{equation}}
 
 \textbf{解答过程：}
 已知质点所受合力矢量 $\mathbf{F}_{\text{合}} = (7\mathbf{i} - 6\mathbf{j})\text{ N}$。
 (1) 求合力所做的功：
 质点从原点 $(0,0,0)$ 运动到 $\mathbf{r} = (-3\mathbf{i} + 4\mathbf{j} + 16\mathbf{k})\text{ m}$，位移矢量即为位置矢量本身：$\Delta\mathbf{r} = -3\mathbf{i} + 4\mathbf{j} + 16\mathbf{k}$。
-恒力做功等于力矢量与位移矢量的点乘（数量积），计算如公式（1）：
-\begin{equation}
+恒力做功等于力矢量与位移矢量的点乘（数量积），计算如公式（\ref{eq:2-29-1}）：
+\begin{equation}\label{eq:2-29-1}
 	W = \mathbf{F}_{\text{合}} \cdot \Delta\mathbf{r} = (7\mathbf{i} - 6\mathbf{j} + 0\mathbf{k}) \cdot (-3\mathbf{i} + 4\mathbf{j} + 16\mathbf{k})
 \end{equation}
 $$W = 7 \times (-3) + (-6) \times 4 + 0 \times 16 = -21 - 24 = -45\text{ J}$$
 
 (2) 求合力做功的平均功率：
-平均功率定义为功除以时间，将上一步计算的功代入公式（2）：
-\begin{equation}
+平均功率定义为功除以时间，将上一步计算的功代入公式（\ref{eq:2-29-2}）：
+\begin{equation}\label{eq:2-29-2}
 	\bar{P} = \frac{W}{t} = \frac{-45\text{ J}}{0.6\text{ s}} = -75\text{ W}
 \end{equation}
 
 (3) 求质点动能的变化：
-根据动能定理，合外力对质点做的总功等于质点动能的变化量，由此推出关系式（3）：
-\begin{equation}
+根据动能定理，合外力对质点做的总功等于质点动能的变化量，由此推出关系式（\ref{eq:2-29-3}）：
+\begin{equation}\label{eq:2-29-3}
 	\Delta E_k = W_{\text{合}} = -45\text{ J}
 \end{equation}
 （动能减少了 $45\text{ J}$）
@@ -619,28 +634,29 @@ $$W = 7 \times (-3) + (-6) \times 4 + 0 \times 16 = -21 - 24 = -45\text{ J}$$
 
 \textbf{2-31题解：}
 \setcounter{equation}{0}
+\renewcommand{\theHequation}{2-31.\arabic{equation}}
 
 \textbf{答案：} $980\text{ J}$ （取 $g=9.8\text{ m/s}^2$）或 $1000\text{ J}$ （取 $g=10\text{ m/s}^2$），以下过程以重力加速度 $g$ 符号保留，最后代入标准值 $9.8\text{ m/s}^2$。
 
 \textbf{解答过程：}
 这是一个变力做功的问题。因为水桶在匀速上升过程中不断漏水，所以水桶和水的总质量 $m$ 是高度 $y$（距水面的高度）的函数。
-设水桶上升高度为 $y$ 时的总质量为 $M(y)$。
+设水桶上升高度为 $y$ 时的总质量为 $M(y)。$
 已知空桶质量 $m_{\text{桶}} = 1\text{ kg}$，初始水质量 $m_{\text{水0}} = 10\text{ kg}$，每升高 $1\text{ m}$ 漏水 $0.2\text{ kg}$。
 在高度 $y$ 处，剩下的水质量为 $m_{\text{水}}(y) = 10 - 0.2y$。
 总质量 $M(y) = 1 + (10 - 0.2y) = 11 - 0.2y$。
-因为是匀速提升，人施加的拉力大小等于总重力，由此得出受力函数公式（1）：
-\begin{equation}
+因为是匀速提升，人施加的拉力大小等于总重力，由此得出受力函数公式（\ref{eq:2-31-1}）：
+\begin{equation}\label{eq:2-31-1}
 	F(y) = M(y)g = (11 - 0.2y)g
 \end{equation}
-人做功微元为 $dW = F(y) dy$，对整个高度 $y \in [0, 10]$ 进行定积分得到总功的计算公式（2）：
-\begin{equation}
+人做功微元为 $dW = F(y) dy$，对整个高度 $y \in [0, 10]$ 进行定积分得到总功的计算公式（\ref{eq:2-31-2}）：
+\begin{equation}\label{eq:2-31-2}
 	W = \int_{0}^{10} F(y) dy = \int_{0}^{10} (11 - 0.2y)g dy
 \end{equation}
 $$W = g \left[ 11y - \frac{0.2}{2}y^2 \right]_{0}^{10} = g \left[ 11y - 0.1y^2 \right]_{0}^{10}$$
 代入上下限：
 $$W = g (11 \times 10 - 0.1 \times 100) = g(110 - 10) = 100g$$
-将 $g = 9.8\text{ m/s}^2$ 代入，则人做的最终总功为公式（3）：
-\begin{equation}
+将 $g = 9.8\text{ m/s}^2$ 代入，则人做的最终总功为公式（\ref{eq:2-31-3}）：
+\begin{equation}\label{eq:2-31-3}
 	W = 100 \times 9.8 = 980\text{ J}
 \end{equation}
 
@@ -651,28 +667,29 @@ $$W = g (11 \times 10 - 0.1 \times 100) = g(110 - 10) = 100g$$
 
 \textbf{2-38题解：}
 \setcounter{equation}{0}
+\renewcommand{\theHequation}{2-38.\arabic{equation}}
 
 \textbf{解答过程：}
 小球 $m$ 从木块 $m'$ 的四分之一圆弧槽滑下的过程中，由于地面光滑（无摩擦），系统在\textbf{水平方向}上不受外力，因此水平方向动量守恒。同时，系统只有重力做功，系统\textbf{机械能守恒}。
 设小球脱离大木块时，小球相对于地面的速度大小为 $v$，方向水平向左；大木块相对于地面的速度大小为 $V$，方向水平向右。\\
-1. 水平方向动量守恒（以小球速度方向为正），建立守恒公式（1）：
-\begin{equation}
+1. 水平方向动量守恒（以小球速度方向为正），建立守恒公式（\ref{eq:2-38-1}）：
+\begin{equation}\label{eq:2-38-1}
 	mv - m'V = 0 \implies V = \frac{m}{m'}v
 \end{equation}
-2. 系统机械能守恒（以小球初位置为零势能面或利用势能减少等于动能增加），建立能量转化公式（2）：
-\begin{equation}
+2. 系统机械能守恒（以小球初位置为零势能面或利用势能减少等于动能增加），建立能量转化公式（\ref{eq:2-38-2}）：
+\begin{equation}\label{eq:2-38-2}
 	mgR = \frac{1}{2}mv^2 + \frac{1}{2}m'V^2
 \end{equation}
-将由公式（1）解出的 $V$ 代入公式（2）的机械能守恒方程中，推导出代入后的表达式（3）：
-\begin{equation}
+将由公式（\ref{eq:2-38-1}）解出的 $V$ 代入公式（\ref{eq:2-38-2}）的机械能守恒方程中，推导出代入后的表达式（\ref{eq:2-38-3}）：
+\begin{equation}\label{eq:2-38-3}
 	mgR = \frac{1}{2}mv^2 + \frac{1}{2}m'\left(\frac{m}{m'}v\right)^2 = \frac{1}{2}mv^2 + \frac{1}{2}\frac{m^2}{m'}v^2
 \end{equation}
-对公式（3）的右侧提取公因式 $\frac{1}{2}mv^2$ 并通分：
+对公式（\ref{eq:2-38-3}）的右侧提取公因式 $\frac{1}{2}mv^2$ 并通分：
 $$mgR = \frac{1}{2}mv^2 \left(1 + \frac{m}{m'}\right) = \frac{1}{2}mv^2 \left(\frac{m' + m}{m'}\right)$$
 消去等式两边的一个 $m$ 并解出 $v^2$：
 $$v^2 = \frac{2gR \cdot m'}{m + m'}$$
-对两边开平方，由公式（1）和（2）最终联合推出小球脱离大木块时的速度公式（4）：
-\begin{equation}
+对两边开平方，由公式（\ref{eq:2-38-1}）和（\ref{eq:2-38-2}）最终联合推出小球脱离大木块时的速度公式（\ref{eq:2-38-4}）：
+\begin{equation}\label{eq:2-38-4}
 	v = \sqrt{\frac{2m'gR}{m + m'}}
 \end{equation}
 
@@ -794,71 +811,72 @@ $$v^2 = \frac{2gR \cdot m'}{m + m'}$$
 
 \textbf{3-10题解：}
 \setcounter{equation}{0}
+\renewcommand{\theHequation}{3-10.\arabic{equation}}
 
 \textbf{解答过程：}
 \textbf{计算由两个同轴圆柱体组成的刚体系统的总转动惯量 $J$:}
-大圆柱体的转动惯量与小圆柱体的转动惯量之和由公式（1）表示：
-\begin{equation}
+大圆柱体的转动惯量与小圆柱体的转动惯量之和由公式（\ref{eq:3-10-1}）表示：
+\begin{equation}\label{eq:3-10-1}
 	J = \frac{1}{2}m'R^2 + \frac{1}{2}mr^2
 \end{equation}
-代入已知数据 $R = 0.20 \text{ m}, r = 0.10 \text{ m}, m = 4 \text{ kg}, m' = 10 \text{ kg}$，计算出转动惯量如公式（2）：
-\begin{equation}
+代入已知数据 $R = 0.20 \text{ m}, r = 0.10 \text{ m}, m = 4 \text{ kg}, m' = 10 \text{ kg}$，计算出转动惯量如公式（\ref{eq:3-10-2}）：
+\begin{equation}\label{eq:3-10-2}
 	J = \frac{1}{2} \times 10 \times (0.20)^2 + \frac{1}{2} \times 4 \times (0.10)^2 = 0.22 \text{ kg}\cdot\text{m}^2
 \end{equation}
 
 设系统的角加速度为 $\alpha$（设 $m_1$ 下降方向对应转动正方向），$m_1$ 向下的加速度为 $a_1$，$m_2$ 向上的加速度为 $a_2$。两侧细绳的张力分别为 $T_1$ 和 $T_2$。
-根据刚体转动与平动的运动学关系，建立公式（3）和公式（4）：
-\begin{equation}
+根据刚体转动与平动的运动学关系，建立公式（\ref{eq:3-10-3}）和公式（\ref{eq:3-10-4}）：
+\begin{equation}\label{eq:3-10-3}
 	a_1 = \alpha R
 \end{equation}
-\begin{equation}
+\begin{equation}\label{eq:3-10-4}
 	a_2 = \alpha r
 \end{equation}
 
 (1). \textbf{求柱体转动时的角加速度 $\alpha$：}
-对 $m_1$ 应用牛顿第二定律（向下为正），结合公式（3）得到公式（5）：
-\begin{equation}
+对 $m_1$ 应用牛顿第二定律（向下为正），结合公式（\ref{eq:3-10-3}）得到公式（\ref{eq:3-10-5}）：
+\begin{equation}\label{eq:3-10-5}
 	m_1 g - T_1 = m_1 a_1 \implies T_1 = m_1(g - \alpha R)
 \end{equation}
-对 $m_2$ 应用牛顿第二定律（向上为正），结合公式（4）得到公式（6）：
-\begin{equation}
+对 $m_2$ 应用牛顿第二定律（向上为正），结合公式（\ref{eq:3-10-4}）得到公式（\ref{eq:3-10-6}）：
+\begin{equation}\label{eq:3-10-6}
 	T_2 - m_2 g = m_2 a_2 \implies T_2 = m_2(g + \alpha r)
 \end{equation}
-对转动系统应用刚体定轴转动定律，建立公式（7）：
-\begin{equation}
+对转动系统应用刚体定轴转动定律，建立公式（\ref{eq:3-10-7}）：
+\begin{equation}\label{eq:3-10-7}
 	T_1 R - T_2 r = J \alpha
 \end{equation}
-将公式（5）和公式（6）代入公式（7）中，得到公式（8）：
-\begin{equation}
+将公式（\ref{eq:3-10-5}）和公式（\ref{eq:3-10-6}）代入公式（\ref{eq:3-10-7}）中，得到公式（\ref{eq:3-10-8}）：
+\begin{equation}\label{eq:3-10-8}
 	m_1(g - \alpha R)R - m_2(g + \alpha r)r = J \alpha
 \end{equation}
-将公式（8）展开并提取出 $\alpha$，推导出角加速度的表达式（9）：
-\begin{equation}
+将公式（\ref{eq:3-10-8}）展开并提取出 $\alpha$，推导出角加速度的表达式（\ref{eq:3-10-9}）：
+\begin{equation}\label{eq:3-10-9}
 	\alpha = \frac{(m_1 R - m_2 r)g}{J + m_1 R^2 + m_2 r^2}
 \end{equation}
-将公式（2）的结果和已知数据代入公式（9）中（取 $g = 9.8 \text{ m/s}^2$，$m_1 = m_2 = 2 \text{ kg}$）：
-\begin{equation}
+将公式（\ref{eq:3-10-2}）的结果和已知数据代入公式（\ref{eq:3-10-9}）中（取 $g = 9.8 \text{ m/s}^2$，$m_1 = m_2 = 2 \text{ kg}$）：
+\begin{equation}\label{eq:3-10-10}
 	\alpha = \frac{(2 \times 0.20 - 2 \times 0.10) \times 9.8}{0.22 + 2 \times 0.20^2 + 2 \times 0.10^2} = \frac{1.96}{0.32} = 6.125 \text{ rad/s}^2
 \end{equation}
 
 (2). \textbf{求两侧细绳的张力：}
-将由公式（10）求得的 $\alpha$ 分别代回公式（5）和公式（6），得出张力公式（11）和公式（12）：
-\begin{equation}
+将由公式（\ref{eq:3-10-10}）求得的 $\alpha$ 分别代回公式（\ref{eq:3-10-5}）和公式（\ref{eq:3-10-6}），得出张力公式（\ref{eq:3-10-11}）和公式（\ref{eq:3-10-12}）：
+\begin{equation}\label{eq:3-10-11}
 	T_1 = m_1(g - \alpha R) = 2 \times (9.8 - 6.125 \times 0.20) = 17.15 \text{ N}
 \end{equation}
-\begin{equation}
+\begin{equation}\label{eq:3-10-12}
 	T_2 = m_2(g + \alpha r) = 2 \times (9.8 + 6.125 \times 0.10) = 20.825 \text{ N}
 \end{equation}
 
 (3). \textbf{判断哪个先落地及落地前瞬间的速率：}
 由于 $m_1$ 产生的力矩 $m_1 g R > m_2 g r$，系统将顺时针加速转动，$m_1$ 加速下降而 $m_2$ 加速上升，且初始高度相同，因此 **$m_1$ 先落地**。
-$m_1$ 下落时的恒定线加速度由公式（3）得 $a_1 = \alpha R = 6.125 \times 0.20 = 1.225 \text{ m/s}^2$。
-根据匀变速直线运动规律，初速度为 $0$，位移 $h = 2 \text{ m}$，落地速率 $v_1$ 满足公式（13）：
-\begin{equation}
+$m_1$ 下落时的恒定线加速度由公式（\ref{eq:3-10-3}）得 $a_1 = \alpha R = 6.125 \times 0.20 = 1.225 \text{ m/s}^2$。
+根据匀变速直线运动规律，初速度为 $0$，位移 $h = 2 \text{ m}$，落地速率 $v_1$ 满足公式（\ref{eq:3-10-13}）：
+\begin{equation}\label{eq:3-10-13}
 	v_1^2 = 2 a_1 h \implies v_1 = \sqrt{2 \times 1.225 \times 2}
 \end{equation}
-由公式（13）解得 $m_1$ 落地前瞬间的速率（14）：
-\begin{equation}
+由公式（\ref{eq:3-10-13}）解得 $m_1$ 落地前瞬间的速率（\ref{eq:3-10-14}）：
+\begin{equation}\label{eq:3-10-14}
 	v_1 = \sqrt{4.9} \approx 2.21 \text{ m/s}
 \end{equation}
 
@@ -875,53 +893,54 @@ $m_1$ 下落时的恒定线加速度由公式（3）得 $a_1 = \alpha R = 6.125 
 
 \textbf{3-11题解：}
 \setcounter{equation}{0}
+\renewcommand{\theHequation}{3-11.\arabic{equation}}
 
 \textbf{解答过程：}
 设系统物体的加速度大小为 $a$，滑轮的角加速度为 $\alpha$。
 两侧细绳的张力分别设为 $T_1$（连接 $m_1$ 侧）和 $T_2$（连接 $m_2$ 侧）。
 
-对水平桌面上的物体 $m_1$（忽略摩擦），在水平方向应用牛顿第二定律建立公式（1）：
-\begin{equation}
+对水平桌面上的物体 $m_1$（忽略摩擦），在水平方向应用牛顿第二定律建立公式（\ref{eq:3-11-1}）：
+\begin{equation}\label{eq:3-11-1}
 	T_1 = m_1 a
 \end{equation}
 
-对悬挂的物体 $m_2$，在竖直方向应用牛顿第二定律（设向下为正方向）建立公式（2）：
-\begin{equation}
+对悬挂的物体 $m_2$，在竖直方向应用牛顿第二定律（设向下为正方向）建立公式（\ref{eq:3-11-2}）：
+\begin{equation}\label{eq:3-11-2}
 	m_2 g - T_2 = m_2 a
 \end{equation}
 
-对具有质量的定滑轮，应用刚体定轴转动定律建立公式（3）：
-\begin{equation}
+对具有质量的定滑轮，应用刚体定轴转动定律建立公式（\ref{eq:3-11-3}）：
+\begin{equation}\label{eq:3-11-3}
 	(T_2 - T_1)r = J\alpha
 \end{equation}
 
-其中，质量均匀分布的圆柱体（滑轮）的转动惯量 $J$ 如公式（4）：
-\begin{equation}
+其中，质量均匀分布的圆柱体（滑轮）的转动惯量 $J$ 如公式（\ref{eq:3-11-4}）：
+\begin{equation}\label{eq:3-11-4}
 	J = \frac{1}{2}m'r^2
 \end{equation}
 
-绳子不可伸长且与滑轮之间无相对滑动，线加速度与角加速度的运动学关系如公式（5）：
-\begin{equation}
+绳子不可伸长且与滑轮之间无相对滑动，线加速度与角加速度的运动学关系如公式（\ref{eq:3-11-5}）：
+\begin{equation}\label{eq:3-11-5}
 	a = \alpha r
 \end{equation}
 
-将公式（4）和公式（5）代入公式（3）中，消去 $J$ 和 $\alpha$，得到关于线加速度的转动方程（6）：
-\begin{equation}
+将公式（\ref{eq:3-11-4}）和公式（\ref{eq:3-11-5}）代入公式（\ref{eq:3-11-3}）中，消去 $J$ 和 $\alpha$，得到关于线加速度的转动方程（\ref{eq:3-11-6}）：
+\begin{equation}\label{eq:3-11-6}
 	(T_2 - T_1)r = \left(\frac{1}{2}m'r^2\right) \left(\frac{a}{r}\right) \implies T_2 - T_1 = \frac{1}{2}m'a
 \end{equation}
 
-将公式（1）中的 $T_1$ 和公式（2）变形得到的 $T_2 = m_2 g - m_2 a$ 一并代入公式（6）中：
-\begin{equation}
+将公式（\ref{eq:3-11-1}）中的 $T_1$ 和公式（\ref{eq:3-11-2}）变形得到的 $T_2 = m_2 g - m_2 a$ 一并代入公式（\ref{eq:3-11-6}）中：
+\begin{equation}\label{eq:3-11-7}
 	(m_2 g - m_2 a) - m_1 a = \frac{1}{2}m'a
 \end{equation}
 
-对公式（7）移项并提取公因式 $a$，解得系统加速度的一般表达式（8）：
-\begin{equation}
+对公式（\ref{eq:3-11-7}）移项并提取公因式 $a$，解得系统加速度的一般表达式（\ref{eq:3-11-8}）：
+\begin{equation}\label{eq:3-11-8}
 	a = \frac{m_2 g}{m_1 + m_2 + \frac{1}{2}m'}
 \end{equation}
 
-代入已知数据 $m_1 = 50\text{ kg}, m_2 = 200\text{ kg}, m' = 15\text{ kg}$，取重力加速度 $g = 9.8\text{ m/s}^2$ 得到最终结果（9）：
-\begin{equation}
+代入已知数据 $m_1 = 50\text{ kg}, m_2 = 200\text{ kg}, m' = 15\text{ kg}$，取重力加速度 $g = 9.8\text{ m/s}^2$ 得到最终结果（\ref{eq:3-11-9}）：
+\begin{equation}\label{eq:3-11-9}
 	a = \frac{200 \times 9.8}{50 + 200 + \frac{1}{2} \times 15} = \frac{1960}{257.5} \approx 7.61 \text{ m/s}^2
 \end{equation}
 \textcolor{red}{（注：若题目要求取 $g = 10\text{ m/s}^2$，代入上式计算得 $a \approx 7.77\text{ m/s}^2$）}
@@ -935,60 +954,61 @@ $m_1$ 下落时的恒定线加速度由公式（3）得 $a_1 = \alpha R = 6.125 
 
 \textbf{3-12题解：}
 \setcounter{equation}{0}
+\renewcommand{\theHequation}{3-12.\arabic{equation}}
 
 \textbf{解答过程：}
 细杆可绕过端点 $O$ 的水平固定轴转动，这是一个典型的刚体定轴转动问题。
-根据刚体转动惯量的计算，均匀细杆绕过其一端且垂直于杆的轴的转动惯量 $J$ 为公式（1）：
-\begin{equation}
+根据刚体转动惯量的计算，均匀细杆绕过其一端且垂直于杆的轴的转动惯量 $J$ 为公式（\ref{eq:3-12-1}）：
+\begin{equation}\label{eq:3-12-1}
 	J = \frac{1}{3}ml^2
 \end{equation}
 
 (1) \textbf{求初始时刻的角加速度 $\alpha_0$：}
-初始时刻，细杆处于静止的水平位置。此时重力 $mg$ 集中作用在杆的质心（距 $O$ 点距离为 $\frac{l}{2}$）上。此时重力的力臂最大，产生的重力力矩 $\tau_0$ 见公式（2）：
-\begin{equation}
+初始时刻，细杆处于静止的水平位置。此时重力 $mg$ 集中作用在杆的质心（距 $O$ 点距离为 $\frac{l}{2}$）上。此时重力的力臂最大，产生的重力力矩 $\tau_0$ 见公式（\ref{eq:3-12-2}）：
+\begin{equation}\label{eq:3-12-2}
 	\tau_0 = mg \frac{l}{2}
 \end{equation}
-根据刚体定轴转动定律 $\tau = J\alpha$，结合公式（1）和公式（2）可得初始时刻的角加速度算式（3）：
-\begin{equation}
+根据刚体定轴转动定律 $\tau = J\alpha$，结合公式（\ref{eq:3-12-1}）和公式（\ref{eq:3-12-2}）可得初始时刻的角加速度算式（\ref{eq:3-12-3}）：
+\begin{equation}\label{eq:3-12-3}
 	\alpha_0 = \frac{\tau_0}{J} = \frac{mg \frac{l}{2}}{\frac{1}{3}ml^2}
 \end{equation}
-化简公式（3），得到初始时刻的角加速度表达式（4）：
-\begin{equation}
+化简公式（\ref{eq:3-12-3}），得到初始时刻的角加速度表达式（\ref{eq:3-12-4}）：
+\begin{equation}\label{eq:3-12-4}
 	\alpha_0 = \frac{3g}{2l}
 \end{equation}
 
 (2) \textbf{求杆转过 $\theta$ 角时的角加速度 $\alpha$ 和角速度 $\omega$：}
 当细杆从水平位置向下转过 $\theta$ 角时，根据题图可知，$\theta$ 为杆与水平线的夹角。此时质心到 $O$ 点的水平距离（即重力力臂）减小为 $\frac{l}{2} \cos\theta$。
-此时重力产生的力矩 $\tau$ 为公式（5）：
-\begin{equation}
+此时重力产生的力矩 $\tau$ 为公式（\ref{eq:3-12-5}）：
+\begin{equation}\label{eq:3-12-5}
 	\tau = mg \frac{l}{2} \cos\theta
 \end{equation}
-再次应用刚体定轴转动定律 $\tau = J\alpha$，结合公式（1）和公式（5），得到此时的角加速度算式（6）：
-\begin{equation}
+再次应用刚体定轴转动定律 $\tau = J\alpha$，结合公式（\ref{eq:3-12-1}）和公式（\ref{eq:3-12-5}），得到此时的角加速度算式（\ref{eq:3-12-6}）：
+\begin{equation}\label{eq:3-12-6}
 	\alpha = \frac{\tau}{J} = \frac{mg \frac{l}{2} \cos\theta}{\frac{1}{3}ml^2}
 \end{equation}
-化简公式（6）得此时的角加速度（7）：
-\begin{equation}
+化简公式（\ref{eq:3-12-6}）得此时的角加速度（\ref{eq:3-12-7}）：
+\begin{equation}\label{eq:3-12-7}
 	\alpha = \frac{3g \cos\theta}{2l}
 \end{equation}
 
 为了求解角速度 $\omega$，最简便的方法是使用\textbf{机械能守恒定律}。
 取细杆的初始水平位置为重力势能零势面，细杆从静止释放，初态总机械能 $E_1 = 0$。
 当杆转过 $\theta$ 角时，杆的质心下降的垂直高度为 $h = \frac{l}{2} \sin\theta$。
-根据机械能守恒定律，系统的重力势能与转动动能之和为零，建立公式（8）：
-\begin{equation}
-	0 = -mg \frac{l}{2} \sin\theta + \frac{1}{2}J\omega^2 
+根据机械能守恒定律，系统的重力势能与转动动能之和为零，建立公式（\ref{eq:3-12-8}）：
+\begin{equation}\label{eq:3-12-8}
+	0 = -mg \frac{l}{2} \sin\theta + \frac{1}{2}J\omega^2 
 \end{equation}
-对公式（8）移项并将公式（1）中的转动惯量代入：
-\begin{equation}
+对公式（\ref{eq:3-12-8}）移项并将公式（\ref{eq:3-12-1}）中的转动惯量代入：
+\begin{equation}\label{eq:3-12-9}
 	mg \frac{l}{2} \sin\theta = \frac{1}{2} \left(\frac{1}{3}ml^2\right) \omega^2
 \end{equation}
-进一步化简等式（9）：
-\begin{equation}
+进一步化简等式（\ref{eq:3-12-9}）：
+\begin{equation}\label{eq:3-12-10}
 	mg \frac{l}{2} \sin\theta = \frac{1}{6} ml^2 \omega^2 \implies 3g \sin\theta = l\omega^2
 \end{equation}
-对公式（10）中的 $\omega^2$ 开平方，解得此时的角速度大小（11）：
-\begin{equation}
+对公式（\ref{eq:3-12-10}）中的 $\omega^2$ 开平方，解得此时的角速度大小（\ref{eq:3-12-11}）：
+\begin{equation}\label{eq:3-12-11}
 	\omega = \sqrt{\frac{3g \sin\theta}{l}}
 \end{equation}
 
@@ -1003,23 +1023,24 @@ $m_1$ 下落时的恒定线加速度由公式（3）得 $a_1 = \alpha R = 6.125 
 
 \textbf{3-13题解：}
 \setcounter{equation}{0}
+\renewcommand{\theHequation}{3-13.\arabic{equation}}
 
 \textbf{解答过程：}
 (1). \textbf{求放手时棒的角加速度：}
-设均匀直棒的质量为 $m$，长度为 $L = 1\text{ m}$。棒绕一端固定的水平光滑轴转动，其转动惯量由公式（1）给出：
-\begin{equation}
+设均匀直棒的质量为 $m$，长度为 $L = 1\text{ m}$。棒绕一端固定的水平光滑轴转动，其转动惯量由公式（\ref{eq:3-13-1}）给出：
+\begin{equation}\label{eq:3-13-1}
 	J = \frac{1}{3}mL^2
 \end{equation}
-放手瞬间，棒受到的重力力矩由重力在垂直于棒的方向上的分量产生。重力作用于棒的质心（距转轴 $\frac{L}{2}$ 处），且题图所示棒与水平面的夹角为 $60^\circ$，因此重力力臂为 $\frac{L}{2} \cos 60^\circ$。由此建立重力力矩 $\tau$ 的公式（2）：
-\begin{equation}
+放手瞬间，棒受到的重力力矩由重力在垂直于棒的方向上的分量产生。重力作用于棒的质心（距转轴 $\frac{L}{2}$ 处），且题图所示棒与水平面的夹角为 $60^\circ$，因此重力力臂为 $\frac{L}{2} \cos 60^\circ$。由此建立重力力矩 $\tau$ 的公式（\ref{eq:3-13-2}）：
+\begin{equation}\label{eq:3-13-2}
 	\tau = mg \frac{L}{2} \cos 60^\circ
 \end{equation}
-根据刚体定轴转动定律 $\tau = J\alpha$，结合公式（1）和公式（2），可得角加速度 $\alpha$ 为公式（3）：
-\begin{equation}
+根据刚体定轴转动定律 $\tau = J\alpha$，结合公式（\ref{eq:3-13-1}）和公式（\ref{eq:3-13-2}），可得角加速度 $\alpha$ 为公式（\ref{eq:3-13-3}）：
+\begin{equation}\label{eq:3-13-3}
 	\alpha = \frac{\tau}{J} = \frac{mg \frac{L}{2} \cos 60^\circ}{\frac{1}{3}mL^2}
 \end{equation}
-将公式（3）化简并代入 $L = 1\text{ m}, \cos 60^\circ = 0.5$ 得到初始角加速度（4）：
-\begin{equation}
+将公式（\ref{eq:3-13-3}）化简并代入 $L = 1\text{ m}, \cos 60^\circ = 0.5$ 得到初始角加速度（\ref{eq:3-13-4}）：
+\begin{equation}\label{eq:3-13-4}
 	\alpha = \frac{3g \cos 60^\circ}{2L} = \frac{3g \times 0.5}{2 \times 1} = 0.75g \text{ rad/s}^2
 \end{equation}
 （若取重力加速度 $g = 9.8\text{ m/s}^2$，则 $\alpha = 7.35\text{ rad/s}^2$）
@@ -1027,24 +1048,24 @@ $m_1$ 下落时的恒定线加速度由公式（3）得 $a_1 = \alpha R = 6.125 
 (2). \textbf{求棒转到竖直位置时的角速度：}
 棒下落过程中，只有重力做功，系统机械能守恒。以竖直最低点处质心所在位置为重力势能零点。
 初始时刻，棒的质心距水平轴的高度为 $\frac{L}{2} \sin 60^\circ$。竖直位置时，质心距水平轴的垂直距离为 $\frac{L}{2}$。
-质心下降的垂直高度差 $\Delta h$ 可由公式（5）计算：
-\begin{equation}
+质心下降的垂直高度差 $\Delta h$ 可由公式（\ref{eq:3-13-5}）计算：
+\begin{equation}\label{eq:3-13-5}
 	\Delta h = \frac{L}{2} - \frac{L}{2} \sin 60^\circ = \frac{L}{2}(1 - \sin 60^\circ)
 \end{equation}
-根据机械能守恒定律，重力势能的减少量等于转动动能的增加量，建立能量守恒方程（6）：
-\begin{equation}
+根据机械能守恒定律，重力势能的减少量等于转动动能的增加量，建立能量守恒方程（\ref{eq:3-13-6}）：
+\begin{equation}\label{eq:3-13-6}
 	mg \Delta h = \frac{1}{2} J \omega^2
 \end{equation}
-将公式（1）的 $J$ 和公式（5）的 $\Delta h$ 代入方程（6）中：
-\begin{equation}
+将公式（\ref{eq:3-13-1}）的 $J$ 和公式（\ref{eq:3-13-5}）的 $\Delta h$ 代入方程（\ref{eq:3-13-6}）中：
+\begin{equation}\label{eq:3-13-7}
 	mg \frac{L}{2}(1 - \sin 60^\circ) = \frac{1}{2} \left(\frac{1}{3}mL^2\right) \omega^2
 \end{equation}
-对公式（7）进行化简，解得角速度 $\omega$ 的解析式（8）：
-\begin{equation}
+对公式（\ref{eq:3-13-7}）进行化简，解得角速度 $\omega$ 的解析式（\ref{eq:3-13-8}）：
+\begin{equation}\label{eq:3-13-8}
 	\omega = \sqrt{\frac{3g(1 - \sin 60^\circ)}{L}}
 \end{equation}
-代入具体数值（$\sin 60^\circ = \frac{\sqrt{3}}{2}$）得到最终结果（9）：
-\begin{equation}
+代入具体数值（$\sin 60^\circ = \frac{\sqrt{3}}{2}$）得到最终结果（\ref{eq:3-13-9}）：
+\begin{equation}\label{eq:3-13-9}
 	\omega = \sqrt{\frac{3g(1 - \frac{\sqrt{3}}{2})}{1}} = \sqrt{3g \left(\frac{2-\sqrt{3}}{2}\right)}
 \end{equation}
 
@@ -1061,32 +1082,33 @@ $m_1$ 下落时的恒定线加速度由公式（3）得 $a_1 = \alpha R = 6.125 
 
 \textbf{3-14题解：}
 \setcounter{equation}{0}
+\renewcommand{\theHequation}{3-14.\arabic{equation}}
 
 \textbf{解答过程：}
 (1). \textbf{求开始转动时的角速度：}
 小球与细杆碰撞过程极短，碰撞期间桌面的摩擦力矩远小于小球对杆的冲击力矩，因此小球与细杆组成的系统对转轴 $O$ 的角动量守恒。
-设杆的转动惯量为 $J$，质量为 $m$，长度为 $L$。小球质量 $m_0 = m/3$，碰撞点 $OP = \frac{3}{4}L$。转动惯量由公式（1）给出：
-\begin{equation}
+设杆的转动惯量为 $J$，质量为 $m$，长度为 $L$。小球质量 $m_0 = m/3$，碰撞点 $OP = \frac{3}{4}L$。转动惯量由公式（\ref{eq:3-14-1}）给出：
+\begin{equation}\label{eq:3-14-1}
 	J = \frac{1}{3}mL^2
 \end{equation}
-碰撞前，系统只有小球具有角动量，根据角动量定义建立公式（2）：
-\begin{equation}
+碰撞前，系统只有小球具有角动量，根据角动量定义建立公式（\ref{eq:3-14-2}）：
+\begin{equation}\label{eq:3-14-2}
 	L_i = m_0 v_0 \cdot OP = \left(\frac{m}{3}\right) v_0 \left(\frac{3}{4}L\right) = \frac{1}{4} m v_0 L
 \end{equation}
-碰撞后，小球以 $v = v_0/3$ 的速度反弹，杆以角速度 $\omega_0$ 开始转动。碰撞后的总角动量为公式（3）：
-\begin{equation}
+碰撞后，小球以 $v = v_0/3$ 的速度反弹，杆以角速度 $\omega_0$ 开始转动。碰撞后的总角动量为公式（\ref{eq:3-14-3}）：
+\begin{equation}\label{eq:3-14-3}
 	L_f = J \omega_0 + m_0 (-v) \cdot OP = \frac{1}{3}mL^2 \omega_0 - \left(\frac{m}{3}\right) \left(\frac{v_0}{3}\right) \left(\frac{3}{4}L\right)
 \end{equation}
-将公式（3）化简得出公式（4）：
-\begin{equation}
+将公式（\ref{eq:3-14-3}）化简得出公式（\ref{eq:3-14-4}）：
+\begin{equation}\label{eq:3-14-4}
 	L_f = \frac{1}{3}mL^2 \omega_0 - \frac{1}{12} m v_0 L
 \end{equation}
-根据角动量守恒 $L_i = L_f$，联立公式（2）和公式（4）得到等式（5）：
-\begin{equation}
+根据角动量守恒 $L_i = L_f$，联立公式（\ref{eq:3-14-2}）和公式（\ref{eq:3-14-4}）得到等式（\ref{eq:3-14-5}）：
+\begin{equation}\label{eq:3-14-5}
 	\frac{1}{4} m v_0 L = \frac{1}{3}mL^2 \omega_0 - \frac{1}{12} m v_0 L
 \end{equation}
-对公式（5）移项化简，求得开始转动时的角速度 $\omega_0$（6）：
-\begin{equation}
+对公式（\ref{eq:3-14-5}）移项化简，求得开始转动时的角速度 $\omega_0$（\ref{eq:3-14-6}）：
+\begin{equation}\label{eq:3-14-6}
 	\frac{1}{3}mL^2 \omega_0 = \left(\frac{1}{4} + \frac{1}{12}\right) m v_0 L = \frac{1}{3} m v_0 L \implies \omega_0 = \frac{v_0}{L}
 \end{equation}
 
@@ -1094,26 +1116,26 @@ $m_1$ 下落时的恒定线加速度由公式（3）得 $a_1 = \alpha R = 6.125 
 杆在水平桌面上转动时，各处受到的滑动摩擦力方向均与运动方向相反。
 在距转轴 $O$ 为 $x$ 处，取长度为 $dx$ 的微元。该微元的质量为 $dm = \frac{m}{L} dx$，所受支持力为 $dN = dm \cdot g$。
 该微元受到的滑动摩擦力为 $df = \mu dN = \mu \frac{m}{L} g dx$。
-此摩擦力对转轴 $O$ 产生的微摩擦力矩为 $dM_f = x df$，建立微元公式（7）：
-\begin{equation}
+此摩擦力对转轴 $O$ 产生的微摩擦力矩为 $dM_f = x df$，建立微元公式（\ref{eq:3-14-7}）：
+\begin{equation}\label{eq:3-14-7}
 	dM_f = x \left(\mu \frac{m}{L} g dx\right) = \frac{\mu m g}{L} x dx
 \end{equation}
-对公式（7）从 $0$ 到 $L$ 积分，得到总摩擦力矩 $M_f$ 的大小（8）：
-\begin{equation}
+对公式（\ref{eq:3-14-7}）从 $0$ 到 $L$ 积分，得到总摩擦力矩 $M_f$ 的大小（\ref{eq:3-14-8}）：
+\begin{equation}\label{eq:3-14-8}
 	M_f = \int_{0}^{L} \frac{\mu m g}{L} x dx = \frac{\mu m g}{L} \left[ \frac{1}{2}x^2 \right]_{0}^{L} = \frac{1}{2} \mu m g L
 \end{equation}
 
 (3). \textbf{求杆从开始转动到静止所转过的角度和经历的时间：}
-杆在定摩擦力矩作用下做匀减速转动。根据刚体定轴转动定律，由公式（1）和公式（8）求得角加速度 $\alpha$ 的大小（9）：
-\begin{equation}
+杆在定摩擦力矩作用下做匀减速转动。根据刚体定轴转动定律，由公式（\ref{eq:3-14-1}）和公式（\ref{eq:3-14-8}）求得角加速度 $\alpha$ 的大小（\ref{eq:3-14-9}）：
+\begin{equation}\label{eq:3-14-9}
 	|\alpha| = \frac{M_f}{J} = \frac{\frac{1}{2} \mu m g L}{\frac{1}{3}mL^2} = \frac{3 \mu g}{2 L}
 \end{equation}
-设经历的时间为 $t$，根据匀变速转动公式 $\omega_t = \omega_0 - |\alpha| t = 0$，代入求得时间公式（10）：
-\begin{equation}
+设经历的时间为 $t$，根据匀变速转动公式 $\omega_t = \omega_0 - |\alpha| t = 0$，代入求得时间公式（\ref{eq:3-14-10}）：
+\begin{equation}\label{eq:3-14-10}
 	t = \frac{\omega_0}{|\alpha|} = \frac{\frac{v_0}{L}}{\frac{3 \mu g}{2 L}} = \frac{2v_0}{3\mu g}
 \end{equation}
-转过的角度 $\theta$ 可由 $\omega_t^2 - \omega_0^2 = -2|\alpha|\theta$ 得到公式（11）：
-\begin{equation}
+转过的角度 $\theta$ 可由 $\omega_t^2 - \omega_0^2 = -2|\alpha|\theta$ 得到公式（\ref{eq:3-14-11}）：
+\begin{equation}\label{eq:3-14-11}
 	\theta = \frac{\omega_0^2}{2|\alpha|} = \frac{\left(\frac{v_0}{L}\right)^2}{2 \left(\frac{3 \mu g}{2 L}\right)} = \frac{v_0^2}{3 \mu g L}
 \end{equation}
 \textcolor{red}{（注：也可直接使用动能定理求解转过的角度：$-M_f \theta = 0 - \frac{1}{2}J\omega_0^2$，结果完全一致）。}
@@ -1129,66 +1151,67 @@ $m_1$ 下落时的恒定线加速度由公式（3）得 $a_1 = \alpha R = 6.125 
 
 \textbf{3-16题解：}
 \setcounter{equation}{0}
+\renewcommand{\theHequation}{3-16.\arabic{equation}}
 
 \textbf{解答过程：}
 (1). \textbf{求碰撞后瞬间细棒的角速度 $\omega$：}
 碰撞时间极短，重力的冲量矩可以忽略。在小球与细棒碰撞的过程中，系统受到固定轴 $O$ 的外力作用，因此系统的动量不守恒；但外力通过转轴 $O$，力臂为零，因此系统对轴 $O$ 的\textbf{角动量守恒}。
 规定逆时针（或小球初始速度方向对应的旋转方向）为正方向。
-碰撞前，细棒静止，只有小球具有相对于 $O$ 轴的角动量，如公式（1）：
-\begin{equation}
+碰撞前，细棒静止，只有小球具有相对于 $O$ 轴的角动量，如公式（\ref{eq:3-16-1}）：
+\begin{equation}\label{eq:3-16-1}
 	L_i = m_2 v_1 l
 \end{equation}
-碰撞后，细棒以角速度 $\omega$ 转动，小球反弹，速度方向相反，取值为 $-v_2$。碰撞后系统的总角动量如公式（2）：
-\begin{equation}
+碰撞后，细棒以角速度 $\omega$ 转动，小球反弹，速度方向相反，取值为 $-v_2$。碰撞后系统的总角动量如公式（\ref{eq:3-16-2}）：
+\begin{equation}\label{eq:3-16-2}
 	L_f = J\omega + m_2 (-v_2) l = J\omega - m_2 v_2 l
 \end{equation}
-其中，均匀细棒绕一端悬挂点的转动惯量 $J$ 为公式（3）：
-\begin{equation}
+其中，均匀细棒绕一端悬挂点的转动惯量 $J$ 为公式（\ref{eq:3-16-3}）：
+\begin{equation}\label{eq:3-16-3}
 	J = \frac{1}{3}m_1 l^2
 \end{equation}
-根据角动量守恒定律 $L_i = L_f$，联立公式（1）和公式（2），代入公式（3）得到等式（4）：
-\begin{equation}
+根据角动量守恒定律 $L_i = L_f$，联立公式（\ref{eq:3-16-1}）和公式（\ref{eq:3-16-2}），代入公式（\ref{eq:3-16-3}）得到等式（\ref{eq:3-16-4}）：
+\begin{equation}\label{eq:3-16-4}
 	m_2 v_1 l = \frac{1}{3}m_1 l^2 \omega - m_2 v_2 l
 \end{equation}
-对公式（4）移项并解得碰撞后瞬间细棒的角速度 $\omega$（5）：
-\begin{equation}
+对公式（\ref{eq:3-16-4}）移项并解得碰撞后瞬间细棒的角速度 $\omega$（\ref{eq:3-16-5}）：
+\begin{equation}\label{eq:3-16-5}
 	\omega = \frac{3m_2(v_1 + v_2)}{m_1 l}
 \end{equation}
 
 (2). \textbf{求细棒能够摆动的最大摆角 $\theta_m$：}
 碰撞结束后，细棒在向上摆动的过程中，只有重力做功，机械能守恒。
 取细棒静止时的最低点所在水平面为重力势能零参考面。
-碰撞后瞬间，细棒的初始动能为 $E_k$，初始势能为 $E_{p1}$（质心高度为 $l/2$），总机械能 $E_1$ 如公式（6）：
-\begin{equation}
+碰撞后瞬间，细棒的初始动能为 $E_k$，初始势能为 $E_{p1}$（质心高度为 $l/2$），总机械能 $E_1$ 如公式（\ref{eq:3-16-6}）：
+\begin{equation}\label{eq:3-16-6}
 	E_1 = \frac{1}{2}J\omega^2 + m_1 g \frac{l}{2}
 \end{equation}
 当细棒摆动到最大摆角 $\theta_m$ 时，角速度为零，动能为零。此时质心距离转轴 $O$ 的竖直深度为 $\frac{l}{2}\cos\theta_m$。
-若以质心初位置为零势面，则质心升高的高度 $\Delta h$ 可由公式（7）得出：
-\begin{equation}
+若以质心初位置为零势面，则质心升高的高度 $\Delta h$ 可由公式（\ref{eq:3-16-7}）得出：
+\begin{equation}\label{eq:3-16-7}
 	\Delta h = \frac{l}{2} - \frac{l}{2}\cos\theta_m = \frac{l}{2}(1 - \cos\theta_m)
 \end{equation}
-根据机械能守恒定律，动能转化为重力势能，结合公式（7）得出方程（8）：
-\begin{equation}
+根据机械能守恒定律，动能转化为重力势能，结合公式（\ref{eq:3-16-7}）得出方程（\ref{eq:3-16-8}）：
+\begin{equation}\label{eq:3-16-8}
 	\frac{1}{2}J\omega^2 = m_1 g \Delta h = m_1 g \frac{l}{2}(1 - \cos\theta_m)
 \end{equation}
-将公式（3）的 $J$ 和公式（5）的 $\omega$ 代入公式（8）中：
-\begin{equation}
+将公式（\ref{eq:3-16-3}）的 $J$ 和公式（\ref{eq:3-16-5}）的 $\omega$ 代入公式（\ref{eq:3-16-8}）中：
+\begin{equation}\label{eq:3-16-9}
 	\frac{1}{2}\left(\frac{1}{3}m_1 l^2\right) \left[ \frac{3m_2(v_1 + v_2)}{m_1 l} \right]^2 = m_1 g \frac{l}{2}(1 - \cos\theta_m)
 \end{equation}
-化简公式（9）等式左侧：
-\begin{equation}
+化简公式（\ref{eq:3-16-9}）等式左侧：
+\begin{equation}\label{eq:3-16-10}
 	\frac{1}{6} m_1 l^2 \cdot \frac{9 m_2^2 (v_1 + v_2)^2}{m_1^2 l^2} = m_1 g \frac{l}{2}(1 - \cos\theta_m)
 \end{equation}
-进一步消去同类项得到公式（11）：
-\begin{equation}
+进一步消去同类项得到公式（\ref{eq:3-16-11}）：
+\begin{equation}\label{eq:3-16-11}
 	\frac{3 m_2^2 (v_1 + v_2)^2}{2 m_1} = m_1 g \frac{l}{2}(1 - \cos\theta_m)
 \end{equation}
-由公式（11）解得 $\cos\theta_m$ 的表达式（12）：
-\begin{equation}
+由公式（\ref{eq:3-16-11}）解得 $\cos\theta_m$ 的表达式（\ref{eq:3-16-12}）：
+\begin{equation}\label{eq:3-16-12}
 	1 - \cos\theta_m = \frac{3 m_2^2 (v_1 + v_2)^2}{m_1^2 g l} \implies \cos\theta_m = 1 - \frac{3 m_2^2 (v_1 + v_2)^2}{m_1^2 g l}
 \end{equation}
-由公式（12）应用反三角函数最终得到最大摆角 $\theta_m$（13）：
-\begin{equation}
+由公式（\ref{eq:3-16-12}）应用反三角函数最终得到最大摆角 $\theta_m$（\ref{eq:3-16-13}）：
+\begin{equation}\label{eq:3-16-13}
 	\theta_m = \arccos\left(1 - \frac{3 m_2^2 (v_1 + v_2)^2}{m_1^2 g l}\right)
 \end{equation}
 
@@ -1203,72 +1226,73 @@ $m_1$ 下落时的恒定线加速度由公式（3）得 $a_1 = \alpha R = 6.125 
 
 \textbf{3-17题解：}
 \setcounter{equation}{0}
+\renewcommand{\theHequation}{3-17.\arabic{equation}}
 
 \textbf{解答过程：}
 (1). \textbf{求杆在转动过程中 $\theta$ 角加速度 $\alpha$ 的表达式：}
-从图中可以看出，$\theta$ 是细杆与水平线的夹角。重力作用在杆的质心（距 $O$ 点 $l/2$ 处），力臂为 $\frac{l}{2}\cos\theta$。重力产生的力矩 $\tau$ 如公式（1）所示：
-\begin{equation}
+从图中可以看出，$\theta$ 是细杆与水平线的夹角。重力作用在杆的质心（距 $O$ 点 $l/2$ 处），力臂为 $\frac{l}{2}\cos\theta$。重力产生的力矩 $\tau$ 如公式（\ref{eq:3-17-1}）所示：
+\begin{equation}\label{eq:3-17-1}
 	\tau = m_1 g \frac{l}{2} \cos\theta
 \end{equation}
-细杆绕一端旋转的转动惯量 $J = \frac{1}{3}m_1 l^2$。根据刚体定轴转动定律 $\tau = J\alpha$，结合公式（1）得出角加速度公式（2）：
-\begin{equation}
+细杆绕一端旋转的转动惯量 $J = \frac{1}{3}m_1 l^2$。根据刚体定轴转动定律 $\tau = J\alpha$，结合公式（\ref{eq:3-17-1}）得出角加速度公式（\ref{eq:3-17-2}）：
+\begin{equation}\label{eq:3-17-2}
 	\alpha = \frac{\tau}{J} = \frac{m_1 g \frac{l}{2} \cos\theta}{\frac{1}{3}m_1 l^2} = \frac{3g \cos\theta}{2l}
 \end{equation}
 
 (2). \textbf{求杆转到竖直位置时的角动量和动能：}
-细杆从水平位置自由转到竖直位置，质心下降的高度为 $l/2$。根据机械能守恒，减小的重力势能转化为细杆的转动动能 $E_k$，如公式（3）：
-\begin{equation}
+细杆从水平位置自由转到竖直位置，质心下降的高度为 $l/2$。根据机械能守恒，减小的重力势能转化为细杆的转动动能 $E_k$，如公式（\ref{eq:3-17-3}）：
+\begin{equation}\label{eq:3-17-3}
 	E_k = m_1 g \frac{l}{2}
 \end{equation}
-由 $E_k = \frac{1}{2}J\omega^2$ 可求得此时细杆的角速度 $\omega$（4）：
-\begin{equation}
+由 $E_k = \frac{1}{2}J\omega^2$ 可求得此时细杆的角速度 $\omega$（\ref{eq:3-17-4}）：
+\begin{equation}\label{eq:3-17-4}
 	\frac{1}{2}\left(\frac{1}{3}m_1 l^2\right)\omega^2 = m_1 g \frac{l}{2} \implies \omega = \sqrt{\frac{3g}{l}}
 \end{equation}
-结合转动惯量和公式（4），杆转到竖直位置时的角动量 $L$ 为公式（5）：
-\begin{equation}
+结合转动惯量和公式（\ref{eq:3-17-4}），杆转到竖直位置时的角动量 $L$ 为公式（\ref{eq:3-17-5}）：
+\begin{equation}\label{eq:3-17-5}
 	L = J\omega = \left(\frac{1}{3}m_1 l^2\right)\sqrt{\frac{3g}{l}} = m_1 \sqrt{\frac{g l^3}{3}}
 \end{equation}
 
 (3). \textbf{若碰撞是完全弹性的，求碰撞后 $m_2$ 的速度 $v'$：}
-碰撞过程时间极短，系统关于 $O$ 轴的角动量守恒。设碰后杆的角速度为 $\omega'$。由角动量守恒建立公式（6）：
-\begin{equation}
+碰撞过程时间极短，系统关于 $O$ 轴的角动量守恒。设碰后杆的角速度为 $\omega'$。由角动量守恒建立公式（\ref{eq:3-17-6}）：
+\begin{equation}\label{eq:3-17-6}
 	J\omega = J\omega' + m_2 v' l
 \end{equation}
-由于是完全弹性碰撞，系统机械能（动能）也守恒，建立动能方程（7）：
-\begin{equation}
+由于是完全弹性碰撞，系统机械能（动能）也守恒，建立动能方程（\ref{eq:3-17-7}）：
+\begin{equation}\label{eq:3-17-7}
 	\frac{1}{2}J\omega^2 = \frac{1}{2}J\omega'^2 + \frac{1}{2}m_2 v'^2
 \end{equation}
-由公式（6）可得 $J(\omega - \omega') = m_2 v' l$。
-由公式（7）可得 $J(\omega - \omega')(\omega + \omega') = m_2 v'^2$。
-将两式相除（假定 $v' \neq 0$），得到碰撞前后的速度关系公式（8）：
-\begin{equation}
+由公式（\ref{eq:3-17-6}）可得 $J(\omega - \omega') = m_2 v' l$。
+由公式（\ref{eq:3-17-7}）可得 $J(\omega - \omega')(\omega + \omega') = m_2 v'^2$。
+将两式相除（假定 $v' \neq 0$），得到碰撞前后的速度关系公式（\ref{eq:3-17-8}）：
+\begin{equation}\label{eq:3-17-8}
 	\omega + \omega' = \frac{v'}{l} \implies \omega' = \frac{v'}{l} - \omega
 \end{equation}
-将公式（8）代回角动量守恒公式（6）中：
-\begin{equation}
+将公式（\ref{eq:3-17-8}）代回角动量守恒公式（\ref{eq:3-17-6}）中：
+\begin{equation}\label{eq:3-17-9}
 	J\left[\omega - \left(\frac{v'}{l} - \omega\right)\right] = m_2 v' l \implies J\left(2\omega - \frac{v'}{l}\right) = m_2 v' l
 \end{equation}
-对公式（9）化简解得 $v'$ 的一般表达式（10）：
-\begin{equation}
+对公式（\ref{eq:3-17-9}）化简解得 $v'$ 的一般表达式（\ref{eq:3-17-10}）：
+\begin{equation}\label{eq:3-17-10}
 	v' = \frac{2J\omega}{m_2 l + \frac{J}{l}}
 \end{equation}
-代入已知条件 $J = \frac{1}{3}m_1 l^2$, $m_2 = \frac{1}{3}m_1$ 以及由公式（4）求得的 $\omega = \sqrt{\frac{3g}{l}}$，得到最终速度（11）：
-\begin{equation}
+代入已知条件 $J = \frac{1}{3}m_1 l^2$, $m_2 = \frac{1}{3}m_1$ 以及由公式（\ref{eq:3-17-4}）求得的 $\omega = \sqrt{\frac{3g}{l}}$，得到最终速度（\ref{eq:3-17-11}）：
+\begin{equation}\label{eq:3-17-11}
 	v' = \frac{2\left(\frac{1}{3}m_1 l^2\right)\omega}{\frac{1}{3}m_1 l + \frac{1}{3}m_1 l} = \frac{\frac{2}{3}m_1 l^2 \omega}{\frac{2}{3}m_1 l} = \omega l = \sqrt{3gl}
 \end{equation}
 
 (4). \textbf{求弹簧被压缩的最大长度 $\Delta x$：}
 碰后物体 $m_2$ 以速度 $v'$ 在光滑水平面上运动并压缩弹簧，系统动能全部转化为弹簧的弹性势能。
-根据机械能守恒，建立能量转化公式（12）：
-\begin{equation}
+根据机械能守恒，建立能量转化公式（\ref{eq:3-17-12}）：
+\begin{equation}\label{eq:3-17-12}
 	\frac{1}{2}m_2 v'^2 = \frac{1}{2}k \Delta x^2
 \end{equation}
-将 $m_2 = \frac{1}{3}m_1$ 和公式（11）中的 $v' = \sqrt{3gl}$ 代入公式（12）得到等式（13）：
-\begin{equation}
+将 $m_2 = \frac{1}{3}m_1$ 和公式（\ref{eq:3-17-11}）中的 $v' = \sqrt{3gl}$ 代入公式（\ref{eq:3-17-12}）得到等式（\ref{eq:3-17-13}）：
+\begin{equation}\label{eq:3-17-13}
 	\frac{1}{2}\left(\frac{1}{3}m_1\right)(3gl) = \frac{1}{2}k \Delta x^2 \implies \frac{1}{2}m_1 g l = \frac{1}{2}k \Delta x^2
 \end{equation}
-由公式（13）解得弹簧的最大压缩量 $\Delta x$ 为公式（14）：
-\begin{equation}
+由公式（\ref{eq:3-17-13}）解得弹簧的最大压缩量 $\Delta x$ 为公式（\ref{eq:3-17-14}）：
+\begin{equation}\label{eq:3-17-14}
 	\Delta x = \sqrt{\frac{m_1 g l}{k}}
 \end{equation}
 
@@ -1277,8 +1301,8 @@ $m_1$ 下落时的恒定线加速度由公式（3）得 $a_1 = \alpha R = 6.125 
 \textbf{易混淆知识点说明：}
 这是一道非常经典的“等效质量”问题。在第(3)问中，计算出 $v' = \omega l$，意味着细杆末端的碰撞点将其全部的线速度传递给了小球，此时如果去算碰后细杆的角速度 $\omega'$，会发现恰好为 $0$。
 产生这种“速度完全交换、细杆停下”的现象，是因为碰撞点所在的\textbf{有效质量}（$m_{eff} = \frac{J}{l^2} = \frac{1}{3}m_1$）恰好等于被撞物体 $m_2$ 的质量。这就像两个质量相同的质点发生一维完全弹性碰撞会交换速度一样。理解了这一层物理内涵，不仅能验证答案的正确性，还能对刚体碰撞有更深刻的直觉。此外，切记此类有固定轴的碰撞中，\textbf{常规的线动量绝不守恒}，只能列角动量守恒方程。
-	
 \newpage
+
 \subsection{习题4}
 
 \begin{enumerate}
