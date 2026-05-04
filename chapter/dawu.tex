@@ -1427,12 +1427,389 @@ $m_1$ 下落时的恒定线加速度由公式（\ref{eq:3-10-3}）得 $a_1 = \al
 
 \newpage
 
+\subsection*{习题4题解}
+
+\textbf{4-7题解：}
+\setcounter{equation}{0}
+\renewcommand{\theHequation}{4-7.\arabic{equation}}
+
+\textbf{解答过程：}
+设沿 $x$ 轴传播的平面简谐波方程为公式（\ref{eq:47-1}）：
+\begin{equation}\label{eq:47-1}
+	y = A \cos(\omega t - kx)
+\end{equation}
+
+介质中体积为 $\Delta V$ 的某质元的动能 $E_k$ 由速度 $v = \frac{\partial y}{\partial t}$ 决定，得到公式（\ref{eq:47-2}）：
+\begin{equation}\label{eq:47-2}
+	E_k = \frac{1}{2} \rho \Delta V v^2 = \frac{1}{2} \rho \Delta V A^2 \omega^2 \sin^2(\omega t - kx)
+\end{equation}
+
+该质元的弹性势能 $E_p$ 由介质的相对形变 $\frac{\partial y}{\partial x}$ 决定，得到公式（\ref{eq:47-3}）：
+\begin{equation}\label{eq:47-3}
+	E_p = \frac{1}{2} \rho \Delta V A^2 \omega^2 \sin^2(\omega t - kx)
+\end{equation}
+
+对比公式（\ref{eq:47-2}）与公式（\ref{eq:47-3}）可知，介质质元的动能与势能随时间的变化是完全同步的。
+当质元处于平衡位置时，位移 $y=0$。由公式（\ref{eq:47-1}）推导相位关系：
+\begin{align*}
+	A \cos(\omega t - kx) &= 0 \\
+	\implies \cos(\omega t - kx) &= 0 \\
+	\implies \sin^2(\omega t - kx) &= 1
+\end{align*}
+将此结果代入公式（\ref{eq:47-2}）与公式（\ref{eq:47-3}），可知此时动能 $E_k$ 与势能 $E_p$ 同时达到最大值。
+因此，正确选项为 \textbf{C}。
+
+\textbf{易混淆知识点：}
+本题极易将波动过程中的“开放系统质元”与机械振动中的“孤立系统振子”混淆。具体区别如下表所示：
+
+\begin{table}[htbp]
+	\centering
+	\small
+	\renewcommand{\arraystretch}{1.4}
+	\begin{tabular}{|p{2.2cm}|p{5.5cm}|p{5.5cm}|}
+		\hline
+		\textbf{对比维度} & \textbf{简谐波中的介质质元} & \textbf{孤立系统的简谐振子} \\ \hline
+		系统性质 & 开放系统，不断接收和传递能量 & 孤立系统，总机械能守恒 \\ \hline
+		能量变化 & 同步变化（同相），同时达到极值 & 相互转化（反相），此消彼长 \\ \hline
+		过平衡位置 & 形变与速度皆达最大，\textbf{动能最大，势能最大} & 速度最大、形变为零，\textbf{动能最大，势能为零} \\ \hline
+		在最大位移 & 形变与速度皆为零，\textbf{动能为零，势能为零} & 速度为零、形变最大，\textbf{动能为零，势能最大} \\ \hline
+	\end{tabular}
+\end{table}
+\textcolor{red}{注：本题若以期末复习考试为主，则主要记住表格即可，推导过程了解即可。}
+
+\vspace{2em}
+
+\textbf{4-11题解： }
+\setcounter{equation}{0}
+
+%\renewcommand{\theequation}{4-11.\arabic{equation}}%这句是设置标号前缀的（4-11.1...）
+\renewcommand{\theHequation}{4-11.\arabic{equation}}%这句是定义超链接在4-11题内跳转的，防止乱跳。
+\textbf{答案： }
+$10$ ， $-\pi/2$
+
+\textbf{解答过程： }
+设两个简谐振动分别对应旋转矢量 $\vec{A}_1$ 和 $\vec{A}_2$，合振动对应矢量 $\vec{A}$。根据矢量合成法则建立公式（\ref{eq:4-11-v}）：
+\begin{equation}\label{eq:4-11-v}
+	\vec{A} = \vec{A}_1 + \vec{A}_2
+\end{equation}
+对由 $\vec{A}$、$\vec{A}_1$ 和 $\vec{A}_2$ 构成的矢量三角形应用余弦定理，得到求解第二个振动振幅 $A_2$ 的公式（\ref{eq:4-11-cos}）：
+\begin{equation}\label{eq:4-11-cos}
+	A_2^2 = A^2 + A_1^2 - 2AA_1\cos(\varphi - \varphi_1)
+\end{equation}
+将已知条件 $A = 20\text{ cm}$、$A_1 = 10\sqrt{3}\text{ cm}$ 且相位差 $\varphi - \varphi_1 = \pi/6$ 代入公式（\ref{eq:4-11-cos}）中展开：
+\begin{align*}
+	A_2^2 &= 20^2 + (10\sqrt{3})^2 - 2(20)(10\sqrt{3})\cos\left(\frac{\pi}{6}\right) \\
+	&= 400 + 300 - 400\sqrt{3} \times \frac{\sqrt{3}}{2} \\
+	&= 100
+\end{align*}
+解得第二个简谐振动的振幅 $A_2 = 10\text{ cm}$。
+
+为求两者相位差，可建立平面直角坐标系，令 $\vec{A}_1$ 位于 $x$ 轴正半轴（即设 $\varphi_1 = 0$）。此时合矢量 $\vec{A}$ 的相角为 $\pi/6$，将其写为直角坐标形式：
+\begin{align*}
+	\vec{A} &= (20\cos 30^\circ, 20\sin 30^\circ) = (10\sqrt{3}, 10) \\
+	\vec{A}_1 &= (10\sqrt{3}, 0)
+\end{align*}
+结合公式（\ref{eq:4-11-v}）求解 $\vec{A}_2$ 的坐标：
+\begin{align*}
+	\vec{A}_2 &= \vec{A} - \vec{A}_1 = (0, 10)
+\end{align*}
+可以看出 $\vec{A}_2$ 垂直于 $\vec{A}_1$ 沿 $y$ 轴向上，即其初相 $\varphi_2 = \pi/2$。题目要求第一、第二两个振动的相位差，如公式（\ref{eq:4-11-phase}）所示：
+\begin{equation}\label{eq:4-11-phase}
+	\varphi_1 - \varphi_2 = 0 - \frac{\pi}{2} = -\frac{\pi}{2}
+\end{equation}
+故两个空分别填 $10$ 和 $-\pi/2$。
+
+\textbf{易混淆知识点： }
+1. 使用旋转矢量法求解时，许多人习惯直接盲目套用合振幅公式 $A^2 = A_1^2 + A_2^2 + 2A_1A_2\cos(\varphi_2 - \varphi_1)$。但在本题中 $A_2$ 和两者相位差均为未知量，直接代入会形成无法直接求解的复杂方程。灵活利用矢量减法 $\vec{A}_2 = \vec{A} - \vec{A}_1$ 结合余弦定理是破题捷径。
+
+2. 计算相位差时必须仔细审题。常规题目往往询问“第二个与第一个的相位差”（即 $\varphi_2 - \varphi_1$），而本题特别设问 $\varphi_1 - \varphi_2$，若不加注意极易漏写负号。
+
+\vspace{2em}
+
+\textbf{4-15题解： }
+\setcounter{equation}{0}
+\renewcommand{\theHequation}{4-15.\arabic{equation}}
+
+\textbf{答案： }
+$y = 0.1\cos(7\sqrt{2}t + \pi)\text{ (SI)}$
+
+\textbf{解答过程： }
+首先求解弹簧的劲度系数 $k$。当挂上物体静止时，系统处于平衡状态，弹力与重力等大反向，建立公式（\ref{eq:4-15-k}）：
+\begin{equation}\label{eq:4-15-k}
+	mg = k\Delta l
+\end{equation}
+已知弹簧原长 $l_0 = 0.5\text{ m}$，平衡长度 $l = 0.6\text{ m}$，则静伸长量 $\Delta l = l - l_0 = 0.1\text{ m}$，代入数据得：
+\begin{align*}
+	k &= \frac{0.1 \times 9.8}{0.1} = 9.8\text{ N/m}
+\end{align*}
+弹簧振子系统的固有角频率 $\omega$ 由公式（\ref{eq:4-15-w}）计算：
+\begin{equation}\label{eq:4-15-w}
+	\omega = \sqrt{\frac{k}{m}} = \sqrt{\frac{9.8}{0.1}} = \sqrt{98} = 7\sqrt{2}\text{ rad/s}
+\end{equation}
+设该简谐振动的位移学方程为公式（\ref{eq:4-15-y}）：
+\begin{equation}\label{eq:4-15-y}
+	y = A\cos(\omega t + \varphi_0)
+\end{equation}
+依题意取竖直向下为坐标系的正方向，并以受力平衡位置（即弹簧长度为 $0.6\text{ m}$ 处）为坐标原点 $y=0$。
+将物体上推至弹簧缩回到原长处放手，即 $t=0$ 时：
+\begin{align*}
+	y_0 &= 0.5 - 0.6 = -0.1\text{ m} \\
+	v_0 &= 0\text{ m/s}
+\end{align*}
+利用初始条件求解振动方程的振幅 $A$ 和初相 $\varphi_0$：
+\begin{align*}
+	A &= \sqrt{y_0^2 + \left(\frac{v_0}{\omega}\right)^2} = \sqrt{(-0.1)^2 + 0} = 0.1\text{ m} \\
+	y_0 &= A\cos\varphi_0 \implies \cos\varphi_0 = \frac{-0.1}{0.1} = -1 \implies \varphi_0 = \pi
+\end{align*}
+将求得的各项参数代回公式（\ref{eq:4-15-y}），写出最终的振动表达式：
+\begin{align*}
+	y &= 0.1\cos(7\sqrt{2}t + \pi)\text{ (SI)}
+\end{align*}
+
+\textbf{易混淆知识点： }
+1. \textbf{平衡位置的绝对基准}：弹簧振子的简谐运动必须围绕“受力平衡点”而非“弹簧原长点”展开。在列出振动方程时，坐标 $y$ 必须且只能表示物体偏离此受力平衡位置的位移大小和方向。
+
+2. \textbf{坐标正方向对初相的决定性影响}：题目明确规定“取竖直向下为正方向”，这意味着将物体上推回到原长（即向上移动）所对应的初始坐标是负值（$y_0 = -0.1\text{ m}$）。如果不严格遵守题目给定的正方向将其记作正值，将会导致求出的初相为 $0$，使最终得出的振动方程在相位上发生完全反转。
+
+\vspace{2em}
+
+\textbf{4-17题解： }
+\setcounter{equation}{0}
+\renewcommand{\theHequation}{4-17.\arabic{equation}}
+
+\textbf{答案： }
+$x = 10 \cos\left(\frac{5\pi}{12} t + \frac{2\pi}{3}\right) \text{ (cm)}$
+
+\textbf{解答过程： }
+设简谐振动的运动学方程为公式（\ref{eq:4-17-x}）：
+\begin{equation}\label{eq:4-17-x}
+	x = A \cos(\omega t + \phi_0)
+\end{equation}
+对位移求导，可得振动速度方程为公式（\ref{eq:4-17-v}）：
+\begin{equation}\label{eq:4-17-v}
+	v = \frac{dx}{dt} = -A\omega \sin(\omega t + \phi_0)
+\end{equation}
+由图中振动曲线可知，振幅 $A = 10 \text{ cm}$。
+当 $t = 0$ 时，初始位移 $x_0 = -5 \text{ cm}$，代入公式（\ref{eq:4-17-x}）得：
+\begin{align*}
+	10 \cos\phi_0 &= -5 \\
+	\implies \cos\phi_0 &= -\frac{1}{2}
+\end{align*}
+同时，在 $t=0$ 处曲线的斜率为负，说明此时速度 $v_0 < 0$。代入公式（\ref{eq:4-17-v}）可知 $\sin\phi_0 > 0$。综合可得初相 $\phi_0 = \frac{2\pi}{3}$。
+由图可知，当 $t = 2 \text{ s}$ 时，质点首次经过平衡位置且向正方向运动（斜率为正），即 $x = 0$ 且 $v > 0$。结合公式（\ref{eq:4-17-x}）和（\ref{eq:4-17-v}）有：
+\begin{align*}
+	10 \cos\left(2\omega + \frac{2\pi}{3}\right) &= 0 \\
+	-10\omega \sin\left(2\omega + \frac{2\pi}{3}\right) &> 0
+\end{align*}
+要满足余弦为0且正弦为负，该时刻的相位应为 $\frac{3\pi}{2}$，建立相位等式为公式（\ref{eq:4-17-phase}）：
+\begin{equation}\label{eq:4-17-phase}
+	2\omega + \frac{2\pi}{3} = \frac{3\pi}{2}
+\end{equation}
+解公式（\ref{eq:4-17-phase}）得到角频率 $\omega = \frac{5\pi}{12} \text{ rad/s}$。
+将 $A$、$\omega$、$\phi_0$ 代回公式（\ref{eq:4-17-x}），得到最终振动方程：
+\begin{align*}
+	x &= 10 \cos\left(\frac{5\pi}{12} t + \frac{2\pi}{3}\right) \text{ (cm)}
+\end{align*}
+
+\textbf{易混淆知识点： }
+本题极易在通过 $t=2\text{ s}$ 点求解 $\omega$ 时出错。很多学生会错误地认为从 $t=0$ 到 $t=2$ 是四分之一个周期或直接代入 $\cos=0$ 的任意解（如 $\pi/2$）。必须结合图像斜率（速度方向）来判定 $t=2\text{ s}$ 时刻对应的确切相位是 $3\pi/2$ 而非 $\pi/2$。
+
+\vspace{2em}
+
+\textbf{4-18题解： }
+\setcounter{equation}{0}
+\renewcommand{\theHequation}{4-18.\arabic{equation}}
+
+\textbf{答案： }
+(1) $x = 12 \cos\left(\pi t - \frac{\pi}{3}\right) \text{ (cm)}$
+(2) 位置 $6\sqrt{3} \text{ cm}$，速度 $-6\pi \text{ cm/s}$，加速度 $-6\sqrt{3}\pi^2 \text{ cm/s}^2$
+(3) $\frac{5}{6} \text{ s}$
+
+\textbf{解答过程： }
+(1) 已知周期 $T = 2 \text{ s}$，由周期与角频率关系建立公式（\ref{eq:4-18-omega}）：
+\begin{equation}\label{eq:4-18-omega}
+	\omega = \frac{2\pi}{T} = \frac{2\pi}{2} = \pi \text{ rad/s}
+\end{equation}
+设振动方程为 $x = A \cos(\omega t + \phi_0)$。已知振幅 $A = 12 \text{ cm}$。
+当 $t = 0$ 时，位移 $x_0 = 6 \text{ cm}$ 且向 $x$ 轴正向运动（$v_0 > 0$），代入公式建立条件方程组（\ref{eq:4-18-init}）：
+\begin{equation}\label{eq:4-18-init}
+	\begin{cases}
+		12 \cos\phi_0 = 6 \\
+		-12\pi \sin\phi_0 > 0
+	\end{cases}
+\end{equation}
+由公式（\ref{eq:4-18-init}）解得 $\cos\phi_0 = \frac{1}{2}$ 且 $\sin\phi_0 < 0$，故初相 $\phi_0 = -\frac{\pi}{3}$。
+得到振动表达式为：
+\begin{align*}
+	x &= 12 \cos\left(\pi t - \frac{\pi}{3}\right) \text{ (cm)}
+\end{align*}
+
+(2) 质点的速度和加速度方程分别对位移求一阶和二阶导数，得到公式（\ref{eq:4-18-v}）和公式（\ref{eq:4-18-a}）：
+\begin{equation}\label{eq:4-18-v}
+	v = \frac{dx}{dt} = -12\pi \sin\left(\pi t - \frac{\pi}{3}\right)
+\end{equation}
+\begin{equation}\label{eq:4-18-a}
+	a = \frac{dv}{dt} = -12\pi^2 \cos\left(\pi t - \frac{\pi}{3}\right)
+\end{equation}
+将 $t = 0.5 \text{ s}$ 代入位移、速度和加速度方程中：
+\begin{align*}
+	x &= 12 \cos\left(0.5\pi - \frac{\pi}{3}\right) = 12 \cos\left(\frac{\pi}{6}\right) = 6\sqrt{3} \text{ cm} \\
+	v &= -12\pi \sin\left(0.5\pi - \frac{\pi}{3}\right) = -12\pi \sin\left(\frac{\pi}{6}\right) = -6\pi \text{ cm/s} \\
+	a &= -12\pi^2 \cos\left(0.5\pi - \frac{\pi}{3}\right) = -12\pi^2 \cos\left(\frac{\pi}{6}\right) = -6\sqrt{3}\pi^2 \text{ cm/s}^2
+\end{align*}
+
+(3) 设某时刻位移 $x = -6 \text{ cm}$ 且向负方向运动，设此时相位为 $\Phi$。建立方程（\ref{eq:4-18-target1}）：
+\begin{equation}\label{eq:4-18-target1}
+	12 \cos\Phi = -6 \implies \cos\Phi = -\frac{1}{2}
+\end{equation}
+由于向负方向运动，即速度 $v < 0$，得出 $\sin\Phi > 0$。满足条件的相位 $\Phi = \frac{2\pi}{3}$。
+质点回到平衡位置即 $x = 0$，下一个平衡位置对应相位为 $\Phi' = \frac{3\pi}{2}$。
+相位差 $\Delta\Phi$ 计算如公式（\ref{eq:4-18-dphi}）所示：
+\begin{equation}\label{eq:4-18-dphi}
+	\Delta\Phi = \frac{3\pi}{2} - \frac{2\pi}{3} = \frac{5\pi}{6}
+\end{equation}
+所需最短时间 $\Delta t$ 由公式（\ref{eq:4-18-dt}）给出：
+\begin{equation}\label{eq:4-18-dt}
+	\Delta t = \frac{\Delta\Phi}{\omega} = \frac{\frac{5\pi}{6}}{\pi} = \frac{5}{6} \text{ s}
+\end{equation}
+
+\textbf{易混淆知识点： }
+第(3)问求解最短时间时，必须准确判定初始状态与目标状态的“绝对相位”。已知 $x=-6$ 且 $v<0$，说明质点正在第二象限的旋转矢量上（$\Phi=2\pi/3$），向着负向最大位移（$\Phi=\pi$）进发。回到平衡位置指的是越过负向最大点后折返至 $x=0$ 的位置（对应旋转矢量转至 $\Phi=3\pi/2$）。\textcolor{red}{切勿将目标点错当成 $\pi/2$ 而得出负的时间值。}
+
+\textbf{本人对于第（3）问的感悟：}：对于第4章的题目，最重要也是最有助于理解的东西就是：旋转圆法，旋转圆都是从逆时针出发的（不管振动方向正向还是反向），因为旋转圆表示的是时间，时间是不可逆的。下面将详细讲解一下关于旋转圆的知识点（主要以本题第（3）问为主）：
+\section*{物理思维工具：“参考圆”（旋转矢量法）}
+
+要把这一段完全搞懂，我们需要借助一个强大的物理思维工具：\textbf{“参考圆”（也叫旋转矢量法）}。
+
+很多同学搞不懂“相位”，是因为只盯着直线上来回跑的质点看。如果我们把这段直线运动，想象成是一个圆周运动在直线上的投影，一切就豁然开朗了。为了让你彻底弄懂，我们一步步来“走”完这个过程。
+
+\subsection*{第一步：理解“相位”到底是什么？}
+
+想象有一个圆，半径就是振幅 $A = 12\text{ cm}$。圆上有一个点（我们叫它“参考点”），正在逆时针做匀速圆周运动。
+这个参考点在横轴（$x$ 轴）上的影子，就是我们在题目中研究的那个做简谐振动的质点。
+
+\textbf{参考点转过的角度，就是所谓的“相位”。}
+
+在圆上：
+\begin{itemize}
+	\item 最右边（3点钟方向）是 $0$ 度 ($0$)。
+	\item 最上面（12点钟方向）是 $90$ 度 ($\pi/2$)。
+	\item 最左边（9点钟方向）是 $180$ 度 ($\pi$)。
+	\item 最下面（6点钟方向）是 $270$ 度 ($3\pi/2$)。
+\end{itemize}
+
+\subsection*{第二步：代入题目的三个关键状态}
+
+现在我们让圆上的点开始逆时针转，盯着它在 $x$ 轴上的影子（质点）看：
+
+\textbf{状态 1：当前所在位置（相位 $2\pi/3$）}
+\begin{itemize}
+	\item \textbf{圆上的位置：} 点转到了第二象限，角度是 $120^\circ$（即 $2\pi/3$）。
+	\item \textbf{影子的状态（质点）：} 此时影子在 $x$ 轴负半轴的 $-6\text{ cm}$ 处。因为圆上的点正在往左上角转，所以它的影子也正在向左（负方向）运动。这就对应了题目说的“位于 $x = -6\text{ cm}$，且向 $x$ 轴负方向运动”。
+\end{itemize}
+
+\textbf{状态 2：走到负最大位移处（相位 $\pi$）}
+\begin{itemize}
+	\item \textbf{圆上的位置：} 点继续逆时针转，到达了最左边，也就是 9 点钟方向。这个位置的角度是 $180^\circ$（即 $\pi$）。
+	\item \textbf{影子的状态（质点）：} 此时影子到达了 $x$ 轴的最左端，也就是 $x = -12\text{ cm}$ 的位置。此时影子不能再往左了，它的速度瞬间减为 $0$，准备掉头向右走。
+\end{itemize}
+
+\textbf{状态 3：掉头回到平衡位置（相位 $3\pi/2$）}
+\begin{itemize}
+	\item \textbf{圆上的位置：} 点从最左边继续逆时针转，来到了最底部，也就是 6 点钟方向。这个位置的角度是 $270^\circ$（即 $3\pi/2$）。
+	\item \textbf{影子的状态（质点）：} 此时影子刚好走到了 $x$ 轴的正中间（原点 $x = 0$），也就是平衡位置。因为圆上的点正在向右下角转，所以它的影子此时正在向右（正方向）运动。
+\end{itemize}
+
+\subsection*{总结一下区别：}
+
+\begin{itemize}
+	\item 当相位是 $\pi/2$（最上面）时，质点在平衡位置 $x=0$，但正在\textbf{向左走}。
+	\item 当相位是 $3\pi/2$（最下面）时，质点在平衡位置 $x=0$，但正在\textbf{向右走}。
+\end{itemize}
+
+因为质点是从左边 ($-6\text{ cm}$) 掉头往右走回来的，所以它经过平衡位置时必然是向右走的，因此对应的相位只能是底部的 $3\pi/2$。
+
+\vspace{2em}
+\newpage
+
+\subsection{习题7}
+
+\begin{enumerate}
+	\item [\textbf{7-9}]
+	一个细玻璃棒被弯成半径为$\mathbf{R}$的半圆形，沿其上半部分均匀分布有电荷$\mathbf{+Q}$,沿其下半部分均匀分布有电荷$\mathbf{-Q}$,如习题7-9图所示。试求圆心$\mathbf{O}$处的电场强度。
+	% TODO: \usepackage{graphicx} required
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.2\linewidth]{figure/7-9}
+		\caption{图7-9}
+		\label{fig:7-9}
+	\end{figure}
+	
+	\item [\textbf{7-11}]
+	如习题7-11图所示两个无限大的平行平面都均匀带电，电荷的面密度分别为$\sigma_1$和$\sigma_2$，试求空间各处场强。
+	% TODO: \usepackage{graphicx} required
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.2\linewidth]{figure/7-11}
+		\caption{图7-11}
+		\label{fig:7-11}
+	\end{figure}
+	
+	\item [\textbf{7-13}]
+	如习题7-13图所示，在点电荷$q$的电厂中,选取以$q$为中心、$\mathbf{R}$为半径的球面上一点$\mathbf{P}$作为电势零点,求与点电荷$q$距离为$r$的$\mathbf{P^\prime}$点的电势。
+	% TODO: \usepackage{graphicx} required
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.3\linewidth]{figure/7-13}
+		\caption{图7-13}
+		\label{fig:7-13}
+	\end{figure}
+	
+	\item [\textbf{7-14}]
+	如习题7-14图所示,边长为$a$的等边三角形的三个顶点上，分别放置着三个正的点电荷$q$、$2q$、$3q$.若将另一个正点电荷$\mathbf{Q}$从无穷远处移到三角形的中心$\mathbf{O}$处，外力所做的功多大?
+	% TODO: \usepackage{graphicx} required
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.3\linewidth]{figure/7-14}
+		\caption{图7-14}
+		\label{fig:7-14}
+	\end{figure}
+	
+	\item [\textbf{7-15}]
+	如习题7-15图所示，试验电荷$q$在点电荷$\mathbf{+Q}$产生的电场中，沿半径为$\mathbf{R}$的整个圆弧的$3/4$圆弧轨道，由$a$点移动到$d$点的过程中电场力做的功为多少？从$d$点移动到无限远处的过程中，电场力做的功为多少？
+	
+	% TODO: \usepackage{graphicx} required
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.3\linewidth]{figure/7-15}
+		\caption{图7-15}
+		\label{fig:7-15}
+	\end{figure}
+	
+	\item [\textbf{7-17}]
+	电荷$q$均匀分布在长为$2l$的细杆上，求在杆外延长线上与杆端距离为$a$的$P$点的电势(设无限远处为电势零点)
+	
+\end{enumerate}
+
+\newpage
+
+\subsection{习题8}
+
+\begin{enumerate}
+	\item [\textbf{8-5}]
+	电荷量$\mathbf{Q}$均匀分布在半径为$\mathbf{R}$的球体内，则球内、球外的静电能之比为\underline{\hspace{6em}}.
+\end{enumerate}
+
+\newpage
+
 \section{课本例题重现}
 
 \subsection{第一章}
 
 \begin{enumerate}
 	\item [\textbf{L1-2}]
+	\setcounter{equation}{0}
+	\renewcommand{\theHequation}{L1-2.\arabic{equation}}
 	如图 1-6 所示，一人通过一根不可伸缩的绳水平向右拉小车前进，绳跨过一个小定滑轮，小车位于人拉绳的一端上方高为 $h$ 的平台上，人的速率 $v_0$ 不变，求人离滑轮的水平距离为 $s$ 时，小车的速度大小和加速度大小。
 	
 	% TODO: \usepackage{graphicx} required
@@ -1445,37 +1822,42 @@ $m_1$ 下落时的恒定线加速度由公式（\ref{eq:3-10-3}）得 $a_1 = \al
 	
 	
 	\textbf{解} \quad 小车水平向右做直线运动，小车做平动，可看成质点，以地面为参考系，以滑轮处为坐标原点，水平向右为 $x$ 轴正向，竖直向上为 $y$ 轴正向，建立平面直角坐标系. 任意时刻小车的坐标 $(x, y)$ 为 $(x, 0)$（此处 $x < 0$），人的坐标 $(x, y)$ 为 $(x_1, -h)$，小车和人的 $y$ 坐标都是常量. 由速度的定义，小车的速度为
-	\[
-	\boldsymbol{v} = \frac{\mathrm{d}x}{\mathrm{d}t}\boldsymbol{i} + \frac{\mathrm{d}y}{\mathrm{d}t}\boldsymbol{j} = \frac{\mathrm{d}x}{\mathrm{d}t}\boldsymbol{i}
-	\]
+	\begin{align*}
+		\boldsymbol{v} = \frac{\mathrm{d}x}{\mathrm{d}t}\boldsymbol{i} + \frac{\mathrm{d}y}{\mathrm{d}t}\boldsymbol{j} = \frac{\mathrm{d}x}{\mathrm{d}t}\boldsymbol{i}
+	\end{align*}
 	所以小车的速度沿 $x$ 轴方向. 人的速度为
-	\[
-	\boldsymbol{v}_0 = \frac{\mathrm{d}x_1}{\mathrm{d}t}\boldsymbol{i} + \frac{\mathrm{d}y}{\mathrm{d}t}\boldsymbol{j} = \frac{\mathrm{d}x_1}{\mathrm{d}t}\boldsymbol{i}
-	\]
-	已知人的速度 $\boldsymbol{v}_0 = v_0\boldsymbol{i}$，所以有 $\frac{\mathrm{d}x_1}{\mathrm{d}t} = v_0$.
+	\begin{align*}
+		\boldsymbol{v}_0 = \frac{\mathrm{d}x_1}{\mathrm{d}t}\boldsymbol{i} + \frac{\mathrm{d}y}{\mathrm{d}t}\boldsymbol{j} = \frac{\mathrm{d}x_1}{\mathrm{d}t}\boldsymbol{i}
+	\end{align*}
+	已知人的速度 $\boldsymbol{v}_0 = v_0\boldsymbol{i}$，所以有
+	\begin{equation}\label{eq:L1-2-1}
+		\frac{\mathrm{d}x_1}{\mathrm{d}t} = v_0
+	\end{equation}
 	
 	又因为绳不可伸缩，设绳总长为 $l_0$，定滑轮和人之间的绳长为 $l$，则有 $l_0 = l + |x| = l - x$，所以
-	\[
-	x = l - l_0 = \sqrt{x_1^2 + h^2} - l_0
-	\]
+	\begin{equation}\label{eq:L1-2-2}
+		x = l - l_0 = \sqrt{x_1^2 + h^2} - l_0
+	\end{equation}
 	因此，小车的速度为
-	\[
-	\boldsymbol{v} = \frac{\mathrm{d}x}{\mathrm{d}t}\boldsymbol{i} = \frac{\mathrm{d}}{\mathrm{d}t}\left(\sqrt{x_1^2 + h^2} - l_0\right)\boldsymbol{i} = \frac{\mathrm{d}\left(\sqrt{x_1^2 + h^2} - l_0\right)}{\mathrm{d}x_1} \cdot \frac{\mathrm{d}x_1}{\mathrm{d}t}\boldsymbol{i} = \frac{x_1 v_0}{\sqrt{x_1^2 + h^2}}\boldsymbol{i}
-	\]
+	\begin{equation}\label{eq:L1-2-3}
+		\boldsymbol{v} = \frac{\mathrm{d}x}{\mathrm{d}t}\boldsymbol{i} = \frac{\mathrm{d}}{\mathrm{d}t}\left(\sqrt{x_1^2 + h^2} - l_0\right)\boldsymbol{i} = \frac{\mathrm{d}\left(\sqrt{x_1^2 + h^2} - l_0\right)}{\mathrm{d}x_1} \cdot \frac{\mathrm{d}x_1}{\mathrm{d}t}\boldsymbol{i} = \frac{x_1 v_0}{\sqrt{x_1^2 + h^2}}\boldsymbol{i}
+	\end{equation}
 	故当人离滑轮的水平距离为 $s$ 时，即 $x_1 = s$ 时，小车的速度大小为 $v = \frac{s v_0}{\sqrt{s^2 + h^2}}$，方向水平向右.
 	
-	任意时刻的速度 $\boldsymbol{v}$ 再对时间求导，并利用 $\frac{\mathrm{d}x_1}{\mathrm{d}t} = v_0$，可得小车的加速度为
-	\[
-	\boldsymbol{a} = \frac{\mathrm{d}\boldsymbol{v}}{\mathrm{d}t} = \frac{\mathrm{d}}{\mathrm{d}t}\left( \frac{x_1 v_0}{\sqrt{x_1^2 + h^2}} \right)\boldsymbol{i} = \frac{\mathrm{d}}{\mathrm{d}x_1}\left( \frac{x_1 v_0}{\sqrt{x_1^2 + h^2}} \right) \cdot \frac{\mathrm{d}x_1}{\mathrm{d}t}\boldsymbol{i} = \frac{h^2 v_0^2}{\left(x_1^2 + h^2\right)^{\frac{3}{2}}}\boldsymbol{i}
-	\]
+	将式（\ref{eq:L1-2-3}）的任意时刻的速度 $\boldsymbol{v}$ 再对时间求导，并利用式（\ref{eq:L1-2-1}），可得小车的加速度为
+	\begin{equation}\label{eq:L1-2-4}
+		\boldsymbol{a} = \frac{\mathrm{d}\boldsymbol{v}}{\mathrm{d}t} = \frac{\mathrm{d}}{\mathrm{d}t}\left( \frac{x_1 v_0}{\sqrt{x_1^2 + h^2}} \right)\boldsymbol{i} = \frac{\mathrm{d}}{\mathrm{d}x_1}\left( \frac{x_1 v_0}{\sqrt{x_1^2 + h^2}} \right) \cdot \frac{\mathrm{d}x_1}{\mathrm{d}t}\boldsymbol{i} = \frac{h^2 v_0^2}{\left(x_1^2 + h^2\right)^{\frac{3}{2}}}\boldsymbol{i}
+	\end{equation}
 	小车的加速度方向水平向右，小车做变加速运动，当人离滑轮的水平距离为 $s$ 时，加速度大小为
-	\[
-	a = \frac{h^2 v_0^2}{\left(s^2 + h^2\right)^{\frac{3}{2}}}
-	\]
+	\begin{equation}\label{eq:L1-2-5}
+		a = \frac{h^2 v_0^2}{\left(s^2 + h^2\right)^{\frac{3}{2}}}
+	\end{equation}
 	
 	\vspace{2em}
 	
 	\item [\textbf{L1-3}]
+	\setcounter{equation}{0}
+	\renewcommand{\theHequation}{L1-3.\arabic{equation}}
 	\quad 以速度 $v_0$ 平抛一小球，不计空气阻力，如图 1-12 所示. 以平抛时为计时起点，求 $t$ 时刻小球的切向加速度分量 $a_t$ 和法向加速度分量 $a_n$，以及轨迹的曲率半径 $\rho$.
 	
 	% TODO: \usepackage{graphicx} required
@@ -1488,201 +1870,209 @@ $m_1$ 下落时的恒定线加速度由公式（\ref{eq:3-10-3}）得 $a_1 = \al
 	
 	
 	\textbf{解一} \quad 建立如图 1-12 所示直角坐标系. 任意 $t$ 时刻，小球的加速度即重力加速度 $g$，方向竖直向下，大小不变. 而任意时刻 $t$，小球速度的 $x, y$ 分量分别为
-	\[
-	v_x = v_0, \quad v_y = gt
-	\]
+	\begin{equation}\label{eq:L1-3-1}
+		v_x = v_0, \quad v_y = gt
+	\end{equation}
 	故任意时刻，速度矢量与 $x$ 轴正向之间的夹角 $\theta$（即重力加速度 $g$ 与法向加速度之间的夹角）满足
-	\[
-	\tan \theta = \frac{v_y}{v_x} = \frac{gt}{v_0}
-	\]
+	\begin{equation}\label{eq:L1-3-2}
+		\tan \theta = \frac{v_y}{v_x} = \frac{gt}{v_0}
+	\end{equation}
 	所以，法向加速度分量为
-	\[
-	a_n = g \cos \theta = g \frac{v_0}{v} = \frac{g v_0}{\sqrt{v_0^2 + g^2 t^2}}
-	\]
+	\begin{equation}\label{eq:L1-3-3}
+		a_n = g \cos \theta = g \frac{v_0}{v} = \frac{g v_0}{\sqrt{v_0^2 + g^2 t^2}}
+	\end{equation}
 	切向加速度分量为
-	\[
-	a_t = g \sin \theta = g \frac{gt}{v} = \frac{g^2 t}{\sqrt{v_0^2 + g^2 t^2}}
-	\]
+	\begin{equation}\label{eq:L1-3-4}
+		a_t = g \sin \theta = g \frac{gt}{v} = \frac{g^2 t}{\sqrt{v_0^2 + g^2 t^2}}
+	\end{equation}
 	轨迹的曲率半径为
-	\[
-	\rho = \frac{v^2}{a_n} = \frac{\left(v_0^2 + g^2 t^2\right)^{3/2}}{g v_0}
-	\]
+	\begin{equation}\label{eq:L1-3-5}
+		\rho = \frac{v^2}{a_n} = \frac{\left(v_0^2 + g^2 t^2\right)^{3/2}}{g v_0}
+	\end{equation}
 	
 	\textbf{解二} \quad 以抛出点 $O'$ 为自然坐标的原点，建立如图 1-12 所示自然坐标系. 任意 $t$ 时刻，小球速度的 $x, y$ 分量和速率 $v$ 分别为
-	\[
-	v_x = v_0, \quad v_y = gt, \quad v = |\boldsymbol{v}| = \sqrt{v_0^2 + g^2 t^2}
-	\]
-	故任意时刻，小球的切向加速度分量为
-	\[
-	a_t = \frac{\mathrm{d}v}{\mathrm{d}t} = \frac{g^2 t}{\sqrt{v_0^2 + g^2 t^2}}
-	\]
+	\begin{equation}\label{eq:L1-3-6}
+		v_x = v_0, \quad v_y = gt, \quad v = |\boldsymbol{v}| = \sqrt{v_0^2 + g^2 t^2}
+	\end{equation}
+	故由式（\ref{eq:L1-3-6}），小球的切向加速度分量为
+	\begin{equation}\label{eq:L1-3-7}
+		a_t = \frac{\mathrm{d}v}{\mathrm{d}t} = \frac{g^2 t}{\sqrt{v_0^2 + g^2 t^2}}
+	\end{equation}
 	由于小球的加速度即重力加速度 $\boldsymbol{g}$，方向竖直向下，大小不变，所以，法向加速度分量为
-	\[
-	a_n = \sqrt{a^2 - a_t^2} = \sqrt{g^2 - \left( \frac{g^2 t}{\sqrt{v_0^2 + g^2 t^2}} \right)^2} = \frac{g v_0}{\sqrt{v_0^2 + g^2 t^2}}
-	\]
+	\begin{equation}\label{eq:L1-3-8}
+		a_n = \sqrt{a^2 - a_t^2} = \sqrt{g^2 - \left( \frac{g^2 t}{\sqrt{v_0^2 + g^2 t^2}} \right)^2} = \frac{g v_0}{\sqrt{v_0^2 + g^2 t^2}}
+	\end{equation}
 	轨迹的曲率半径为
-	\[
-	\rho = \frac{v^2}{a_n} = \frac{\left(v_0^2 + g^2 t^2\right)^{3/2}}{g v_0}
-	\]
+	\begin{equation}\label{eq:L1-3-9}
+		\rho = \frac{v^2}{a_n} = \frac{\left(v_0^2 + g^2 t^2\right)^{3/2}}{g v_0}
+	\end{equation}
 	
 	\vspace{2em}
 	
 	\item [\textbf{L1-4}]
+	\setcounter{equation}{0}
+	\renewcommand{\theHequation}{L1-4.\arabic{equation}}
 	\quad 一飞轮以初始转速 $n = 1\,500 \mathrm{\ r \cdot min^{-1}}$ 转动，受制动后均匀地减速，经 $t = 50 \mathrm{\ s}$ 后静止. (1) 求角加速度 $\alpha$；(2) 从开始制动到静止，飞轮转过的转数 $N$；(3) 制动开始后 $20 \mathrm{\ s}$ 时飞轮的角速度；(4) 设飞轮半径为 $R = 0.60 \mathrm{\ m}$，求 $t = 20 \mathrm{\ s}$ 时刻飞轮边缘上任一点的速率和加速度大小.
 	
 	\textbf{解} \quad (1) 设飞轮初始角速度方向为正方向，则
-	\[
-	\omega_0 = \frac{2\pi n}{60} = \frac{2\pi \times 1\,500}{60} \mathrm{\ rad \cdot s^{-1}} = 50\pi \mathrm{\ rad \cdot s^{-1}}
-	\]
+	\begin{align*}
+		\omega_0 = \frac{2\pi n}{60} = \frac{2\pi \times 1\,500}{60} \mathrm{\ rad \cdot s^{-1}} = 50\pi \mathrm{\ rad \cdot s^{-1}}
+	\end{align*}
 	当 $t = 50 \mathrm{\ s}$ 时，$\omega = 0$，而且 $\alpha = \text{常量}$，故由式 (1.33) 可得
-	\[
-	\alpha = \frac{\omega - \omega_0}{t} = \frac{0 - 50\pi}{50} \mathrm{\ rad \cdot s^{-2}} = -\pi \mathrm{\ rad \cdot s^{-2}} = -3.14 \mathrm{\ rad \cdot s^{-2}}
-	\]
+	\begin{equation}\label{eq:L1-4-1}
+		\alpha = \frac{\omega - \omega_0}{t} = \frac{0 - 50\pi}{50} \mathrm{\ rad \cdot s^{-2}} = -\pi \mathrm{\ rad \cdot s^{-2}} = -3.14 \mathrm{\ rad \cdot s^{-2}}
+	\end{equation}
 	
 	(2) 从开始制动到静止，飞轮转过的角位移 $\Delta\theta$ 和转数 $N$ 分别为
-	\[
-	\Delta\theta = \theta - \theta_0 = \omega_0 t + \frac{1}{2}\alpha t^2 = \left[ 50\pi \times 50 + \frac{1}{2} \times (-\pi) \times 50^2 \right] \mathrm{rad} = 1\,250\pi \mathrm{\ rad}
-	\]
-	\[
-	N = \frac{\Delta\theta}{2\pi} = \frac{1\,250\pi}{2\pi} \mathrm{\ r} = 625 \mathrm{\ r}
-	\]
+	\begin{align*}
+		\Delta\theta = \theta - \theta_0 = \omega_0 t + \frac{1}{2}\alpha t^2 = \left[ 50\pi \times 50 + \frac{1}{2} \times (-\pi) \times 50^2 \right] \mathrm{rad} = 1\,250\pi \mathrm{\ rad}
+	\end{align*}
+	\begin{equation}\label{eq:L1-4-2}
+		N = \frac{\Delta\theta}{2\pi} = \frac{1\,250\pi}{2\pi} \mathrm{\ r} = 625 \mathrm{\ r}
+	\end{equation}
 	
 	(3) 制动开始后 $t = 20 \mathrm{\ s}$ 时飞轮的角速度为
-	\[
-	\omega = \omega_0 + \alpha t = \left[ 50\pi + (-\pi) \times 20 \right] \mathrm{\ rad \cdot s^{-1}} = 30\pi \mathrm{\ rad \cdot s^{-1}}
-	\]
+	\begin{equation}\label{eq:L1-4-3}
+		\omega = \omega_0 + \alpha t = \left[ 50\pi + (-\pi) \times 20 \right] \mathrm{\ rad \cdot s^{-1}} = 30\pi \mathrm{\ rad \cdot s^{-1}}
+	\end{equation}
 	
 	(4) $t = 20 \mathrm{\ s}$ 时刻飞轮边缘上任一点的速率为
-	\[
-	v = R\omega = 0.60 \times 30\pi \mathrm{\ m \cdot s^{-1}} = 18\pi \mathrm{\ m \cdot s^{-1}} = 56.5 \mathrm{\ m \cdot s^{-1}}
-	\]
+	\begin{align*}
+		v = R\omega = 0.60 \times 30\pi \mathrm{\ m \cdot s^{-1}} = 18\pi \mathrm{\ m \cdot s^{-1}} = 56.5 \mathrm{\ m \cdot s^{-1}}
+	\end{align*}
 	$t = 20 \mathrm{\ s}$ 时刻飞轮边缘上任一点的切向加速度和法向加速度分别为
-	\[
-	a_t = R\alpha = 0.60 \times (-\pi) \mathrm{\ m \cdot s^{-2}} = -0.60\pi \mathrm{\ m \cdot s^{-2}} = -1.88 \mathrm{\ m \cdot s^{-2}}
-	\]
-	\[
-	a_n = R\omega^2 = 0.60 \times (30\pi)^2 \mathrm{\ m \cdot s^{-2}} = 5.33 \times 10^3 \mathrm{\ m \cdot s^{-2}}
-	\]
+	\begin{align*}
+		a_t = R\alpha = 0.60 \times (-\pi) \mathrm{\ m \cdot s^{-2}} = -0.60\pi \mathrm{\ m \cdot s^{-2}} = -1.88 \mathrm{\ m \cdot s^{-2}}
+	\end{align*}
+	\begin{align*}
+		a_n = R\omega^2 = 0.60 \times (30\pi)^2 \mathrm{\ m \cdot s^{-2}} = 5.33 \times 10^3 \mathrm{\ m \cdot s^{-2}}
+	\end{align*}
 	$t = 20 \mathrm{\ s}$ 时刻飞轮边缘上任一点的加速度大小为
-	\[
-	a = \sqrt{a_t^2 + a_n^2} = 5.33 \times 10^3 \mathrm{\ m \cdot s^{-2}}
-	\]
+	\begin{equation}\label{eq:L1-4-4}
+		a = \sqrt{a_t^2 + a_n^2} = 5.33 \times 10^3 \mathrm{\ m \cdot s^{-2}}
+	\end{equation}
 	
 	\vspace{2em}
 	
 	\item [\textbf{L1-5}]
+	\setcounter{equation}{0}
+	\renewcommand{\theHequation}{L1-5.\arabic{equation}}
 	\quad 已知质点的运动学方程为 $\boldsymbol{r} = 2t\boldsymbol{i} + (8 - 6t^2)\boldsymbol{j}$ (SI 单位)，求：(1) 质点运动轨迹方程；(2) 从 $t_1 = 1\mathrm{\ s}$ 到 $t_2 = 2\mathrm{\ s}$ 这段时间内质点的位移、平均速度；(3) 在任意时刻的速度、加速度；(4) 在任意时刻的切向加速度、法向加速度.
 	
 	\textbf{解} \quad (1) 运动学方程写成分量式
-	\[
-	x = 2t, \quad y = 8 - 6t^2, \quad z = 0
-	\]
-	质点在 $z = 0$ 的平面内运动. 消去时间 $t$，即得轨迹方程 $y = 8 - \frac{3}{2}x^2 \, (z=0)$，这是一条抛物线.
+	\begin{equation}\label{eq:L1-5-1}
+		x = 2t, \quad y = 8 - 6t^2, \quad z = 0
+	\end{equation}
+	质点在 $z = 0$ 的平面内运动. 由式（\ref{eq:L1-5-1}）消去时间 $t$，即得轨迹方程 $y = 8 - \frac{3}{2}x^2 \, (z=0)$，这是一条抛物线.
 	
 	(2) $t_1 = 1\mathrm{\ s}$ 时的位置矢量 $\boldsymbol{r}_1 = (2\boldsymbol{i} + 2\boldsymbol{j})\mathrm{\ m}$；$t_2 = 2\mathrm{\ s}$ 时的位置矢量 $\boldsymbol{r}_2 = (4\boldsymbol{i} - 16\boldsymbol{j})\mathrm{\ m}$. 这段时间内质点的位移为
-	\[
-	\Delta\boldsymbol{r} = \boldsymbol{r}_2 - \boldsymbol{r}_1 = (2\boldsymbol{i} - 18\boldsymbol{j})\mathrm{\ m}
-	\]
+	\begin{align*}
+		\Delta\boldsymbol{r} = \boldsymbol{r}_2 - \boldsymbol{r}_1 = (2\boldsymbol{i} - 18\boldsymbol{j})\mathrm{\ m}
+	\end{align*}
 	$t_1 = 1\mathrm{\ s}$ 到 $t_2 = 2\mathrm{\ s}$ 这段时间内质点的平均速度为
-	\[
-	\bar{\boldsymbol{v}} = \frac{\Delta\boldsymbol{r}}{\Delta t} = \frac{\boldsymbol{r}_2 - \boldsymbol{r}_1}{t_2 - t_1} = (2\boldsymbol{i} - 18\boldsymbol{j})\mathrm{\ m \cdot s^{-1}}
-	\]
+	\begin{equation}\label{eq:L1-5-2}
+		\bar{\boldsymbol{v}} = \frac{\Delta\boldsymbol{r}}{\Delta t} = \frac{\boldsymbol{r}_2 - \boldsymbol{r}_1}{t_2 - t_1} = (2\boldsymbol{i} - 18\boldsymbol{j})\mathrm{\ m \cdot s^{-1}}
+	\end{equation}
 	
 	(3) 由速度定义，可得质点在任意时刻的速度
-	\[
-	\boldsymbol{v} = \frac{\mathrm{d}\boldsymbol{r}}{\mathrm{d}t} = \frac{\mathrm{d}x}{\mathrm{d}t}\boldsymbol{i} + \frac{\mathrm{d}y}{\mathrm{d}t}\boldsymbol{j} + \frac{\mathrm{d}z}{\mathrm{d}t}\boldsymbol{k} = 2\boldsymbol{i} - 12t\boldsymbol{j}
-	\]
-	即速度大小（速率）为 $v = \sqrt{v_x^2 + v_y^2} = \sqrt{2^2 + (-12t)^2} = \sqrt{4 + 144t^2} = 2\sqrt{1 + 36t^2}$，速度方向与 $x$ 轴正方向的夹角为
-	\[
-	\theta = \arctan \frac{v_y}{v_x} = \arctan \frac{-12t}{2} = \arctan(-6t)
-	\]
+	\begin{equation}\label{eq:L1-5-3}
+		\boldsymbol{v} = \frac{\mathrm{d}\boldsymbol{r}}{\mathrm{d}t} = \frac{\mathrm{d}x}{\mathrm{d}t}\boldsymbol{i} + \frac{\mathrm{d}y}{\mathrm{d}t}\boldsymbol{j} + \frac{\mathrm{d}z}{\mathrm{d}t}\boldsymbol{k} = 2\boldsymbol{i} - 12t\boldsymbol{j}
+	\end{equation}
+	即由式（\ref{eq:L1-5-3}）得速度大小（速率）为 $v = \sqrt{v_x^2 + v_y^2} = \sqrt{2^2 + (-12t)^2} = \sqrt{4 + 144t^2} = 2\sqrt{1 + 36t^2}$，速度方向与 $x$ 轴正方向的夹角为
+	\begin{align*}
+		\theta = \arctan \frac{v_y}{v_x} = \arctan \frac{-12t}{2} = \arctan(-6t)
+	\end{align*}
 	由加速度的定义，可得质点在任意时刻的加速度
-	\[
-	\boldsymbol{a} = \frac{\mathrm{d}\boldsymbol{v}}{\mathrm{d}t} = -12\boldsymbol{j} \mathrm{\ m \cdot s^{-2}}
-	\]
+	\begin{equation}\label{eq:L1-5-4}
+		\boldsymbol{a} = \frac{\mathrm{d}\boldsymbol{v}}{\mathrm{d}t} = -12\boldsymbol{j} \mathrm{\ m \cdot s^{-2}}
+	\end{equation}
 	即加速度大小为 $a = 12 \mathrm{\ m \cdot s^{-2}}$，加速度方向沿 $y$ 轴负方向.
 	
 	(4) 由切向加速度的定义，可得质点在任意时刻的切向加速度
-	\[
-	a_t = \frac{\mathrm{d}v}{\mathrm{d}t} = \frac{\mathrm{d}}{\mathrm{d}t}\left( 2\sqrt{1 + 36t^2} \right) = \frac{72t}{\sqrt{1 + 36t^2}}
-	\]
+	\begin{equation}\label{eq:L1-5-5}
+		a_t = \frac{\mathrm{d}v}{\mathrm{d}t} = \frac{\mathrm{d}}{\mathrm{d}t}\left( 2\sqrt{1 + 36t^2} \right) = \frac{72t}{\sqrt{1 + 36t^2}}
+	\end{equation}
 	质点在任意时刻的法向加速度
-	\[
-	a_n = \sqrt{a^2 - a_t^2} = \frac{12}{\sqrt{1 + 36t^2}}
-	\]
+	\begin{equation}\label{eq:L1-5-6}
+		a_n = \sqrt{a^2 - a_t^2} = \frac{12}{\sqrt{1 + 36t^2}}
+	\end{equation}
 	
 	\vspace{2em}
 	
 	\item [\textbf{L1-6}]
+	\setcounter{equation}{0}
+	\renewcommand{\theHequation}{L1-6.\arabic{equation}}
 	\quad 一质点沿一半径为 $R = 1 \mathrm{\ m}$ 的圆周运动，其角量运动学方程为 $\theta = 2 + t + 3t^3$ (SI 单位). 求：(1) $t = 1 \mathrm{\ s}$ 时，质点的角位置、角速度、角加速度；(2) $t = 1 \mathrm{\ s}$ 时，质点的速率、切向加速度、法向加速度和加速度大小.
 	
 	\textbf{解} \quad (1) 由定义可得，任意时刻 $t$ 质点的角速度 $\omega$、角加速度 $\alpha$ 分别为
-	\[
-	\omega = \frac{\mathrm{d}\theta}{\mathrm{d}t} = 1 + 9t^2
-	\]
-	\[
-	\alpha = \frac{\mathrm{d}\omega}{\mathrm{d}t} = 18t
-	\]
-	$t = 1 \mathrm{\ s}$ 时，质点的角位置 $\theta$、角速度 $\omega$、角加速度 $\alpha$ 分别为
-	\[
-	\theta = \left.(2 + t + 3t^3)\right|_{t=1 \mathrm{\ s}} = 6 \mathrm{\ rad}
-	\]
-	\[
-	\omega = \left.(1 + 9t^2)\right|_{t=1 \mathrm{\ s}} = 10 \mathrm{\ rad \cdot s^{-1}}
-	\]
-	\[
-	\alpha = \left.(18t)\right|_{t=1 \mathrm{\ s}} = 18 \mathrm{\ rad \cdot s^{-2}}
-	\]
+	\begin{equation}\label{eq:L1-6-1}
+		\omega = \frac{\mathrm{d}\theta}{\mathrm{d}t} = 1 + 9t^2
+	\end{equation}
+	\begin{equation}\label{eq:L1-6-2}
+		\alpha = \frac{\mathrm{d}\omega}{\mathrm{d}t} = 18t
+	\end{equation}
+	将 $t = 1 \mathrm{\ s}$ 代入运动学方程及式（\ref{eq:L1-6-1}）、式（\ref{eq:L1-6-2}），质点的角位置 $\theta$、角速度 $\omega$、角加速度 $\alpha$ 分别为
+	\begin{align*}
+		\theta = \left.(2 + t + 3t^3)\right|_{t=1 \mathrm{\ s}} = 6 \mathrm{\ rad}
+	\end{align*}
+	\begin{align*}
+		\omega = \left.(1 + 9t^2)\right|_{t=1 \mathrm{\ s}} = 10 \mathrm{\ rad \cdot s^{-1}}
+	\end{align*}
+	\begin{align*}
+		\alpha = \left.(18t)\right|_{t=1 \mathrm{\ s}} = 18 \mathrm{\ rad \cdot s^{-2}}
+	\end{align*}
 	
 	(2) $t = 1 \mathrm{\ s}$ 时，质点的速率 $v$、切向加速度 $a_t$、法向加速度 $a_n$ 和加速度大小 $a$ 分别为
-	\[
-	v = R\omega = 10 \mathrm{\ m \cdot s^{-1}}
-	\]
-	\[
-	a_t = R\alpha = 18 \mathrm{\ m \cdot s^{-2}}
-	\]
-	\[
-	a_n = R\omega^2 = 100 \mathrm{\ m \cdot s^{-2}}
-	\]
-	\[
-	a = \sqrt{a_t^2 + a_n^2} = \sqrt{18^2 + 100^2} \mathrm{\ m \cdot s^{-2}} = 101.6 \mathrm{\ m \cdot s^{-2}}
-	\]
+	\begin{align*}
+		v = R\omega = 10 \mathrm{\ m \cdot s^{-1}}
+	\end{align*}
+	\begin{align*}
+		a_t = R\alpha = 18 \mathrm{\ m \cdot s^{-2}}
+	\end{align*}
+	\begin{align*}
+		a_n = R\omega^2 = 100 \mathrm{\ m \cdot s^{-2}}
+	\end{align*}
+	\begin{equation}\label{eq:L1-6-3}
+		a = \sqrt{a_t^2 + a_n^2} = \sqrt{18^2 + 100^2} \mathrm{\ m \cdot s^{-2}} = 101.6 \mathrm{\ m \cdot s^{-2}}
+	\end{equation}
 	
 	\vspace {2em}
 	
 	\item [\textbf{L1-7}]
+	\setcounter{equation}{0}
+	\renewcommand{\theHequation}{L1-7.\arabic{equation}}
 	\quad 已知质点的加速度为 $\boldsymbol{a} = 2\boldsymbol{i} + 6t^2\boldsymbol{j}$ (SI 单位)，初始时刻 ($t=0$) 质点位于坐标原点处，初速度为 $\boldsymbol{v}_0 = 2\boldsymbol{i} \mathrm{\ m \cdot s^{-1}}$. 求：(1) 质点在任意时刻的速度；(2) 运动学方程 $\boldsymbol{r}(t)$ 和轨迹方程.
 	
-	\textbf{解} \quad (1) 由 $\boldsymbol{a} = 2\boldsymbol{i} + 6t^2\boldsymbol{j} = \frac{\mathrm{d}\boldsymbol{v}}{\mathrm{d}t}$，得
-	$$
-	\mathrm{d}\boldsymbol{v} = (2\boldsymbol{i} + 6t^2\boldsymbol{j})\mathrm{d}t
-	$$
-	将上式两边积分
-	$$
-	\int_{2\boldsymbol{i}}^{\boldsymbol{v}} \mathrm{d}\boldsymbol{v} = \int_{0}^{t} (2\boldsymbol{i} + 6t^2\boldsymbol{j})\mathrm{d}t
-	$$
+	\textbf{解} \quad (1) 由已知加速度 $\boldsymbol{a} = 2\boldsymbol{i} + 6t^2\boldsymbol{j} = \frac{\mathrm{d}\boldsymbol{v}}{\mathrm{d}t}$，得
+	\begin{equation}\label{eq:L1-7-1}
+		\mathrm{d}\boldsymbol{v} = (2\boldsymbol{i} + 6t^2\boldsymbol{j})\mathrm{d}t
+	\end{equation}
+	将式（\ref{eq:L1-7-1}）两边积分
+	\begin{align*}
+		\int_{2\boldsymbol{i}}^{\boldsymbol{v}} \mathrm{d}\boldsymbol{v} = \int_{0}^{t} (2\boldsymbol{i} + 6t^2\boldsymbol{j})\mathrm{d}t
+	\end{align*}
 	得质点在任意时刻的速度
-	$$
-	\boldsymbol{v} = (2 + 2t)\boldsymbol{i} + 2t^3\boldsymbol{j} \quad (\text{SI 单位})
-	$$
+	\begin{equation}\label{eq:L1-7-2}
+		\boldsymbol{v} = (2 + 2t)\boldsymbol{i} + 2t^3\boldsymbol{j} \quad (\text{SI 单位})
+	\end{equation}
 	
-	(2) 由 $\boldsymbol{v} = (2 + 2t)\boldsymbol{i} + 2t^3\boldsymbol{j} = \frac{\mathrm{d}\boldsymbol{r}}{\mathrm{d}t}$，积分：
-	$$
-	\int_{0}^{\boldsymbol{r}} \mathrm{d}\boldsymbol{r} = \int_{0}^{t} \left[ (2 + 2t)\boldsymbol{i} + 2t^3\boldsymbol{j} \right] \mathrm{d}t
-	$$
+	(2) 由式（\ref{eq:L1-7-2}）及 $\boldsymbol{v} = \frac{\mathrm{d}\boldsymbol{r}}{\mathrm{d}t}$，积分：
+	\begin{align*}
+		\int_{0}^{\boldsymbol{r}} \mathrm{d}\boldsymbol{r} = \int_{0}^{t} \left[ (2 + 2t)\boldsymbol{i} + 2t^3\boldsymbol{j} \right] \mathrm{d}t
+	\end{align*}
 	得运动学方程
-	$$
-	\boldsymbol{r} = (2t + t^2)\boldsymbol{i} + \frac{1}{2}t^4\boldsymbol{j} \quad (\text{SI 单位})
-	$$
+	\begin{equation}\label{eq:L1-7-3}
+		\boldsymbol{r} = (2t + t^2)\boldsymbol{i} + \frac{1}{2}t^4\boldsymbol{j} \quad (\text{SI 单位})
+	\end{equation}
 	运动学方程的分量形式为
-	$$
-	x = 2t + t^2, \quad y = \frac{1}{2}t^4
-	$$
-	上式消去时间 $t$，可得轨迹方程
-	$$
-	2y - \left(\sqrt{x + 1} - 1\right)^4 = 0
-	$$
-
+	\begin{equation}\label{eq:L1-7-4}
+		x = 2t + t^2, \quad y = \frac{1}{2}t^4
+	\end{equation}
+	由式（\ref{eq:L1-7-4}）消去时间 $t$，可得轨迹方程
+	\begin{equation}\label{eq:L1-7-5}
+		2y - \left(\sqrt{x + 1} - 1\right)^4 = 0
+	\end{equation}
+	
 \end{enumerate}
 
 \subsection{第二章}
