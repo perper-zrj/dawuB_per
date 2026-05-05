@@ -1730,6 +1730,116 @@ $x = 10 \cos\left(\frac{5\pi}{12} t + \frac{2\pi}{3}\right) \text{ (cm)}$
 因为质点是从左边 ($-6\text{ cm}$) 掉头往右走回来的，所以它经过平衡位置时必然是向右走的，因此对应的相位只能是底部的 $3\pi/2$。
 
 \vspace{2em}
+
+\textbf{4-19题解： }
+\setcounter{equation}{0}
+\renewcommand{\theHequation}{4-19.\arabic{equation}}
+
+\textbf{答案： }
+(1) $0.16 \text{ J}$
+(2) $x = 0.4 \cos\left(2\pi t + \frac{\pi}{3}\right) \text{ (SI)}$
+
+\textbf{解答过程： }
+(1) 根据简谐振动的动力学特征，最大回复力 $F_m$ 与振幅 $A$（即最大位移 $x_m$）的关系建立公式（\ref{eq:4-19-k}）：
+\begin{equation}\label{eq:4-19-k}
+	F_m = k A
+\end{equation}
+代入已知数据 $F_m = 0.8 \text{ N}$ 和 $A = x_m = 0.4 \text{ m}$，解得系统的等效劲度系数 $k$：
+\begin{align*}
+	k &= \frac{0.8}{0.4} = 2 \text{ N/m}
+\end{align*}
+\textcolor{red}{因为是简谐振动，所以振动系统的总能量 $E$ 等于系统经过最大位移时的最大弹性势能}，由公式（\ref{eq:4-19-e}）计算得出：
+\begin{equation}\label{eq:4-19-e}
+	E = \frac{1}{2} k A^2
+\end{equation}
+代入数据得：
+\begin{align*}
+	E &= \frac{1}{2} \times 2 \times 0.4^2 = 0.16 \text{ J}
+\end{align*}
+
+(2) 设简谐振动的运动学表达式为 $x = A \cos(\omega t + \phi_0)$。
+已知最大速度 $v_m = 0.8\pi \text{ m/s}$，利用最大速度与角频率的关系建立公式（\ref{eq:4-19-w}）：
+\begin{equation}\label{eq:4-19-w}
+	v_m = \omega A
+\end{equation}
+代入求得角频率 $\omega$：
+\begin{align*}
+	\omega &= \frac{0.8\pi}{0.4} = 2\pi \text{ rad/s}
+\end{align*}
+当 $t=0$ 时，初始位移 $x_0 = +0.2 \text{ m}$，将其代入振动方程：
+\begin{align*}
+	0.4 \cos\phi_0 &= 0.2 \implies \cos\phi_0 = \frac{1}{2}
+\end{align*}
+同时已知初速度与 $x$ 轴正向相反（即 $v_0 < 0$），而速度方程 $v = -A\omega \sin(\omega t + \phi_0)$，故要求 $t=0$ 时 $\sin\phi_0 > 0$。综合正弦与余弦的条件得出初相 $\phi_0 = \frac{\pi}{3}$。
+综上，该振动的最终表达式为：
+\begin{align*}
+	x &= 0.4 \cos\left(2\pi t + \frac{\pi}{3}\right) \text{ (SI)}
+\end{align*}
+
+\textbf{易混淆知识点： }
+在求解简谐振动能量时，很多学生习惯于寻找振子质量 $m$ 并利用 $E = \frac{1}{2}mv_m^2$ 来计算。但本题并未直接给出质量。灵活理解简谐运动的本质，利用“最大回复力”求出劲度系数 $k$，直接通过最大势能公式 $E = \frac{1}{2}kA^2$ 求解，是突破此类“隐去质量”题目的关键途径。
+
+\vspace{2em}
+
+\textbf{4-21题解： }
+\setcounter{equation}{0}
+\renewcommand{\theHequation}{4-21.\arabic{equation}}
+
+\textbf{答案： }
+(1) $\sqrt{A_1^2 + A_2^2}$
+(2) $x = \sqrt{A_1^2 + A_2^2} \cos\left(\frac{2\pi}{T} t - \pi + \arctan\frac{A_2}{A_1}\right)$
+
+\textbf{解答过程： }
+(1) 根据振动曲线图，我们首先写出两个分振动的独立表达式。
+$x_1(t)$ 曲线在 $t=0$ 时恰好位于负向最大位移处，其振幅为 $A_1$，周期为 $T$。设角频率为 $\omega = \frac{2\pi}{T}$，则其初相 $\phi_1 = \pi$（或$-\pi$），振动方程写为公式（\ref{eq:4-21-x1}）：
+\begin{equation}\label{eq:4-21-x1}
+	x_1 = A_1 \cos(\omega t + \pi)
+\end{equation}
+$x_2(t)$ 曲线在 $t=0$ 时刚好通过平衡位置且斜率为正（向正向运动），其振幅为 $A_2$，初相 $\phi_2 = -\frac{\pi}{2}$，振动方程写为公式（\ref{eq:4-21-x2}）：
+\begin{equation}\label{eq:4-21-x2}
+	x_2 = A_2 \cos\left(\omega t - \frac{\pi}{2}\right)
+\end{equation}
+两个振动的相位差 $\Delta \phi = \phi_2 - \phi_1 = -\frac{\pi}{2} - \pi = -\frac{3\pi}{2}$（等效于 $\frac{\pi}{2}$ 的相位差），这说明两个振动在相位上是相互正交的。
+利用矢量合成法则，合振幅 $A$ 的计算如公式（\ref{eq:4-21-A}）所示：
+\begin{equation}\label{eq:4-21-A}
+	A = \sqrt{A_1^2 + A_2^2 + 2A_1 A_2 \cos\left(\frac{\pi}{2}\right)} = \sqrt{A_1^2 + A_2^2}
+\end{equation}
+
+(2) 设合振动的表达式为 $x = A \cos(\omega t + \phi)$。我们可以利用直角坐标系投影法来求解合初相 $\phi$：
+在相量图中，将 $x_1$ 和 $x_2$ 的旋转矢量在 $x$ 轴和 $y$ 轴上分解，建立 $t=0$ 时刻的分量方程组（\ref{eq:4-21-proj}）：
+\begin{equation}\label{eq:4-21-proj}
+	\begin{cases}
+		A \cos\phi = A_1 \cos\pi + A_2 \cos\left(-\frac{\pi}{2}\right) = -A_1 \\
+		A \sin\phi = A_1 \sin\pi + A_2 \sin\left(-\frac{\pi}{2}\right) = -A_2
+	\end{cases}
+\end{equation}
+由方程组（\ref{eq:4-21-proj}）可知，合相量的余弦分量和正弦分量均为负值，这明确界定了合相量 $\phi$ 必然位于第三象限。
+利用正切关系求解角度：
+\begin{align*}
+	\tan\phi &= \frac{-A_2}{-A_1} = \frac{A_2}{A_1} \\
+	\implies \phi &= -\pi + \arctan\frac{A_2}{A_1}
+\end{align*}
+代入图示给出的时间周期参数 $\omega = \frac{2\pi}{T}$，得到最终完整的合振动表达式：
+\begin{align*}
+	x &= \sqrt{A_1^2 + A_2^2} \cos\left(\frac{2\pi}{T} t - \pi + \arctan\frac{A_2}{A_1}\right)
+\end{align*}
+
+\textbf{易混淆知识点： }
+在合成两个同频简谐振动求解合初相 $\phi$ 时，极易直接套用公式 $\tan\phi = \frac{A_2}{A_1}$ 然后按计算器得出 $\phi = \arctan(A_2/A_1)$，从而误将初相定在第一象限。必须严格根据旋转矢量的横轴投影（本题为 $-A_1$）和纵轴投影（本题为 $-A_2$）的具体符号来判定其所在的象限。由于本题两投影皆为负，合相量必定在第三象限，因此在求得反正切主值后必须加上（或减去）$\pi$ 以进行象限修正。
+
+\textbf{补充：}
+根据\ref{eq:4-21-x1}和\ref{eq:4-21-x2}可得出初相位分别为$\pi$(x负半轴)，和$-\frac{\pi}{2}$(y负半轴)，可以做出矢量合成图：
+
+% TODO: \usepackage{graphicx} required
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.4\linewidth]{figure/slt}
+	\caption{辅助矢量图}
+	\label{fig:slt}
+\end{figure}
+
+\textcolor{red}{再次说明：根据初相位做矢量图和旋转圆法在第4章非常重要，一定要重点掌握！}
+
 \newpage
 
 \subsection{习题7}
