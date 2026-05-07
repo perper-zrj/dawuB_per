@@ -1840,6 +1840,347 @@ $x_2(t)$ 曲线在 $t=0$ 时刚好通过平衡位置且斜率为正（向正向�
 
 \textcolor{red}{再次说明：根据初相位做矢量图和旋转圆法在第4章非常重要，一定要重点掌握！}
 
+\vspace{2em}
+
+\textbf{4-22题解： }
+\setcounter{equation}{0}
+\renewcommand{\theHequation}{4-22.\arabic{equation}}
+
+\textbf{答案： }
+(1) $x_1=10\,\text{m}$ 处质元的振动方程为 $y_1 = 0.25 \cos(125t - 3.7)$ (SI)；$x_2=25\,\text{m}$ 处质元的振动方程为 $y_2 = 0.25 \cos(125t - 9.25)$ (SI)。\\
+(2) $x_1$ 和 $x_2$ 两质点间的振动相位差为 $\Delta \phi = 5.55\,\text{rad}$。\\
+(3) $t=4\,\text{s}$ 时 $x_1$ 点的振动位移为 $y \approx 0.249\,\text{m}$。
+
+\textbf{解答过程： }
+已知平面简谐波的波函数为：
+\begin{equation}\label{eq:4-22-1}
+	y(x,t) = 0.25 \cos(125t - 0.37x)
+\end{equation}
+
+(1) 求解某坐标点的振动方程，即将该点的位置坐标 $x$ 代入波函数即可：
+对于 $x_1 = 10\,\text{m}$ 的质元，代入公式(\ref{eq:4-22-1})得其振动方程为：
+\begin{align*}
+	y_1 &= 0.25 \cos(125t - 0.37 \times 10) \\
+	&= 0.25 \cos(125t - 3.7) \quad (\text{SI})
+\end{align*}
+
+对于 $x_2 = 25\,\text{m}$ 的质元，代入公式(\ref{eq:4-22-1})得其振动方程为：
+\begin{align*}
+	y_2 &= 0.25 \cos(125t - 0.37 \times 25) \\
+	&= 0.25 \cos(125t - 9.25) \quad (\text{SI})
+\end{align*}
+
+(2) 平面简谐波中，同波线上两质点间的相位差 $\Delta \phi$ 由波矢 $k$ 与空间距离 $\Delta x$ 决定。由给定的波函数可知波数 $k = 0.37\,\text{rad/m}$，相位差公式为：
+\begin{equation}\label{eq:4-22-2}
+	\Delta \phi = k |x_2 - x_1|
+\end{equation}
+将数据代入公式(\ref{eq:4-22-2})可得：
+\begin{align*}
+	\Delta \phi &= 0.37 \times |25 - 10| \\
+	&= 0.37 \times 15 \\
+	&= 5.55\,\text{rad}
+\end{align*}
+
+(3) 求特定时间、特定位置的振动位移，需将 $t=4\,\text{s}$ 与 $x_1=10\,\text{m}$ 代入波函数(\ref{eq:4-22-1})中：
+\begin{align*}
+	y &= 0.25 \cos(125 \times 4 - 0.37 \times 10) \\
+	&= 0.25 \cos(500 - 3.7) \\
+	&= 0.25 \cos(496.3)
+\end{align*}
+计算可知 $496.3\,\text{rad} \approx 79 \times 2\pi - 0.0716\,\text{rad}$，因此：
+\begin{align*}
+	y &\approx 0.25 \times \cos(-0.0716) \\
+	&\approx 0.25 \times 0.9974 \\
+	&\approx 0.249\,\text{m}
+\end{align*}
+
+\textbf{易混淆知识点： }
+1. \textbf{波函数与振动方程的区别}：波函数 $y(x,t)$ 描述了介质中所有质点在任意时刻的位移（包含空间变量 $x$ 和时间变量 $t$）；而振动方程 $y(t)$ 描述的是某一特定质元（给定确定的 $x$ 值）单纯随时间的变化规律。
+
+2. \textbf{相位差的计算}：同一时刻波线上两点的相位差公式为 $\Delta \phi = k\Delta x = \frac{2\pi}{\lambda}\Delta x$。注意不要与同一质点在不同时刻的相位差 $\Delta \phi = \omega\Delta t$ 混淆。
+
+3. \textbf{计算器弧度制设置}：在计算第(3)问中的 $\cos(496.3)$ 时，括号内的数值单位为“弧度”（rad），而非“角度”（degree）。在进行具体数值计算时，务必确保科学计算器处于弧度制（Rad）模式，否则会导致位移结果完全错误。
+
+\textcolor{red}{注意：公式(\ref{eq:4-22-2})属于易忘公式，一定要牢记！！！}
+
+\vspace{2em}
+
+\textbf{4-24题解： }
+\setcounter{equation}{0}
+\renewcommand{\theHequation}{4-24.\arabic{equation}}
+
+\textbf{答案： }
+(1) 该波的波函数为 $y = 0.04 \cos(0.4\pi t - 5\pi x - \frac{\pi}{2})$ (SI)。\\
+(2) $P$ 处质元的振动方程为 $y_P = 0.04 \cos(0.4\pi t + \frac{\pi}{2})$ (SI)。
+
+\textbf{解答过程： }
+从波形图可知，该简谐波的振幅 $A = 0.04\,\text{m}$。
+波在 $t=0$ 时刻由原点 $O$ 传播至 $P$ 点（从位移为0向下振动到再次位移为0）经历半个波形，故半波长 $\frac{\lambda}{2} = 0.20\,\text{m}$，解得波长 $\lambda = 0.40\,\text{m}$。
+由波速 $u = 0.08\,\text{m/s}$，可得周期 $T$ 为：
+\begin{align*}
+	T = \frac{\lambda}{u} = \frac{0.40}{0.08} = 5\,\text{s}
+\end{align*}
+进而求得角频率 $\omega$ 和波数 $k$ 分别为：
+\begin{align*}
+	\omega &= \frac{2\pi}{T} = 0.4\pi\,\text{rad/s} \\
+	k &= \frac{2\pi}{\lambda} = 5\pi\,\text{rad/m}
+\end{align*}
+设平面简谐波的波函数一般形式为：
+\begin{equation}\label{eq:4-24-1}
+	y(x,t) = A \cos(\omega t - kx + \phi_0)
+\end{equation}
+考察原点 $x=0$ 处的质元，在 $t=0$ 时刻位移 $y=0$。结合波沿 $x$ 轴正向传播，可知原点处质元此刻正受到其左侧波峰的带动，向 $y$ 轴正方向运动（即速度 $v > 0$）。
+代入初始条件：
+\begin{align*}
+	y(0,0) &= A \cos\phi_0 = 0 \\
+	v(0,0) &= -A\omega \sin\phi_0 > 0
+\end{align*}
+由以上两式解得初相位 $\phi_0 = -\frac{\pi}{2}$。
+将各参数代入公式(\ref{eq:4-24-1})，得到该波的波函数为：
+\begin{equation}\label{eq:4-24-2}
+	y = 0.04 \cos(0.4\pi t - 5\pi x - \frac{\pi}{2}) \quad (\text{SI})
+\end{equation}
+
+(2) 求解 $P$ 处质元的振动方程，从图中可知 $P$ 点的坐标为 $x = 0.20\,\text{m}$。
+将其代入已求得的波函数公式(\ref{eq:4-24-2})中：
+\begin{align*}
+	y_P &= 0.04 \cos(0.4\pi t - 5\pi \times 0.20 - \frac{\pi}{2}) \\
+	&= 0.04 \cos(0.4\pi t - \pi - \frac{\pi}{2}) \\
+	&= 0.04 \cos(0.4\pi t - \frac{3\pi}{2})
+\end{align*}
+利用三角函数诱导公式 $\cos(\alpha - \frac{3\pi}{2}) = \cos(\alpha + \frac{\pi}{2})$，化简可得 $P$ 处质元的振动方程：
+\begin{equation}\label{eq:4-24-3}
+	y_P = 0.04 \cos(0.4\pi t + \frac{\pi}{2}) \quad (\text{SI})
+\end{equation}
+
+\textbf{易混淆知识点： }
+1. \textbf{初相位符号的判定}：已知 $y=0$ 只能得出初相为 $\pm\pi/2$，此时必须结合波的传播方向利用\textcolor{red}{“同侧法”或“微商法”(本人推荐用同侧法)}判断质点振动速度方向。本题波向右传，原点即将迎来波峰，故向上振动（速度为正），从而确定初相为 $-\pi/2$ 而不是 $+\pi/2$。
+
+2. \textbf{波形空间距离与波长的关系}：图中 $P$ 点位于 $x=0.20\,\text{m}$ 处，由于波形正好是一个完整的下半波谷，因此这段距离对应的是 $\lambda/2$，切勿看成 $1/4$ 波长或一整个波长。
+
+3. \textbf{主值区间的化简}：在求解质点振动方程得到相位差 $-3\pi/2$ 后，建议利用诱导公式将其转化到 $(-\pi, \pi]$ 的主值区间内（即 $+\pi/2$）。虽然两者在数学上等价，但在物理学中，使用主值区间表达相位更为规范和直观。
+
+\vspace{2em}
+
+\textbf{4-25题解： }
+\setcounter{equation}{0}
+\renewcommand{\theHequation}{4-25.\arabic{equation}}
+
+\textbf{答案： }
+(1) $O$ 点的振动表达式为 $y_O = 0.1 \cos(\pi t + \frac{\pi}{3})$ (SI)。\\
+(2) 该波的波函数为 $y = 0.1 \cos(\pi t - 5\pi x + \frac{\pi}{3})$ (SI)。\\
+(3) $A$ 点的振动表达式为 $y_A = 0.1 \cos(\pi t - \frac{5\pi}{6})$ (SI)。\\
+(4) $A$ 点离 $O$ 点的距离为 $\frac{7}{30}\,\text{m}$ （或 $\approx 0.233\,\text{m}$ / $\frac{70}{3}\,\text{cm}$）。
+
+\textbf{解答过程： }
+已知周期 $T = 2\,\text{s}$，则角频率为：
+\begin{align*}
+	\omega = \frac{2\pi}{T} = \pi\,\text{rad/s}
+\end{align*}
+设沿 $x$ 轴正方向传播的平面简谐波的波函数一般形式为：
+\begin{equation}\label{eq:4-25-1}
+	y(x,t) = A \cos(\omega t - kx + \phi_0)
+\end{equation}
+由波形图可知，振幅 $A = 10\,\text{cm} = 0.1\,\text{m}$。
+观察放大后的波形图细节，标注为 $20\,\text{cm}$ 的箭头起始于第一个过平衡位置向上的点（波节），终止于点 $A$（下一个过平衡位置向下的波节）。两个相邻且振动方向相反的波节之间的距离正好为半个波长，因此：
+\begin{align*}
+	\frac{\lambda}{2} &= 20\,\text{cm} = 0.2\,\text{m} \\
+	\lambda &= 0.4\,\text{m}
+\end{align*}
+据此求得波数 $k$ 为：
+\begin{equation}\label{eq:4-25-2}
+	k = \frac{2\pi}{\lambda} = \frac{2\pi}{0.4} = 5\pi\,\text{rad/m}
+\end{equation}
+在 $t = \frac{1}{3}\,\text{s}$ 时刻，原点 $O$ ($x=0$) 的位移 $y = -5\,\text{cm} = -0.05\,\text{m}$，且根据波形图，该点处波形曲线的斜率 $\frac{\partial y}{\partial x} > 0$。
+将 $x=0, t=\frac{1}{3}\,\text{s}$ 代入波函数：
+\begin{align*}
+	y(0, \frac{1}{3}) &= 0.1 \cos(\frac{\pi}{3} + \phi_0) = -0.05 \\
+	\cos(\frac{\pi}{3} + \phi_0) &= -0.5
+\end{align*}
+对波函数求空间偏导数 $\frac{\partial y}{\partial x} = Ak \sin(\omega t - kx + \phi_0)$，代入 $O$ 点状态可知 $\sin(\frac{\pi}{3} + \phi_0) > 0$，故相位主值应取第二象限角，即 $\frac{\pi}{3} + \phi_0 = \frac{2\pi}{3}$。由此解得初相位：
+\begin{equation}\label{eq:4-25-3}
+	\phi_0 = \frac{\pi}{3}
+\end{equation}
+
+(1) 求解 $O$ 点的振动表达式，将 $x=0, \omega=\pi, \phi_0=\frac{\pi}{3}$ 代入一般形式：
+\begin{equation}\label{eq:4-25-4}
+	y_O = 0.1 \cos(\pi t + \frac{\pi}{3}) \quad (\text{SI})
+\end{equation}
+
+(2) 将求得的各参数代入，得到该波的波函数为：
+\begin{equation}\label{eq:4-25-5}
+	y(x,t) = 0.1 \cos(\pi t - 5\pi x + \frac{\pi}{3})\quad (\text{SI})
+\end{equation}
+
+(3) 在 $t = \frac{1}{3}\,\text{s}$ 的波形图上，$A$ 点位于波峰右侧的第一个平衡位置（向下穿过 $x$ 轴）。
+将 $t = \frac{1}{3}\,\text{s}$ 代入波函数，该时刻的波形方程相角分布为 $(\frac{2\pi}{3} - 5\pi x)$。
+已知波峰处相角为 $0$，其右侧紧邻的过零点 $A$ 点的相角应为 $-\frac{\pi}{2}$。令：
+\begin{align*}
+	\frac{2\pi}{3} - 5\pi x_A &= -\frac{\pi}{2} \\
+	5\pi x_A &= \frac{7\pi}{6}
+\end{align*}
+解得 $A$ 点的坐标 $x_A = \frac{7}{30}\,\text{m}$。
+将 $x_A$ 代入波函数求解 $A$ 点的振动表达式：
+\begin{align*}
+	y_A &= 0.1 \cos(\pi t - 5\pi \times \frac{7}{30} + \frac{\pi}{3}) \\
+	&= 0.1 \cos(\pi t - \frac{7\pi}{6} + \frac{2\pi}{6})
+\end{align*}
+化简可得：
+\begin{equation}\label{eq:4-25-6}
+	y_A = 0.1 \cos(\pi t - \frac{5\pi}{6}) \quad (\text{SI})
+\end{equation}
+
+% 由(3)中求得的 $A$ 点坐标可知，$A$ 点离原点 $O$ 的距离即为 $x_A$ 的绝对值：
+%\begin{align*}
+%	\Delta x = x_A - 0 = \frac{7}{30}\,\text{m}
+%\end{align*}
+(4)由第(1)问可知$\mathbf{O}$点的振动方程(见(公式\ref{eq:4-25-4}))，可知$\mathbf{O}$点的初相位是$\frac{\pi}{3}$.
+由第(3)问可知$\mathbf{A}$点的振动方程(见(公式\ref{eq:4-25-6})),可知$\mathbf{A}$点的初相位是$-\frac{5\pi}{6}$.
+
+所以有：$x_1=\frac{\pi}{3}$,$x_2=-\frac{5\pi}{6}$,$k=5\pi$
+
+由相位差公式：
+\begin{equation}\label{eq:4-25-7}
+	\Delta x = \frac{\Delta \phi}{k}\,\text{cm}
+\end{equation}
+
+带入公式得：
+\begin{align*}
+	\Delta x = \frac{70}{3}\,\text{cm} \approx 23.33\,\text{cm}
+\end{align*}
+(换算为米即为 $\frac{7}{30}\,\text{m}$)
+
+\textbf{易混淆知识点： }
+1. \textbf{波形图中尺寸标注的识别}：极易将图中平行于 $x$ 轴的长度标注误认为某特征点（如波峰）的绝对横坐标。本题中的“20”带有双向箭头，其物理意义是图示两个“过零点（波节）”之间的相对距离。由于这两个过零点斜率一正一负，它们之间恰好跨越了半个波长（$\lambda/2$）。
+
+2. \textbf{空间相位与振动相位的关系}：在确定 $A$ 点坐标时，需利用空间相位的滞后性。波沿 $+x$ 传播，$A$ 位于波峰前方（更靠近 $+x$ 方向），因此其接受到该波峰状态的时间更晚，在同一时刻的波形图上，其相位比波峰落后 $\frac{\pi}{2}$（即相角为 $-\frac{\pi}{2}$）。
+
+3. \textbf{角频率与波数的量纲统一}：在波函数中若 $x$ 使用米（m）作单位，$k$ 必须是 $\text{rad/m}$；若 $x$ 使用厘米（cm），$k$ 需为 $\text{rad/cm}$。最终写成标准 SI 单位时，所有长度相关的量（振幅 $A$、坐标 $x$、波数 $k$）都必须统一到米制系统下。
+
+\vspace{2em}
+
+\textbf{4-26题解： }
+\setcounter{equation}{0}
+\renewcommand{\theHequation}{4-26.\arabic{equation}}
+
+\textbf{答案： }
+(1) 原点的振动表达式为 $y_O = 0.005 \cos(\frac{5\pi}{6}t - \frac{\pi}{3})$ (SI)。\\
+(2) 该波的波函数为 $y = 0.005 \cos(\frac{5\pi}{6}t + \frac{25\pi}{24}x - \frac{\pi}{3})$ (SI)。\\
+(3) 同一时刻相距 $1\,\text{m}$ 的两点之间的相位差为 $\Delta \phi = \frac{25\pi}{24}\,\text{rad}$。
+
+\textbf{解答过程： }
+(1) 由原点 $O$ 的振动曲线（$y-t$ 图）可知，振幅 $A = 0.5\,\text{cm} = 0.005\,\text{m}$。
+设原点的振动表达式一般形式为：
+\begin{equation}\label{eq:4-26-1}
+	y_O(t) = A \cos(\omega t + \phi_0)
+\end{equation}
+在 $t = 0$ 时刻，位移 $y(0) = 0.25\,\text{cm} = \frac{1}{2}A$。代入振动表达式：
+\begin{align*}
+	A \cos\phi_0 = \frac{1}{2}A \implies \cos\phi_0 = 0.5
+\end{align*}
+且由图可知 $t=0$ 时刻曲线正在上升阶段（向 $+y$ 方向运动），即此时速度 $v(0) = -A\omega\sin\phi_0 > 0$，所以 $\sin\phi_0 < 0$。因此可确定初相位：
+\begin{align*}
+	\phi_0 = -\frac{\pi}{3}
+\end{align*}
+观察图形，在 $t = 1\,\text{s}$ 时刻，质点第一次回到平衡位置且曲线向下（向 $-y$ 方向运动），此时振动相位应为 $\frac{\pi}{2}$：
+\begin{align*}
+	\omega \times 1 - \frac{\pi}{3} = \frac{\pi}{2} \implies \omega = \frac{5\pi}{6}\,\text{rad/s}
+\end{align*}
+将 $A, \omega, \phi_0$ 代入公式(\ref{eq:4-26-1})，得到原点 $O$ 的振动表达式为：
+\begin{align*}
+	y_O = 0.005 \cos(\frac{5\pi}{6}t - \frac{\pi}{3}) \quad (\text{SI})
+\end{align*}
+
+(2) 已知平面简谐波沿 $x$ 轴负方向传播，波速 $u = 0.8\,\text{m/s}$。波沿负方向传播的波函数一般形式为（空间相位项为 $+kx$）：
+\begin{equation}\label{eq:4-26-2}
+	y(x,t) = A \cos(\omega t + kx + \phi_0)
+\end{equation}
+利用波速求波数 $k$：
+\begin{align*}
+	k = \frac{\omega}{u} = \frac{5\pi/6}{0.8} = \frac{5\pi/6}{4/5} = \frac{25\pi}{24}\,\text{rad/m}
+\end{align*}
+将各参数代入公式(\ref{eq:4-26-2})，得到该平面简谐波的波函数为：
+\begin{align*}
+	y = 0.005 \cos(\frac{5\pi}{6}t + \frac{25\pi}{24}x - \frac{\pi}{3}) \quad (\text{SI})
+\end{align*}
+
+(3) 在同一时刻 $t$，波线上相距 $\Delta x$ 的两质点间的振动相位差由空间相位公式决定：
+\begin{equation}\label{eq:4-26-3}
+	\Delta \phi = k \Delta x
+\end{equation}
+已知两点相距 $\Delta x = 1\,\text{m}$，代入公式(\ref{eq:4-26-3})得：
+\begin{align*}
+	\Delta \phi = \frac{25\pi}{24} \times 1 = \frac{25\pi}{24}\,\text{rad}
+\end{align*}
+
+\textbf{易混淆知识点： }
+1. \textbf{振动图与波形图的区分}：本题给出的是原点的“振动曲线”（横坐标为时间 $t$），描述的是单一质点随时间的位移变化。切不可将其误认为是“波形图”（横坐标为空间 $x$）去直接读波长或判断波的传播方向。
+
+2. \textbf{传播方向与空间相位符号}：当波沿 $x$ 轴正方向传播时，波函数中的空间项为 $-kx$（前方质点相位滞后）；而本题明确指出波“沿 $x$ 轴负方向传播”，因此空间项必须为 $+kx$。
+
+3. \textbf{由平衡点推断角频率}：在利用 $t=1\,\text{s}$ 时的过零点求角频率 $\omega$ 时，需注意该质点是“由正向负”穿过平衡位置（斜率为负），对应的振动相位为 $\pi/2$（而非 $3\pi/2$ 或 $-\pi/2$）。结合 $t=0$ 的初相位 $-\pi/3$，这段时间内的相位变化量为 $\Delta\phi = \pi/2 - (-\pi/3) = 5\pi/6$，从而直接求出 $\omega$。
+
+\vspace{2em}
+
+\textbf{4-30题解： }
+\setcounter{equation}{0}
+\renewcommand{\theHequation}{4-30.\arabic{equation}}
+
+\textbf{答案： }
+设单波的强度为 $I_0$。在 $S_1$ 外侧各点合成波的强度为 $0$；在 $S_2$ 外侧各点合成波的强度为 $4I_0$。
+
+\textbf{解答过程： }
+设两相干波源 $S_1$、$S_2$ 在空间某点 $P$ 引起的波的初相分别为 $\phi_{10}$ 和 $\phi_{20}$。由题意知，$S_1$ 比 $S_2$ 相位超前 $\frac{\pi}{2}$，即初相位差为：
+\begin{align*}
+	\Delta \phi_0 = \phi_{10} - \phi_{20} = \frac{\pi}{2}
+\end{align*}
+设空间中某考察点 $P$ 到两波源的距离分别为 $r_1$ 和 $r_2$，则两波在 $P$ 点的绝对相位差 $\Delta \phi$ 为：
+\begin{equation}\label{eq:4-30-1}
+	\Delta \phi = \phi_1 - \phi_2 = (\phi_{10} - \frac{2\pi}{\lambda} r_1) - (\phi_{20} - \frac{2\pi}{\lambda} r_2) = \Delta \phi_0 - \frac{2\pi}{\lambda} (r_1 - r_2)
+\end{equation}
+两波在空间任一点的合成波强度公式为：
+\begin{equation}\label{eq:4-30-2}
+	I = I_1 + I_2 + 2\sqrt{I_1 I_2} \cos(\Delta \phi)
+\end{equation}
+已知沿连线方向强度相同且不随距离变化，设 $I_1 = I_2 = I_0$。
+
+(1) 对于位于 $S_1$ 外侧的各点（即在 $S_1, S_2$ 连线上且位于 $S_1$ 左侧），由于两波源相距 $d = \frac{\lambda}{4}$，该区域各点到两波源的波程差恒为：
+\begin{align*}
+	r_1 - r_2 = -d = -\frac{\lambda}{4}
+\end{align*}
+将其代入相位差公式(\ref{eq:4-30-1})可得：
+\begin{align*}
+	\Delta \phi &= \frac{\pi}{2} - \frac{2\pi}{\lambda} \times (-\frac{\lambda}{4}) \\
+	&= \frac{\pi}{2} + \frac{\pi}{2} = \pi
+\end{align*}
+将 $\Delta \phi = \pi$ 代入合成强度公式(\ref{eq:4-30-2})，得到 $S_1$ 外侧各点的强度：
+\begin{align*}
+	I_{S_1外} &= I_0 + I_0 + 2I_0 \cos\pi \\
+	&= 2I_0 - 2I_0 = 0
+\end{align*}
+即合成波强度为 $0$（发生完全相消干涉）。
+
+(2) 对于位于 $S_2$ 外侧的各点（即在 $S_1, S_2$ 连线上且位于 $S_2$ 右侧），该区域各点到两波源的波程差恒为：
+\begin{align*}
+	r_1 - r_2 = d = \frac{\lambda}{4}
+\end{align*}
+同样将其代入相位差公式(\ref{eq:4-30-1})可得：
+\begin{align*}
+	\Delta \phi &= \frac{\pi}{2} - \frac{2\pi}{\lambda} \times (\frac{\lambda}{4}) \\
+	&= \frac{\pi}{2} - \frac{\pi}{2} = 0
+\end{align*}
+将 $\Delta \phi = 0$ 代入合成强度公式(\ref{eq:4-30-2})，得到 $S_2$ 外侧各点的强度：
+\begin{align*}
+	I_{S_2外} &= I_0 + I_0 + 2I_0 \cos 0 \\
+	&= 2I_0 + 2I_0 = 4I_0
+\end{align*}
+即合成波强度为 $4I_0$（发生完全相长干涉）。
+
+\textbf{易混淆知识点： }
+1. \textbf{相位差公式中符号的严格对应}：在计算 $\Delta \phi = \phi_1 - \phi_2$ 时，波程差项必须严格对应为 $- \frac{2\pi}{\lambda}(r_1 - r_2)$。如果将其颠倒写成 $(r_2 - r_1)$ 且未改变前面的负号，会导致波程差带来的相位符号完全反转，从而得出 $S_1$ 与 $S_2$ 外侧强度互换的错误结论。
+
+2. \textbf{连线外侧波程差的恒定性}：在两个波源连线的延长线上（即“外侧”），空间任意一点到两个波源的距离之差 $|r_1 - r_2|$ 始终恒等于两波源的物理间距 $d$。这也是为什么题目中提及该直线上外侧各点强度“不随距离变化”的几何原因。
+
 \newpage
 
 \subsection{习题7}
