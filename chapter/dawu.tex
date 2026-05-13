@@ -2185,6 +2185,9 @@ $x_2(t)$ 曲线在 $t=0$ 时刚好通过平衡位置且斜率为正（向正向�
 
 \subsection{习题7}
 
+\subsubsection*{本人建议：}
+在做习题七之前，应该先去完成第七章的例题，\textcolor{red}{习题中有很多结论直接出自例题的答案。}
+
 \begin{enumerate}
 	\item [\textbf{7-9}]
 	一个细玻璃棒被弯成半径为$\mathbf{R}$的半圆形，沿其上半部分均匀分布有电荷$\mathbf{+Q}$,沿其下半部分均匀分布有电荷$\mathbf{-Q}$,如习题7-9图所示。试求圆心$\mathbf{O}$处的电场强度。
@@ -2244,6 +2247,114 @@ $x_2(t)$ 曲线在 $t=0$ 时刚好通过平衡位置且斜率为正（向正向�
 
 \newpage
 
+\subsection*{习题7题解}
+
+\textbf{7-9题解： }
+\setcounter{equation}{0}
+\renewcommand{\theHequation}{7-9.\arabic{equation}}
+
+\textbf{答案： }
+圆心 $O$ 处的电场强度大小为 $E = \frac{Q}{\pi^2 \varepsilon_0 R^2}$，方向沿 $y$ 轴负方向。
+
+\textbf{解答过程： }
+建立如图所示的直角坐标系。上半圆环（第二象限部分）带正电荷 $+Q$，下半圆环（第三象限部分）带负电荷 $-Q$。它们在圆心 $O$ 处产生的电场可以由电荷元积分或对称性求出。
+由于半圆环总长度为 $\pi R$，上下两部分各占四分之一圆弧，其长度均为 $\frac{\pi R}{2}$。线电荷密度大小为：
+\begin{equation}\label{eq:7-9-1}
+	\lambda = \frac{Q}{\pi R / 2} = \frac{2Q}{\pi R}
+\end{equation}
+在上半圆环上任取电荷元 $\mathrm{d}q = \lambda R \mathrm{d}\theta$（设极角为 $\theta$，$\theta \in [\frac{\pi}{2}, \pi]$），其在 $O$ 点产生的微场强为：
+\begin{align*}
+	\mathrm{d}\vec{E}_+ = \frac{1}{4\pi\varepsilon_0} \frac{\mathrm{d}q}{R^2} (-\cos\theta \hat{i} - \sin\theta \hat{j}) = \frac{\lambda \mathrm{d}\theta}{4\pi\varepsilon_0 R} (-\cos\theta \hat{i} - \sin\theta \hat{j})
+\end{align*}
+积分求得上半圆环在 $O$ 点产生的电场分量：
+\begin{align*}
+	E_{+x} &= \int_{\pi/2}^{\pi} \frac{\lambda}{4\pi\varepsilon_0 R} (-\cos\theta) \mathrm{d}\theta = \frac{\lambda}{4\pi\varepsilon_0 R} [-\sin\theta]_{\pi/2}^{\pi} = \frac{\lambda}{4\pi\varepsilon_0 R} \\
+	E_{+y} &= \int_{\pi/2}^{\pi} \frac{\lambda}{4\pi\varepsilon_0 R} (-\sin\theta) \mathrm{d}\theta = \frac{\lambda}{4\pi\varepsilon_0 R} [\cos\theta]_{\pi/2}^{\pi} = -\frac{\lambda}{4\pi\varepsilon_0 R}
+\end{align*}
+同理，下半圆环带负电，电荷元 $\mathrm{d}q = -\lambda R \mathrm{d}\theta$（$\theta \in [\pi, \frac{3\pi}{2}]$），其在 $O$ 点产生的电场分量为：
+\begin{align*}
+	E_{-x} &= \int_{\pi}^{3\pi/2} \frac{-\lambda}{4\pi\varepsilon_0 R} (-\cos\theta) \mathrm{d}\theta = \frac{\lambda}{4\pi\varepsilon_0 R} [\sin\theta]_{\pi}^{3\pi/2} = -\frac{\lambda}{4\pi\varepsilon_0 R} \\
+	E_{-y} &= \int_{\pi}^{3\pi/2} \frac{-\lambda}{4\pi\varepsilon_0 R} (-\sin\theta) \mathrm{d}\theta = \frac{\lambda}{4\pi\varepsilon_0 R} [-\cos\theta]_{\pi}^{3\pi/2} = -\frac{\lambda}{4\pi\varepsilon_0 R}
+\end{align*}
+根据场强叠加原理，圆心 $O$ 处的总电场为：
+\begin{equation}\label{eq:7-9-2}
+	E_x = E_{+x} + E_{-x} = \frac{\lambda}{4\pi\varepsilon_0 R} - \frac{\lambda}{4\pi\varepsilon_0 R} = 0
+\end{equation}
+\begin{equation}\label{eq:7-9-3}
+	E_y = E_{+y} + E_{-y} = -\frac{\lambda}{4\pi\varepsilon_0 R} - \frac{\lambda}{4\pi\varepsilon_0 R} = -\frac{\lambda}{2\pi\varepsilon_0 R}
+\end{equation}
+将公式(\ref{eq:7-9-1})代入公式(\ref{eq:7-9-3})，得总场强大小：
+\begin{equation}\label{eq:7-9-4}
+	E = |E_y| = \frac{1}{2\pi\varepsilon_0 R} \left(\frac{2Q}{\pi R}\right) = \frac{Q}{\pi^2 \varepsilon_0 R^2}
+\end{equation}
+方向沿 $y$ 轴负向。
+
+\textbf{易混淆知识点： }
+1. \textbf{线电荷密度的取值}：电荷 $Q$ 只分布在四分之一圆弧（长度为 $\pi R / 2$）上，而不是整个半圆，因此线密度为 $\lambda = \frac{2Q}{\pi R}$。如果错算成 $\frac{Q}{\pi R}$ 会导致最终结果相差两倍。
+
+2. \textbf{对称性的矢量叠加}：计算总场强时，由对称性可以直接判断出上半环正电荷与下半环负电荷在 $x$ 轴方向上产生的电场大小相等、方向相反，完全抵消；而在 $y$ 轴方向上，两者产生的电场均指向 $y$ 轴负方向，相互叠加。熟练利用对称性可以大幅简化积分步骤。
+
+\vspace{2em}
+
+\textbf{7-11题解： }
+\setcounter{equation}{0}
+\renewcommand{\theHequation}{7-11.\arabic{equation}}
+
+\textbf{答案： }
+设水平向右为正方向（单位矢量 $\vec{n}$）。\\
+两平面左侧区域场强：$\vec{E}_I = -\frac{\sigma_1 + \sigma_2}{2\varepsilon_0}\vec{n}$；\\
+两平面之间区域场强：$\vec{E}_{II} = \frac{\sigma_1 - \sigma_2}{2\varepsilon_0}\vec{n}$；\\
+两平面右侧区域场强：$\vec{E}_{III} = \frac{\sigma_1 + \sigma_2}{2\varepsilon_0}\vec{n}$。
+
+\textbf{解答过程： }
+\textcolor{red}{根据无限大均匀带电平面的高斯定理推导结果，}\textbf{表面}电荷密度为 $\sigma$ 的无限大平面在周围空间产生的电场是匀强电场，其场强大小为：
+\begin{equation}\label{eq:7-11-1}
+	E = \frac{\sigma}{2\varepsilon_0}
+\end{equation}
+
+(\textcolor{red}{注：}该公式在L7-8处，课本\textbf{P172}页)
+
+方向垂直于带电平面。若 $\sigma > 0$，场强指向远离平面的方向；若 $\sigma < 0$，场强指向平面的方向。
+
+设平行平面所在位置的法线方向（水平向右）为正向单位矢量 $\vec{n}$。
+左侧平面（电荷密度 $\sigma_1$）在空间产生的匀强电场分布为：
+位于平面左侧时：$\vec{E}_{1L} = -\frac{\sigma_1}{2\varepsilon_0}\vec{n}$
+位于平面右侧时：$\vec{E}_{1R} = \frac{\sigma_1}{2\varepsilon_0}\vec{n}$
+
+右侧平面（电荷密度 $\sigma_2$）在空间产生的匀强电场分布为：
+位于平面左侧时：$\vec{E}_{2L} = -\frac{\sigma_2}{2\varepsilon_0}\vec{n}$
+位于平面右侧时：$\vec{E}_{2R} = \frac{\sigma_2}{2\varepsilon_0}\vec{n}$
+
+根据电场强度的叠加原理，空间任一点的总场强等于两平面在该点单独产生场强的矢量和：
+\begin{equation}\label{eq:7-11-2}
+	\vec{E} = \vec{E}_1 + \vec{E}_2
+\end{equation}
+
+整个空间被两平面分为三个区域进行讨论：
+(1) 在第一平面左侧区域（区域 I）：该区域位于两平面的左侧，两者电场均向左。
+\begin{align*}
+	\vec{E}_I = \vec{E}_{1L} + \vec{E}_{2L} = -\frac{\sigma_1}{2\varepsilon_0}\vec{n} - \frac{\sigma_2}{2\varepsilon_0}\vec{n} = -\frac{\sigma_1 + \sigma_2}{2\varepsilon_0}\vec{n}
+\end{align*}
+
+(2) 在两平面之间区域（区域 II）：该区域位于第一平面右侧、第二平面左侧。
+\begin{align*}
+	\vec{E}_{II} = \vec{E}_{1R} + \vec{E}_{2L} = \frac{\sigma_1}{2\varepsilon_0}\vec{n} - \frac{\sigma_2}{2\varepsilon_0}\vec{n} = \frac{\sigma_1 - \sigma_2}{2\varepsilon_0}\vec{n}
+\end{align*}
+
+(3) 在第二平面右侧区域（区域 III）：该区域位于两平面的右侧，两者电场均向右。
+\begin{align*}
+	\vec{E}_{III} = \vec{E}_{1R} + \vec{E}_{2R} = \frac{\sigma_1}{2\varepsilon_0}\vec{n} + \frac{\sigma_2}{2\varepsilon_0}\vec{n} = \frac{\sigma_1 + \sigma_2}{2\varepsilon_0}\vec{n}
+\end{align*}
+
+\textbf{易混淆知识点： }
+1. \textbf{无限大带电平面的场强特点}：由公式(\ref{eq:7-11-1})可知，场强大小 $\frac{\sigma}{2\varepsilon_0}$ 是一个与距离完全无关的常量。在计算叠加时，无论空间点离平面有多远，只要在平面的同一侧，该平面贡献的电场大小就不会衰减。
+
+2. \textbf{代数表达式的普适性}：在推导时，默认先假设 $\sigma_1, \sigma_2 > 0$ 并在坐标轴上定出矢量正负。最终得出的三个区域的代数表达式实际上具有绝对的通用性：如果实际情况中某平面带有负电（如电容器极板），直接将 $\sigma$ 连同负号代入相应的表达式中即可自然获得正确的方向，无需重新画图判断。
+
+\vspace{2em}
+
+\newpage
+
 \subsection{习题8}
 
 \begin{enumerate}
@@ -2254,6 +2365,10 @@ $x_2(t)$ 曲线在 $t=0$ 时刚好通过平衡位置且斜率为正（向正向�
 \newpage
 
 \section{课本例题重现}
+
+\subsection*{声明：}
+
+课本例题重现由于期末考机制问题，将只整理一、七、八章。\textcolor{red}{特别强调：七八两章为老师勾画的例题极为重要，七八两张的例题一定要复习！}
 
 \subsection{第一章}
 
@@ -2528,9 +2643,8 @@ $x_2(t)$ 曲线在 $t=0$ 时刚好通过平衡位置且斜率为正（向正向�
 
 \subsection{第七章}
 
-%\begin{enumerate}
-%	\item
-%\end{enumerate}
+\subsubsection*{本章目标：}
+第七章的例题会产生很多直接性的结论，\textbf{其中请务必记住例题中有关高斯定理的题产生的结论，这些结论是可以直接使用的。}在前面的习题中有很大的作用。
 
 \begin{enumerate}
 	
@@ -2544,6 +2658,54 @@ $x_2(t)$ 曲线在 $t=0$ 时刚好通过平衡位置且斜率为正（向正向�
 		\label{fig:L7-2}
 	\end{figure}
 	
+	\vspace{1em}
+	
+	\setcounter{equation}{0}
+	\renewcommand{\theHequation}{L7-2.\arabic{equation}}
+	
+	\textbf{答案： }
+	圆环轴线上与环心相距 $x$ 的 $P$ 点的场强大小为 $E = \frac{qx}{4\pi\varepsilon_0(a^2+x^2)^{3/2}}$，方向沿轴线（当 $q>0$ 时背离圆心向外，当 $q<0$ 时指向圆心）。
+	
+	\textbf{解答过程： }
+	在圆环上任取一线元 $\mathrm{d}l$，由于电荷均匀分布，其上所带电荷量为：
+	\begin{align*}
+		\mathrm{d}q = \frac{q}{2\pi a} \mathrm{d}l
+	\end{align*}
+	该点电荷元在空间 $P$ 点产生的微场强大小为：
+	\begin{equation}\label{eq:L7-2-1}
+		\mathrm{d}E = \frac{1}{4\pi\varepsilon_0} \frac{\mathrm{d}q}{r^2} = \frac{1}{4\pi\varepsilon_0} \frac{\mathrm{d}q}{a^2+x^2}
+	\end{equation}
+	建立坐标系，设圆环轴线为 $x$ 轴。将 $\mathrm{d}E$ 分解为平行于轴线的分量 $\mathrm{d}E_x$ 和垂直于轴线的分量 $\mathrm{d}E_{\perp}$：
+	\begin{align*}
+		\mathrm{d}E_x &= \mathrm{d}E \cos\theta \\
+		\mathrm{d}E_{\perp} &= \mathrm{d}E \sin\theta
+	\end{align*}
+	由圆环的空间对称性可知，对环上任意取定的一个电荷元 $\mathrm{d}q$，在环的直径相对端必存在一个等量电荷元。它们在 $P$ 点产生的垂直于轴线的分量大小相等、方向相反，相互抵消。因此，整个圆环在 $P$ 点产生的总场强的垂直分量积分为零：
+	\begin{align*}
+		E_{\perp} = \int \mathrm{d}E_{\perp} = 0
+	\end{align*}
+	所以，总场强即为平行于轴线的分量的积分。由几何关系可知 $\cos\theta = \frac{x}{r} = \frac{x}{\sqrt{a^2+x^2}}$，代入得到：
+	\begin{equation}\label{eq:L7-2-2}
+		E = \int \mathrm{d}E_x = \int \mathrm{d}E \cos\theta = \int \frac{1}{4\pi\varepsilon_0} \frac{\mathrm{d}q}{a^2+x^2} \frac{x}{\sqrt{a^2+x^2}}
+	\end{equation}
+	积分是沿着整个圆环进行的。在积分过程中，环上所有的电荷元到 $P$ 点的距离 $r$ 以及角度 $\theta$ 都是恒定的（即 $a$ 和 $x$ 对于积分变量 $\mathrm{d}q$ 是常量），因此可以将其全部提取到积分号外：
+	\begin{align*}
+		E &= \frac{x}{4\pi\varepsilon_0 (a^2+x^2)^{3/2}} \int \mathrm{d}q
+	\end{align*}
+	考虑到所有电荷元之和即为总电荷量 $\int \mathrm{d}q = q$，最终得到总场强为：
+	\begin{equation}\label{eq:L7-2-3}
+		E = \frac{qx}{4\pi\varepsilon_0 (a^2+x^2)^{3/2}}
+	\end{equation}
+	
+	\textbf{易混淆知识点： }
+	1. \textbf{积分常量的提取}：处理连续带电体场强时，很多人在面对积分号会感到迷茫。本题的核心在于识别出：在沿着圆环边缘遍历积分时，距离 $r$ 和角度 $\theta$ 并不随位置的改变而改变。将它们视作常量提出积分号外，复杂的矢量积分就瞬间转化为了求总电荷量 $q$ 的简单标量加法。
+	
+	2. \textbf{对称性的优先应用}：如果在此题中强行去积分垂直分量 $\mathrm{d}E_{\perp}$，不仅计算极其复杂且容易出错。\textcolor{red}{在电磁学中处理连续电荷分布问题时，“先找对称性”是第一原则。通过对称性直接判断出垂直分量抵消为零，可以省去一半以上的计算量。}
+	
+	3. \textbf{极值情况的物理检验}：推导出的公式可以通过极限情况来检验对错。例如：当 $x=0$ 时（考察点在环心处），由对称性显然可知场强相互抵消为0，代入公式 $E=0$ 符合预期；当 $x \gg a$ 时（距离极远），圆环可近似看作点电荷，公式分母的 $a^2$ 可忽略，退化为 $E \approx \frac{q}{4\pi\varepsilon_0 x^2}$，正好对应库仑定律。
+	
+	\vspace{2em}
+	
 	\item[\textbf{L7-5}]
 	均匀带电球面的场强.设有一均匀带电球面,半径为$R$,电荷为$+q$,求球面内外任一点场强.
 	
@@ -2555,6 +2717,60 @@ $x_2(t)$ 曲线在 $t=0$ 时刚好通过平衡位置且斜率为正（向正向�
 		\label{fig:L7-5}
 	\end{figure}
 	
+	\vspace{1em}
+	
+	\setcounter{equation}{0}
+	\renewcommand{\theHequation}{L7-5.\arabic{equation}}
+	
+	\textbf{答案： }
+	球面内任一点的场强为 $0$ ($r < R$)；\\
+	球面外任一点的场强大小为 $E = \frac{q}{4\pi\varepsilon_0 r^2}$ ($r > R$)，方向沿径向向外。
+	
+	\textbf{解答过程： }
+	由于电荷均匀分布在球面上，由空间对称性可知，产生的电场分布具有球对称性。即电场线必定沿径向，且在以球心 $O$ 为圆心、半径为 $r$ 的球面上，各点场强大小 $E$ 相等。
+	
+	根据高斯定理：
+	\begin{equation}\label{eq:L7-5-1}
+		\oint_S \vec{E} \cdot \mathrm{d}\vec{S} = \frac{1}{\varepsilon_0} \sum q_{\text{内}}
+	\end{equation}
+	
+	(1) 求球面内任一点 $P_1$ 的场强（设距球心 $r_1 < R$）：
+	过点 $P_1$ 作一半径为 $r_1$ 的同心球面 $S_1$ 作为闭合高斯面。由于电场强度方向垂直于高斯面且大小处处相等，高斯面上的电通量为：
+	\begin{align*}
+		\Phi_{e1} = \oint_{S_1} E \mathrm{d}S = E \cdot 4\pi r_1^2
+	\end{align*}
+	因为该高斯面完全在带电球面内部，其包围的净电荷量 $\sum q_{\text{内}} = 0$。代入高斯定理公式(\ref{eq:L7-5-1})得到：
+	\begin{equation}\label{eq:L7-5-2}
+		E \cdot 4\pi r_1^2 = 0
+	\end{equation}
+	由此解得，球面内各点场强为：
+	\begin{equation}\label{eq:L7-5-3}
+		E = 0 \quad (r < R)
+	\end{equation}
+	
+	(2) 求球面外任一点 $P_2$ 的场强（设距球心 $r_2 > R$）：
+	过点 $P_2$ 作一半径为 $r_2$ 的同心球面 $S_2$ 作为闭合高斯面。同理，高斯面上的电通量为：
+	\begin{align*}
+		\Phi_{e2} = \oint_{S_2} E \mathrm{d}S = E \cdot 4\pi r_2^2
+	\end{align*}
+	该高斯面将整个带电球面包围在内，因此其包围的总电荷量即为球面上携带的全部电荷，即 $\sum q_{\text{内}} = q$。代入高斯定理公式(\ref{eq:L7-5-1})得到：
+	\begin{equation}\label{eq:L7-5-4}
+		E \cdot 4\pi r_2^2 = \frac{q}{\varepsilon_0}
+	\end{equation}
+	由此解得，球面外各点场强大小为：
+	\begin{equation}\label{eq:L7-5-5}
+		E = \frac{q}{4\pi\varepsilon_0 r_2^2} \quad (r > R)
+	\end{equation}
+	因为带正电 ($+q$)，所以场强方向沿径向向外。可以发现，这与将全部电荷集中于球心的点电荷在外部空间产生的场强完全相同。
+	
+	\textbf{易混淆知识点： }
+	1. \textbf{高斯面的选择原则}：\textcolor{red}{应用高斯定理计算场强的前提是}\textbf{电荷分布具有高度对称性（球对称、轴对称或面对称）。}通过构造与之匹配的对称高斯面，使得待求的 $E$ 可以作为常量提出积分号 $\oint E \mathrm{d}S = E \oint \mathrm{d}S = ES$，从而极大简化计算。
+	
+	2. \textbf{带电球面与实心球体的区别}：这是一个非常经典的易错点。\textbf{本题是“均匀带电球面”（如金属球壳），电荷只分布在表面，所以内部高斯面无法包围任何电荷，导致内部场强恒为零。}如果是均匀带电的绝缘“实心球体”（即体电荷分布），其内部高斯面会包围一部分电荷，内部场强就不为零，而是与半径 $r$ 成正比增大。
+	
+	3. \textbf{球面处场强的非连续性}：在 $r=R$ 处，场强发生突变。从内部无限逼近表面时场强为 $0$；从外部无限逼近表面时场强为 $\frac{q}{4\pi\varepsilon_0 R^2}$。这种由于表面电荷层导致的场强突变现象在静电学中非常普遍。
+	
+	\vspace{2em}
 	
 	\item[\textbf{L7-7}]
 	无限长均匀带电圆柱面,半径为 $R$,电荷面密度 $\sigma>0$,求柱面内外任一点场强.
@@ -2565,6 +2781,66 @@ $x_2(t)$ 曲线在 $t=0$ 时刚好通过平衡位置且斜率为正（向正向�
 		\caption{例题L7-7辅助图}
 		\label{fig:L7-7}
 	\end{figure}
+	
+	\vspace{1em}
+	
+	\setcounter{equation}{0}
+	\renewcommand{\theHequation}{L7-7.\arabic{equation}}
+	
+	\textbf{答案： }
+	柱面内任一点的场强为 $0$ ($r < R$)；\\
+	柱面外任一点的场强大小为 $E = \frac{\sigma R}{\varepsilon_0 r}$ ($r > R$)，方向垂直于圆柱轴线沿径向向外。
+	
+	\textbf{解答过程： }
+	由于电荷均匀分布在无限长圆柱面上，由空间对称性可知，其产生的电场具有轴对称性。电场线必定垂直于圆柱轴线呈辐射状向外分布（因为 $\sigma > 0$），且在距离轴线为 $r$ 的同轴圆柱面上，各点场强大小 $E$ 相等。
+	
+	根据高斯定理：
+	\begin{equation}\label{eq:L7-7-1}
+		\oint_S \vec{E} \cdot \mathrm{d}\vec{S} = \frac{1}{\varepsilon_0} \sum q_{\text{内}}
+	\end{equation}
+	
+	(1) 求柱面内任一点的场强（设距轴线距离为 $r_1 < R$）：
+	取一段长为 $h$、半径为 $r_1$ 的同轴封闭圆柱面作为高斯面。该高斯面由上底面 $S_1$、下底面 $S_2$ 和侧面 $S_3$ 组成。
+	\textbf{由于电场线平行于上下底面，穿过上下底面的电通量为 $0$。}电场线垂直穿过侧面，故穿过整个高斯面的总电通量仅为\textbf{侧面的电通量：}
+	\begin{align*}
+		\Phi_{e1} = \oint_{S} \vec{E} \cdot \mathrm{d}\vec{S} = \int_{S_3} E \mathrm{d}S = E \cdot 2\pi r_1 h
+	\end{align*}
+	因为该高斯面完全在带电圆柱面内部，其包围的净电荷量 $\sum q_{\text{内}} = 0$。代入高斯定理公式(\ref{eq:L7-7-1})得到：
+	\begin{equation}\label{eq:L7-7-2}
+		E \cdot 2\pi r_1 h = 0
+	\end{equation}
+	由此解得，柱面内各点场强为：
+	\begin{equation}\label{eq:L7-7-3}
+		E = 0 \quad (r < R)
+	\end{equation}
+	
+	(2) 求柱面外任一点的场强（设距轴线距离为 $r_2 > R$）：
+	取一段长为 $h$、半径为 $r_2$ 的同轴封闭圆柱面作为高斯面。\textbf{同理，穿过上下底面 $S'_1$、$S'_2$ 的电通量为 $0$}，总电通量即为穿过侧面 $S'_3$ 的电通量：
+	\begin{align*}
+		\Phi_{e2} = E \cdot 2\pi r_2 h
+	\end{align*}
+	该高斯面内部包围的电荷仅分布在半径为 $R$、长为 $h$ 的那一段真实带电圆柱面上。因此，高斯面内包围的总电荷量为：
+	\begin{align*}
+		\sum q_{\text{内}} = \sigma S_{\text{带电}} = \sigma \cdot 2\pi R h
+	\end{align*}
+	代入高斯定理公式(\ref{eq:L7-7-1})得到：
+	\begin{equation}\label{eq:L7-7-4}
+		E \cdot 2\pi r_2 h = \frac{\sigma \cdot 2\pi R h}{\varepsilon_0}
+	\end{equation}
+	化简解得，柱面外各点场强大小为：
+	\begin{equation}\label{eq:L7-7-5}
+		E = \frac{\sigma R}{\varepsilon_0 r_2} \quad (r > R)
+	\end{equation}
+	由于面电荷密度 $\sigma > 0$，场强方向垂直于圆柱轴线向外。
+	
+	\textbf{易混淆知识点： }
+	1. \textbf{高斯面内包围电荷的计算}：在计算柱面外（$r_2 > R$）高斯面内的电荷时，极易错误地将电荷量写为 $\sigma \cdot 2\pi r_2 h$。必须牢记，电荷只存在于真实的带电体（半径为 $R$ 的圆柱面）上，高斯面内部只有半径为 $R$ 的那部分柱面上有电荷，其余空间是真空。
+	
+	2. \textbf{不同带电体场强的空间衰减规律}：对于无限大均匀带电平面，场强与距离无关（常数）；对于无限长均匀带电直线或圆柱面，场强与距离成反比（$E \propto 1/r$）；对于点电荷或带电球面，场强与距离的平方成反比（$E \propto 1/r^2$）。在检查推导结果时，可以通过量纲和距离的依赖关系来验证正确性。
+	
+	3. \textbf{圆柱面高斯面底面通量的处理}：必须在解答中明确指出，\textbf{之所以只计算侧面积的通量，是因为上下底面的法向量与电场方向垂直}，导致点积 $\vec{E} \cdot \mathrm{d}\vec{S} = 0$。如果跳过这一步直接写面积，不仅物理过程不完整，在考试中也极其容易丢掉步骤分。
+	
+	\vspace{2em}
 	
 	\item[\textbf{L7-9}]
 	有两个厚度不计的平行无限大均匀带电平板 $A$、$B$,电荷面密度分别为
