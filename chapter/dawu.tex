@@ -2254,45 +2254,62 @@ $x_2(t)$ 曲线在 $t=0$ 时刚好通过平衡位置且斜率为正（向正向�
 \renewcommand{\theHequation}{7-9.\arabic{equation}}
 
 \textbf{答案： }
-圆心 $O$ 处的电场强度大小为 $E = \frac{Q}{\pi^2 \varepsilon_0 R^2}$，方向沿 $y$ 轴负方向。
+圆心 $O$ 处的电场强度大小为 $E = \frac{Q}{\pi^2 \varepsilon_0 R^2}$，方向沿 $y$ 轴负方向。矢量形式为 $\mathbf{E} = -\frac{Q}{\pi^2\varepsilon_0 R^2} \mathbf{j}$。
 
 \textbf{解答过程： }
-建立如图所示的直角坐标系。上半圆环（第二象限部分）带正电荷 $+Q$，下半圆环（第三象限部分）带负电荷 $-Q$。它们在圆心 $O$ 处产生的电场可以由电荷元积分或对称性求出。
-由于半圆环总长度为 $\pi R$，上下两部分各占四分之一圆弧，其长度均为 $\frac{\pi R}{2}$。线电荷密度大小为：
+这道题需要通过微元法（取电荷元 $dq$）并结合对称性来进行积分求解。
+
+\textbf{1. 分析对称性与建立坐标系}
+如图所示，半圆弧位于 $y$ 轴左侧。上半部分带正电 $+Q$，下半部分带负电 $-Q$。
+
+\begin{itemize}
+	\item 对于上半圆弧上的任意一个微小电荷元 $+dq$，它在圆心 $O$ 处产生的电场 $d\mathbf{E}_+$ 指向第四象限。
+	\item 在下半圆弧对称位置上，会存在一个电荷元 $-dq$，它在圆心 $O$ 处产生的电场 $d\mathbf{E}_-$ 指向第三象限。
+	\item 分解这两个电场：\textbf{它们的水平分量（$x$ 轴方向）大小相等、方向相反，完美相互抵消；而它们的竖直分量（$y$ 轴方向）都沿着负 $y$ 轴方向，会相互叠加。}
+	\item 因此，圆心 $O$ 处的总电场方向\textbf{必定是竖直向下}（沿负 $y$ 轴方向）。
+\end{itemize}
+
+\textbf{2. 求解上半圆弧产生的电场}
+首先求出线电荷密度 $\lambda$。上半圆弧的长度是 $L = \frac{1}{2}\pi R$，所以它的线电荷密度为：
 \begin{equation}\label{eq:7-9-1}
-	\lambda = \frac{Q}{\pi R / 2} = \frac{2Q}{\pi R}
+	\lambda = \frac{Q}{\frac{\pi R}{2}} = \frac{2Q}{\pi R}
 \end{equation}
-在上半圆环上任取电荷元 $\mathrm{d}q = \lambda R \mathrm{d}\theta$（设极角为 $\theta$，$\theta \in [\frac{\pi}{2}, \pi]$），其在 $O$ 点产生的微场强为：
-\begin{align*}
-	\mathrm{d}\vec{E}_+ = \frac{1}{4\pi\varepsilon_0} \frac{\mathrm{d}q}{R^2} (-\cos\theta \hat{i} - \sin\theta \hat{j}) = \frac{\lambda \mathrm{d}\theta}{4\pi\varepsilon_0 R} (-\cos\theta \hat{i} - \sin\theta \hat{j})
-\end{align*}
-积分求得上半圆环在 $O$ 点产生的电场分量：
-\begin{align*}
-	E_{+x} &= \int_{\pi/2}^{\pi} \frac{\lambda}{4\pi\varepsilon_0 R} (-\cos\theta) \mathrm{d}\theta = \frac{\lambda}{4\pi\varepsilon_0 R} [-\sin\theta]_{\pi/2}^{\pi} = \frac{\lambda}{4\pi\varepsilon_0 R} \\
-	E_{+y} &= \int_{\pi/2}^{\pi} \frac{\lambda}{4\pi\varepsilon_0 R} (-\sin\theta) \mathrm{d}\theta = \frac{\lambda}{4\pi\varepsilon_0 R} [\cos\theta]_{\pi/2}^{\pi} = -\frac{\lambda}{4\pi\varepsilon_0 R}
-\end{align*}
-同理，下半圆环带负电，电荷元 $\mathrm{d}q = -\lambda R \mathrm{d}\theta$（$\theta \in [\pi, \frac{3\pi}{2}]$），其在 $O$ 点产生的电场分量为：
-\begin{align*}
-	E_{-x} &= \int_{\pi}^{3\pi/2} \frac{-\lambda}{4\pi\varepsilon_0 R} (-\cos\theta) \mathrm{d}\theta = \frac{\lambda}{4\pi\varepsilon_0 R} [\sin\theta]_{\pi}^{3\pi/2} = -\frac{\lambda}{4\pi\varepsilon_0 R} \\
-	E_{-y} &= \int_{\pi}^{3\pi/2} \frac{-\lambda}{4\pi\varepsilon_0 R} (-\sin\theta) \mathrm{d}\theta = \frac{\lambda}{4\pi\varepsilon_0 R} [-\cos\theta]_{\pi}^{3\pi/2} = -\frac{\lambda}{4\pi\varepsilon_0 R}
-\end{align*}
-根据场强叠加原理，圆心 $O$ 处的总电场为：
+我们设定一个角 $\theta$（从负 $x$ 轴向上偏转的角度，$\theta \in [0, \pi/2]$）。在这个位置取一段微小弧长 $dl = R d\theta$，它所带的微小电荷量为：
 \begin{equation}\label{eq:7-9-2}
-	E_x = E_{+x} + E_{-x} = \frac{\lambda}{4\pi\varepsilon_0 R} - \frac{\lambda}{4\pi\varepsilon_0 R} = 0
+	dq = \lambda dl = \frac{2Q}{\pi R} R d\theta = \frac{2Q}{\pi} d\theta
 \end{equation}
+这个点电荷 $dq$ 在圆心 $O$ 处产生的电场大小为：
+\begin{align*}
+	dE = \frac{1}{4\pi\varepsilon_0} \frac{dq}{R^2}
+\end{align*}
+我们只关心它在竖直方向（$y$ 轴）的分量 $dE_y$。根据几何关系，这个分量的大小为：
 \begin{equation}\label{eq:7-9-3}
-	E_y = E_{+y} + E_{-y} = -\frac{\lambda}{4\pi\varepsilon_0 R} - \frac{\lambda}{4\pi\varepsilon_0 R} = -\frac{\lambda}{2\pi\varepsilon_0 R}
+	dE_y = dE \sin\theta = \frac{1}{4\pi\varepsilon_0 R^2} \left( \frac{2Q}{\pi} d\theta \right) \sin\theta
 \end{equation}
-将公式(\ref{eq:7-9-1})代入公式(\ref{eq:7-9-3})，得总场强大小：
+对整个上半圆弧（$\theta$ 从 $0$ 到 $\pi/2$）进行积分：
+\begin{align*}
+	E_{y1} &= \int_{0}^{\pi/2} \frac{2Q}{4\pi^2\varepsilon_0 R^2} \sin\theta d\theta \\
+	&= \frac{Q}{2\pi^2\varepsilon_0 R^2} \int_{0}^{\pi/2} \sin\theta d\theta \\
+	&= \frac{Q}{2\pi^2\varepsilon_0 R^2} [-\cos\theta]_0^{\pi/2} \\
+	&= \frac{Q}{2\pi^2\varepsilon_0 R^2} (0 - (-1)) = \frac{Q}{2\pi^2\varepsilon_0 R^2}
+\end{align*}
+方向竖直向下。
+
+\textbf{3. 叠加求总场强}
+根据我们第一步的对称性分析，下半圆弧（带负电 $-Q$）在圆心 $O$ 处产生的竖直向下的电场，其大小与上半圆弧完全相同。
+因此，总电场大小为：
 \begin{equation}\label{eq:7-9-4}
-	E = |E_y| = \frac{1}{2\pi\varepsilon_0 R} \left(\frac{2Q}{\pi R}\right) = \frac{Q}{\pi^2 \varepsilon_0 R^2}
+	E = 2 \times E_{y1} = 2 \times \frac{Q}{2\pi^2\varepsilon_0 R^2} = \frac{Q}{\pi^2\varepsilon_0 R^2}
 \end{equation}
-方向沿 $y$ 轴负向。
+最终答案：圆心 $O$ 处的电场强度大小为 $\frac{Q}{\pi^2\varepsilon_0 R^2}$，方向沿 $y$ 轴负向。写成矢量形式为：
+\begin{equation}\label{eq:7-9-5}
+	\mathbf{E} = -\frac{Q}{\pi^2\varepsilon_0 R^2} \mathbf{j}
+\end{equation}
 
 \textbf{易混淆知识点： }
-1. \textbf{线电荷密度的取值}：电荷 $Q$ 只分布在四分之一圆弧（长度为 $\pi R / 2$）上，而不是整个半圆，因此线密度为 $\lambda = \frac{2Q}{\pi R}$。如果错算成 $\frac{Q}{\pi R}$ 会导致最终结果相差两倍。
+1. \textbf{积分变量与坐标系的巧妙定义}：图解方法中将角度 $\theta$ 定义为“从负 $x$ 轴向上偏转的角度”，且积分区间设定为 $[0, \pi/2]$。这种处理方式比直接使用标准极坐标系（从正 $x$ 轴起算，区间为 $[\pi/2, \pi]$）更加简便直观，但在进行这种自定义时，必须确保投影关系（如这里的 $dE_y = dE \sin\theta$）与你的定义严密吻合。
 
-2. \textbf{对称性的矢量叠加}：计算总场强时，由对称性可以直接判断出上半环正电荷与下半环负电荷在 $x$ 轴方向上产生的电场大小相等、方向相反，完全抵消；而在 $y$ 轴方向上，两者产生的电场均指向 $y$ 轴负方向，相互叠加。熟练利用对称性可以大幅简化积分步骤。
+2. \textbf{线电荷密度的分母极易算错}：\textbf{在计算 $\lambda$ 时，由于带电部分分别只占据了整个圆周的“四分之一”（上半弧和下半弧各自的长度为 $\frac{\pi R}{2}$），}\textcolor{red}{故分母必须是 $\frac{\pi R}{2}$，从而得到 $\lambda = \frac{2Q}{\pi R}$。}许多人在做题时会本能地将其除以半圆周长 $\pi R$，从而遗漏了分子上的 $2$。
 
 \vspace{2em}
 
@@ -2352,6 +2369,69 @@ $x_2(t)$ 曲线在 $t=0$ 时刚好通过平衡位置且斜率为正（向正向�
 2. \textbf{代数表达式的普适性}：在推导时，默认先假设 $\sigma_1, \sigma_2 > 0$ 并在坐标轴上定出矢量正负。最终得出的三个区域的代数表达式实际上具有绝对的通用性：如果实际情况中某平面带有负电（如电容器极板），直接将 $\sigma$ 连同负号代入相应的表达式中即可自然获得正确的方向，无需重新画图判断。
 
 \vspace{2em}
+
+\textbf{7-13题解： }
+\setcounter{equation}{0}
+\renewcommand{\theHequation}{7-13.\arabic{equation}}
+
+\textbf{答案： }
+与点电荷 $q$ 距离为 $r$ 的 $P'$ 点的电势为 $V_{P'} = \frac{q}{4\pi\varepsilon_0} \left( \frac{1}{r} - \frac{1}{R} \right)$。
+
+\textbf{解答过程： }
+\textbf{方法一：电势定义积分法（微积分法）}
+根据静电场中电势的定义，空间某点 $P'$ 的电势等于把单位正电荷从该点移到电势零参考点 $P$ 的过程中电场力所作的功。
+设点电荷 $q$ 到考察点的径向距离为 $x$，则点电荷在距离为 $x$ 处产生的电场强度大小为：
+\begin{equation}\label{eq:7-13-1}
+	E = \frac{q}{4\pi\varepsilon_0 x^2}
+\end{equation}
+方向沿径向。从待求点 $P'$（径向距离为 $r$）沿径向积分到电势零点 $P$（径向距离为 $R$），两点间的电势差定义为：
+\begin{align*}
+	V_{P'} - V_P &= \int_{P'}^{P} \vec{E} \cdot \mathrm{d}\vec{l} = \int_{r}^{R} \frac{q}{4\pi\varepsilon_0 x^2} \mathrm{d}x
+\end{align*}
+题意已知点 $P$ 被选作电势零点，即 $V_P = 0$。代入上式进行定积分计算：
+\begin{equation}\label{eq:7-13-2}
+	V_{P'} - 0 = \frac{q}{4\pi\varepsilon_0} \left[ -\frac{1}{x} \right]_{r}^{R}
+\end{equation}
+代入上下限，化简得到：
+\begin{align*}
+	V_{P'} = \frac{q}{4\pi\varepsilon_0} \left( -\frac{1}{R} - \left(-\frac{1}{r}\right) \right) = \frac{q}{4\pi\varepsilon_0} \left( \frac{1}{r} - \frac{1}{R} \right)
+\end{align*}
+
+\textbf{方法二：电势差不变法（相对电势法）}
+\textcolor{red}{电场中任意两点之间的电势差是绝对的，与电势零点的选择无关。}
+通常情况下，我们默认无穷远处为电势零点。此时，距离点电荷 $q$ 为 $r$ 处的电势公式为：$V = \frac{q}{4\pi\varepsilon_0 r}$。
+若设无穷远处为标准零点，那么：
+$P$ 点（距离为 $R$）的“绝对电势”为：
+\begin{equation}\label{eq:7-13-3}
+	V_P = \frac{q}{4\pi\varepsilon_0 R}
+\end{equation}
+$P'$ 点（距离为 $r$）的“绝对电势”为：
+\begin{equation}\label{eq:7-13-4}
+	V_{P'} = \frac{q}{4\pi\varepsilon_0 r}
+\end{equation}
+两点之间的电势差为：
+\begin{align*}
+	U_{P'P} = V_{P'} - V_P = \frac{q}{4\pi\varepsilon_0 r} - \frac{q}{4\pi\varepsilon_0 R} = \frac{q}{4\pi\varepsilon_0} \left( \frac{1}{r} - \frac{1}{R} \right)
+\end{align*}
+题目现在规定 $P$ 点为新的电势零点，即令 $V_P^{new} = 0$。\textbf{根据电势差不变的原则}，新的 $P'$ 点电势 $V_{P'}^{new}$ 必须满足：
+\begin{align*}
+	V_{P'}^{new} - V_P^{new} = U_{P'P}
+\end{align*}
+代入已知量：
+\begin{equation}\label{eq:7-13-5}
+	V_{P'}^{new} - 0 = \frac{q}{4\pi\varepsilon_0} \left( \frac{1}{r} - \frac{1}{R} \right)
+\end{equation}
+从而得到 $V_{P'}^{new} = \frac{q}{4\pi\varepsilon_0} \left( \frac{1}{r} - \frac{1}{R} \right)$。
+
+\textbf{法一与法二的对比：}
+ \textbf{方法一（积分法）}是从静电场最根本的物理定义（电场力做功）出发，普适性极强。无论电场分布多么复杂，只要能写出场强表达式，就能通过设定上下限直接积出结果。缺点是计算过程相对繁琐，高度依赖微积分基础，容易在积分上下限或正负号上出错。
+ 
+ \textbf{方法二（电势差不变法）}是一种非常巧妙的代数替换技巧。它利用了\textbf{“电势差是绝对的”}这一物理核心性质，\textbf{通过引入已知的标准结论（以无穷远为零点的点电势公式），直接避开了复杂的微积分运算。}优点是计算简便、思路清晰，不易出现符号错误；缺点是它依赖于你已经熟记了该电荷分布在标准零点下的电势公式。
+
+\textbf{易混淆知识点： }
+1. \textbf{电势零点的相对性与电势差的绝对性}：电势的零点是可以人为任意选取的，\textbf{随着零点的改变，空间各点的电势绝对数值都会加上或减去同一个常数（发生整体平移）。}\textcolor{red}{但是，任意两点之间的“高度差”（即电势差）就像山峰之间的相对高度一样，是绝对不变的。}这也是方法二能够成立的核心物理依据。
+
+2. \textbf{电势定义式中积分上下限的顺序}：在方法一中使用积分法 $\int_A^B \vec{E} \cdot \mathrm{d}\vec{l}$ 计算某点电势时，\textcolor{red}{积分的起点（下限）必须是待求点 $P'$（即 $x=r$），积分的终点（上限）必须是规定的电势零点 $P$（即 $x=R$）。}如果将上下限写反，会导致求出的电势带有多余的负号。
 
 \newpage
 
