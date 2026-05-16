@@ -2331,9 +2331,9 @@ $x_2(t)$ 曲线在 $t=0$ 时刚好通过平衡位置且斜率为正（向正向�
 
 (\textcolor{red}{注：}该公式在L7-8处，课本\textbf{P172}页)
 
-方向垂直于带电平面。若 $\sigma > 0$，场强指向远离平面的方向；若 $\sigma < 0$，场强指向平面的方向。
+\textbf{方向垂直于带电平面。若 $\sigma > 0$，场强指向远离平面的方向；若 $\sigma < 0$，场强指向平面的方向。}
 
-设平行平面所在位置的法线方向（水平向右）为正向单位矢量 $\vec{n}$。
+设平行平面所在位置的法线方向\textcolor{red}{（水平向右）}为正向单位矢量 $\vec{n}$。
 左侧平面（电荷密度 $\sigma_1$）在空间产生的匀强电场分布为：
 位于平面左侧时：$\vec{E}_{1L} = -\frac{\sigma_1}{2\varepsilon_0}\vec{n}$
 位于平面右侧时：$\vec{E}_{1R} = \frac{\sigma_1}{2\varepsilon_0}\vec{n}$
@@ -2342,7 +2342,7 @@ $x_2(t)$ 曲线在 $t=0$ 时刚好通过平衡位置且斜率为正（向正向�
 位于平面左侧时：$\vec{E}_{2L} = -\frac{\sigma_2}{2\varepsilon_0}\vec{n}$
 位于平面右侧时：$\vec{E}_{2R} = \frac{\sigma_2}{2\varepsilon_0}\vec{n}$
 
-根据电场强度的叠加原理，空间任一点的总场强等于两平面在该点单独产生场强的矢量和：
+\textbf{根据电场强度的叠加原理，空间任一点的总场强等于两平面在该点单独产生场强的矢量和：}
 \begin{equation}\label{eq:7-11-2}
 	\vec{E} = \vec{E}_1 + \vec{E}_2
 \end{equation}
@@ -2432,6 +2432,126 @@ $P'$ 点（距离为 $r$）的“绝对电势”为：
 1. \textbf{电势零点的相对性与电势差的绝对性}：电势的零点是可以人为任意选取的，\textbf{随着零点的改变，空间各点的电势绝对数值都会加上或减去同一个常数（发生整体平移）。}\textcolor{red}{但是，任意两点之间的“高度差”（即电势差）就像山峰之间的相对高度一样，是绝对不变的。}这也是方法二能够成立的核心物理依据。
 
 2. \textbf{电势定义式中积分上下限的顺序}：在方法一中使用积分法 $\int_A^B \vec{E} \cdot \mathrm{d}\vec{l}$ 计算某点电势时，\textcolor{red}{积分的起点（下限）必须是待求点 $P'$（即 $x=r$），积分的终点（上限）必须是规定的电势零点 $P$（即 $x=R$）。}如果将上下限写反，会导致求出的电势带有多余的负号。
+
+\vspace{2em}
+
+\textbf{7-15题解： }
+\setcounter{equation}{0}
+\renewcommand{\theHequation}{7-15.\arabic{equation}}
+
+\textbf{答案： }
+(1) 试验电荷 $q$ 由 $a$ 点移动到 $d$ 点的过程中，电场力做的功为 $0$。\\
+(2) 从 $d$ 点移动到无限远处的过程中，电场力做的功为 $W_{d\infty} = \frac{qQ}{4\pi\varepsilon_0 R}$。
+
+\textbf{解答过程： }
+(1) 静电场是保守力场，电场力做功只与电荷的初、末位置有关，而与电荷移动的具体路径无关。电场力做功的公式可以表示为：
+\begin{equation}\label{eq:7-15-1}
+	W_{AB} = q(V_A - V_B)
+\end{equation}
+在点电荷 $+Q$ 产生的电场中，距离其为 $r$ 处的电势公式为：
+\begin{equation}\label{eq:7-15-2}
+	V = \frac{Q}{4\pi\varepsilon_0 r}
+\end{equation}
+由图可知，\textbf{$a$ 点和 $d$ 点均位于以 $+Q$ 为圆心、半径为 $R$ 的圆弧上。因此，这两点处于同一个等势面上，它们的电势相等：}
+\begin{align*}
+	V_a = V_d = \frac{Q}{4\pi\varepsilon_0 R}
+\end{align*}
+根据公式(\ref{eq:7-15-1})，试验电荷 $q$ 从 $a$ 移动到 $d$ 电场力做功为：
+\begin{align*}
+	W_{ad} = q(V_a - V_d) = 0
+\end{align*}
+
+(2) 规定无限远处的电势为零，即 $V_\infty = 0$。
+试验电荷 $q$ 从 $d$ 点移动到无限远处，电场力做功为：
+\begin{align*}
+	W_{d\infty} &= q(V_d - V_\infty) \\
+	&= q\left(\frac{Q}{4\pi\varepsilon_0 R} - 0\right) \\
+	&= \frac{qQ}{4\pi\varepsilon_0 R}
+\end{align*}
+
+\textbf{易混淆知识点： }
+1. \textbf{保守力做功与路径无关}：题目特意强调了“沿整个圆弧的 3/4 圆弧轨道”移动，这是一个极具迷惑性的条件。如果不理解静电场的保守性，极易顺着题干的暗示去尝试通过力与路径的线积分 $\int \vec{F} \cdot \mathrm{d}\vec{l}$ 去计算做功，这不仅计算极其复杂（涉及到力的方向时刻改变），还容易算错。\textcolor{red}{牢记：在静电场中求做功，永远优先考虑电势差 $W=qU$。}
+
+2. \textbf{电势的符号代入}：\textcolor{red}{在使用 $W_{AB} = q(V_A - V_B)$ 时，所有的电量（包括场源电荷 $Q$ 和试验电荷 $q$）都需要严格带入正负号。}本题虽然都是正号，但\textbf{在遇到带负电的粒子时，必须连同符号一起代入计算，否则会导致做正功还是负功的判断完全相反。}
+
+\subsection*{7-14和7-15算功时的差异来源}
+7-14 和 7-15 的公式之所以一个是“末减初”，一个是“初减末”，根本原因在于题目问的\textbf{“做功主体”}不同：
+\begin{itemize}
+	\item 7-14 问的是：\textbf{“外力”}做功
+	\item 7-15 问的是：\textbf{“电场力”}做功
+\end{itemize}
+
+这两个力做功的物理意义和计算符号是刚好相反的。我们来详细拆解一下：
+
+\textbf{1. 电场力做功（对应 7-15） $\rightarrow$ 必须是“初减末”}
+
+电场力是一种保守力（和重力一样）。在物理学中，保守力做功的定义是：\textbf{保守力做功等于系统势能的减少量}。
+
+你可以想象一个正电荷在电场中顺着电场线“顺流而下”，电场力在推着它走。此时电场力做正功，电荷的电势能就会变小（就像石头从高处掉下来，重力做正功，重力势能减少）。
+
+因为是“减少量”，所以公式是：
+$$W_{\text{电场力}} = E_{p(\text{初})} - E_{p(\text{末})} = qV_{\text{初}} - qV_{\text{末}} = q(V_{\text{初}} - V_{\text{末}})$$
+
+\textbf{结论}：\textcolor{red}{求电场力做功，一律用初态的能量（电势）减去末态的能量（电势）。}
+
+\textbf{2. 外力做功（对应 7-14） $\rightarrow$ 必须是“末减初”}
+
+题目中说“将电荷从无穷远处移到中心 $O$ 处”，在大学物理中，这隐含着一个条件：\textbf{缓慢移动}（也就是动能不发生改变，始终为零）。
+
+既然动能不增加，根据动能定理，总功必须为零。这意味着外力做的功，必须刚好抵消电场力做的功：
+$$W_{\text{外力}} + W_{\text{电场力}} = 0 \implies W_{\text{外力}} = - W_{\text{电场力}}$$
+
+外力做功的作用是什么？是克服电场力，把电势能“硬塞”给系统（就像你用手把石头举高，你克服重力做正功，增加了系统的重力势能）。
+
+所以，外力做功等于\textbf{系统势能的增加量}。
+
+因为是“增加量”，所以公式是：
+$$W_{\text{外力}} = \Delta E_p = E_{p(\text{末})} - E_{p(\text{初})} = qV_{\text{末}} - qV_{\text{初}} = q(V_{\text{末}} - V_{\text{初}})$$
+
+\textbf{结论}：\textcolor{red}{求外力做功，一律用末态的能量（电势）减去初态的能量（电势）。}
+
+\vspace{2em}
+
+\textbf{7-17题解： }
+\setcounter{equation}{0}
+\renewcommand{\theHequation}{7-17.\arabic{equation}}
+
+\textbf{答案： }
+$P$ 点的电势为 $V = \frac{q}{8\pi\varepsilon_0 l} \ln\left(1 + \frac{2l}{a}\right)$ （或写为 $V = \frac{q}{8\pi\varepsilon_0 l} \ln\frac{a+2l}{a}$）。
+
+\textbf{解答过程： }
+电荷 $q$ 均匀分布在长度为 $2l$ 的细杆上，则细杆的线电荷密度为：
+\begin{equation}\label{eq:7-17-1}
+	\lambda = \frac{q}{2l}
+\end{equation}
+由于细杆是连续带电体，需要使用微元积分法求解电势。建立一维坐标系：设 $P$ 点为坐标原点 $O(0,0)$，细杆所在直线为 $x$ 轴。根据题意，杆端距离 $P$ 点为 $a$，则细杆在坐标轴上占据的区间为 $[a, a+2l]$。
+
+在细杆上坐标为 $x$ 处，取一微小长度元 $\mathrm{d}x$。该线元上的微小电荷量为：
+\begin{align*}
+	\mathrm{d}q = \lambda \mathrm{d}x = \frac{q}{2l} \mathrm{d}x
+\end{align*}
+可以将该微小电荷元视为点电荷，它在原点 $P$ 处产生的微小电势（设无限远处为电势零点）为：
+\begin{equation}\label{eq:7-17-2}
+	\mathrm{d}V = \frac{1}{4\pi\varepsilon_0} \frac{\mathrm{d}q}{x} = \frac{1}{4\pi\varepsilon_0} \frac{\lambda \mathrm{d}x}{x}
+\end{equation}
+根据电势的叠加原理，$P$ 点的总电势等于杆上所有微电荷元在 $P$ 点产生电势的积分。积分区间从杆的近端 $x=a$ 到远端 $x=a+2l$：
+\begin{align*}
+	V &= \int_{a}^{a+2l} \mathrm{d}V \\
+	&= \int_{a}^{a+2l} \frac{\lambda}{4\pi\varepsilon_0} \frac{1}{x} \mathrm{d}x
+\end{align*}
+将常数项提出积分号，并计算定积分：
+\begin{equation}\label{eq:7-17-3}
+	V = \frac{\lambda}{4\pi\varepsilon_0} \left[ \ln x \right]_{a}^{a+2l} = \frac{\lambda}{4\pi\varepsilon_0} (\ln(a+2l) - \ln a) = \frac{\lambda}{4\pi\varepsilon_0} \ln\left(\frac{a+2l}{a}\right)
+\end{equation}
+最后，将线密度 $\lambda = \frac{q}{2l}$ 代入公式(\ref{eq:7-17-3})，得到最终电势表达式：
+\begin{equation}\label{eq:7-17-4}
+	V = \frac{q}{8\pi\varepsilon_0 l} \ln\left(\frac{a+2l}{a}\right) = \frac{q}{8\pi\varepsilon_0 l} \ln\left(1 + \frac{2l}{a}\right)
+\end{equation}
+
+\textbf{易混淆知识点： }
+1. \textbf{连续带电体不能等效为重心点电荷}：求解\textbf{连续带电体的电场或电势}时，初学者极易犯的\textbf{错误是“将全部电荷集中在杆的几何中心处”}，从而直接得出 $V = \frac{q}{4\pi\varepsilon_0(a+l)}$ 的错误答案。在静电学中，\textbf{只有球体在外侧空间的场分布可以等效为球心点电荷，}\textcolor{red}{其他形状的带电体（如细杆、圆环、圆盘等）绝不可简单等效，必须老老实实进行微元积分。}
+
+2. \textbf{坐标系建立的技巧性}：本题的积分非常依赖坐标系的选取。\textbf{将所求点 $P$ 设为坐标原点是最优解，这样积分表达式分母就是简单的 $x$；}如果将杆的左端或中点设为原点，积分分母会变成 $(x_0-x)$ 或类似形式，虽然也能算出正确结果，但极易在求导或积分换元时弄错正负号。
 
 \newpage
 
