@@ -2636,6 +2636,43 @@ $P$ 点的电势为 $V = \frac{q}{8\pi\varepsilon_0 l} \ln\left(1 + \frac{2l}{a}
 
 \newpage
 
+\subsection{习题10}
+\begin{enumerate}
+	\item [\textbf{10-20}] 有两根相距为$a$的无限场平行直导线，它们通以大小相等流向相反的电流，且电流均以$\frac{\mathrm{d}I}{\mathrm{d}t}$的变化率增长，若有一边长为$a$的正方形线圈与两导线处于同一平面内，如习题10-20图所示，求线圈中的感应电动势.
+	% TODO: \usepackage{graphicx} required
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.33\linewidth]{figure/10-20}
+		\caption{图10-20}
+		\label{fig:10-20}
+	\end{figure}
+	
+	\item [\textbf{10-22}] 如习题10‑22图所示，在一无限长直导线附近放置一个矩形导线线框，该线框在垂直于导线方向上以匀速度$\boldsymbol{v}$向右移动，求在图示位置处线框中感应电动势的大小和方向。
+	% TODO: \usepackage{graphicx} required
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.3\linewidth]{figure/10-22}
+		\caption{图10-22}
+		\label{fig:10-22}
+	\end{figure}
+	
+	\item [\textbf{10-23}] 导线ab长为l，绕过O点的垂直轴以匀角速$\boldsymbol{\omega}$转动，$aO=\boldsymbol{\frac{1}{3}l}$，磁感应强度$\boldsymbol{B}$平行于转轴，如习题10‑23图所示，求：
+	\begin{itemize}
+		\item [(1)] ab两端的电势差；
+		\item [(2)] ab两端哪端电势较高？
+	\end{itemize}
+	% TODO: \usepackage{graphicx} required
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.4\linewidth]{figure/10-23}
+		\caption{图10-23}
+		\label{fig:10-23}
+	\end{figure}
+	
+\end{enumerate}
+
+\newpage
+
 \section{课本例题重现}
 
 \subsection*{声明：}
@@ -3106,11 +3143,11 @@ $P$ 点的电势为 $V = \frac{q}{8\pi\varepsilon_0 l} \ln\left(1 + \frac{2l}{a}
 	由于面电荷密度 $\sigma > 0$，场强方向垂直于圆柱轴线向外。
 	
 	\textbf{易混淆知识点： }
-	1. \textbf{高斯面内包围电荷的计算}：在计算柱面外（$r_2 > R$）高斯面内的电荷时，极易错误地将电荷量写为 $\sigma \cdot 2\pi r_2 h$。必须牢记，电荷只存在于真实的带电体（半径为 $R$ 的圆柱面）上，高斯面内部只有半径为 $R$ 的那部分柱面上有电荷，其余空间是真空。
+	1. \textbf{高斯面内包围电荷的计算}：在计算柱面外（$r_2 > R$）高斯面内的电荷时，\textcolor{red}{极易错误地将电荷量写为 $\sigma \cdot 2\pi r_2 h$}\textbf{。必须牢记，电荷只存在于真实的带电体（半径为 $R$ 的圆柱面）上，高斯面内部只有半径为 $R$ 的那部分柱面上有电荷，其余空间是真空。}
 	
-	2. \textbf{不同带电体场强的空间衰减规律}：对于无限大均匀带电平面，场强与距离无关（常数）；对于无限长均匀带电直线或圆柱面，场强与距离成反比（$E \propto 1/r$）；对于点电荷或带电球面，场强与距离的平方成反比（$E \propto 1/r^2$）。在检查推导结果时，可以通过量纲和距离的依赖关系来验证正确性。
+	2. \textbf{不同带电体场强的空间衰减规律}：对于无限大均匀带电平面，场强与距离无关（常数）；\textbf{对于无限长均匀带电直线或圆柱面，场强与距离成反比（$E \propto 1/r$）；对于点电荷或带电球面，场强与距离的平方成反比（$E \propto 1/r^2$）。}在检查推导结果时，可以通过量纲和距离的依赖关系来验证正确性。
 	
-	3. \textbf{圆柱面高斯面底面通量的处理}：必须在解答中明确指出，\textbf{之所以只计算侧面积的通量，是因为上下底面的法向量与电场方向垂直}，导致点积 $\vec{E} \cdot \mathrm{d}\vec{S} = 0$。如果跳过这一步直接写面积，不仅物理过程不完整，在考试中也极其容易丢掉步骤分。
+	3. \textbf{圆柱面高斯面底面通量的处理}：必须在解答中明确指出，\textbf{之所以只计算侧面积的通量}，\textcolor{red}{是因为上下底面的法向量与电场方向垂直}，导致点积 $\vec{E} \cdot \mathrm{d}\vec{S} = 0$。如果跳过这一步直接写面积，不仅物理过程不完整，在考试中也极其容易丢掉步骤分。
 	
 	\vspace{2em}
 	
@@ -3130,30 +3167,194 @@ $P$ 点的电势为 $V = \frac{q}{8\pi\varepsilon_0 l} \ln\left(1 + \frac{2l}{a}
 		\label{fig:L7-9}
 	\end{figure}
 	
+	\vspace{1em}
+	
+
+	\setcounter{equation}{0}
+	\renewcommand{\theHequation}{L7-9.\arabic{equation}}
+	
+	\textbf{答案： }
+	(1) 当电荷面密度分别为 $+\sigma, +\sigma$ 时，板内场强为 $0$；板外场强大小为 $\frac{\sigma}{\varepsilon_0}$，方向均背离两板向外。\\
+	(2) 当电荷面密度分别为 $+\sigma, -\sigma$ 时，板内场强大小为 $\frac{\sigma}{\varepsilon_0}$，方向由正极板指向负极板；板外场强均为 $0$。
+	
+	\textbf{解答过程： }
+	\textbf{由高斯定理可知}，无限大均匀带电平板在周围空间产生匀强电场，其场强大小与距板的距离无关，\textcolor{red}{单块平板产生的场强公式为}：
+	\begin{equation}\label{eq:L7-9-1}
+		E = \frac{|\sigma|}{2\varepsilon_0}
+	\end{equation}
+	电场方向：若平板带正电，场强方向背离极板；若平板带负电，场强方向指向极板。
+	
+	设向右为正方向。平板 $A$ 位于左侧，平板 $B$ 位于右侧。根据场强叠加原理，空间任一点的总场强为：
+	\begin{equation}\label{eq:L7-9-2}
+		\vec{E} = \vec{E}_A + \vec{E}_B
+	\end{equation}
+	
+	(1) 当两板电荷面密度均为 $+\sigma$ 时：
+	板 $A$ 和板 $B$ 均带正电，在空间各点产生的场强大小均为 $E_A = E_B = \frac{\sigma}{2\varepsilon_0}$。
+	
+	\textbf{在板内（两板之间）}：$\vec{E}_A$ 偏向右，$\vec{E}_B$ 偏向左，两者方向相反。
+	\begin{align*}
+		E_{\text{内}} = E_A - E_B = \frac{\sigma}{2\varepsilon_0} - \frac{\sigma}{2\varepsilon_0} = 0
+	\end{align*}
+	
+	\textbf{在板外（两板外侧）}：
+	在板 $A$ 左侧，$\vec{E}_A$ 和 $\vec{E}_B$ 均向左，总场强大小为 $E_{\text{外左}} = \frac{\sigma}{2\varepsilon_0} + \frac{\sigma}{2\varepsilon_0} = \frac{\sigma}{\varepsilon_0}$，方向向左。
+	在板 $B$ 右侧，$\vec{E}_A$ 和 $\vec{E}_B$ 均向右，总场强大小为 $E_{\text{外右}} = \frac{\sigma}{2\varepsilon_0} + \frac{\sigma}{2\varepsilon_0} = \frac{\sigma}{\varepsilon_0}$，方向向右。
+	综上，板外场强大小为 $\frac{\sigma}{\varepsilon_0}$，方向均背离两板向外。
+	
+	(2) 当两板电荷面密度分别为 $+\sigma, -\sigma$ 时（即平行板电容器模型）：
+	板 $A$ 带正电，板 $B$ 带负电。它们在空间产生的场强大小仍均为 $E_A = E_B = \frac{\sigma}{2\varepsilon_0}$。
+	
+	\textbf{在板内（两板之间）}：$\vec{E}_A$ 背离板 $A$ 向右，$\vec{E}_B$ 指向板 $B$ 也向右，两者方向相同。
+	\begin{align*}
+		E_{\text{内}} = E_A + E_B = \frac{\sigma}{2\varepsilon_0} + \frac{\sigma}{2\varepsilon_0} = \frac{\sigma}{\varepsilon_0}
+	\end{align*}
+	方向向右（由带正电的板 $A$ 垂直指向带负电的板 $B$）。
+	
+	\textbf{在板外（两板外侧）}：
+	在板 $A$ 左侧，$\vec{E}_A$ 向左，$\vec{E}_B$ 向右，两者相互抵消，总场强 $E_{\text{外左}} = 0$。
+	在板 $B$ 右侧，$\vec{E}_A$ 向右，$\vec{E}_B$ 向左，两者相互抵消，总场强 $E_{\text{外右}} = 0$。
+	综上，板外场强均为 $0$。
+	
+	\textbf{易混淆知识点： }
+	1. \textbf{公式分母的常数}：\textcolor{red}{无限大均匀带电“几何面”（厚度不计）的场强公式是 $\frac{\sigma}{2\varepsilon_0}$。}许多人会将其与带电“导体板”表面附近的场强公式 $\frac{\sigma}{\varepsilon_0}$ 混淆。\textbf{本题明确指明是“厚度不计的平板”，相当于一层电荷面，因此必须使用 $\frac{\sigma}{2\varepsilon_0}$。}
+	
+	2. \textbf{场强与距离无关}：\textcolor{red}{由高斯定理推导出的无限大平面场强是一个常数，与考察点到平面的距离完全无关。}因此，即使考察点距离板 $A$ 近、距离板 $B$ 远，\textbf{在进行矢量叠加时，两者贡献的场强大小绝对值依然是相等的。}(带绝对值的原因.)
+	
+	3. \textbf{平行板电容器的物理模型}：第(2)问的计算结果（内部为 $\frac{\sigma}{\varepsilon_0}$，外部为 $0$）正是理想平行板电容器内部为匀强电场、外部无漏电场的理论基础。
+	
+	\vspace{2em}
+	
 	\item[\textbf{L7-11}]
 	一个均匀带电球面,半径为 $R$,电荷为 $q$,求球面内、外任一点电势.
 	
 	\begin{figure}[H]
 		\centering
-		\includegraphics[width=0.3\linewidth]{figure/L7-11}
+		\includegraphics[width=0.5\linewidth]{figure/L7-11}
 		\caption{例题L7-11辅助图}
 		\label{fig:L7-11}
 	\end{figure}
 	
+	\vspace{1em}
+	
+	\setcounter{equation}{0}
+	\renewcommand{\theHequation}{L7-11.\arabic{equation}}
+	
+	\textbf{答案： }
+	球面内任一点的电势为 $V = \frac{q}{4\pi\varepsilon_0 R}$ ($r \le R$)；\\
+	球面外任一点的电势为 $V = \frac{q}{4\pi\varepsilon_0 r}$ ($r > R$)。
+	
+	\textbf{解答过程： }
+	已知均匀带电球面产生的电场分布为：
+	球面外 ($x > R$) 的场强：
+	\begin{equation}\label{eq:L7-11-1}
+		E_{\text{外}} = \frac{q}{4\pi\varepsilon_0 x^2}
+	\end{equation}
+	球面内 ($x < R$) 的场强：
+	\begin{equation}\label{eq:L7-11-2}
+		E_{\text{内}} = 0
+	\end{equation}
+	规定无限远处为电势零点。根据电势的定义，空间距球心为 $r$ 处某点的电势 $V$ 等于将单位正电荷从该点移至无限远处的过程中电场力所作的功：
+	\begin{align*}
+		V = \int_{r}^{\infty} E \mathrm{d}x
+	\end{align*}
+	
+	(1) 当考察点在球面外 ($r > R$) 时，积分路径上只有球面外的电场：
+	\begin{align*}
+		V &= \int_{r}^{\infty} E_{\text{外}} \mathrm{d}x \\
+		&= \int_{r}^{\infty} \frac{q}{4\pi\varepsilon_0 x^2} \mathrm{d}x
+	\end{align*}
+	计算定积分得到球面外的电势：
+	\begin{equation}\label{eq:L7-11-3}
+		V = \frac{q}{4\pi\varepsilon_0 r} \quad (r > R)
+	\end{equation}
+	
+	(2) \textcolor{red}{当考察点在球面内 ($r < R$) 时，积分路径必须分为两段：从 $r$ 到 $R$（处于球面内），以及从 $R$ 到无限远（处于球面外）}：
+	\begin{align*}
+		V &= \int_{r}^{R} E_{\text{内}} \mathrm{d}x + \int_{R}^{\infty} E_{\text{外}} \mathrm{d}x \\
+		&= \int_{r}^{R} 0 \mathrm{d}x + \int_{R}^{\infty} \frac{q}{4\pi\varepsilon_0 x^2} \mathrm{d}x
+	\end{align*}
+	\textbf{第一段路径上电场为零，积分为 $0$；第二段积分等同于球面表面的电势：}
+	\begin{equation}\label{eq:L7-11-4}
+		V = 0 + \frac{q}{4\pi\varepsilon_0 R} = \frac{q}{4\pi\varepsilon_0 R} \quad (r \le R)
+	\end{equation}
+	
+	\textbf{易混淆知识点： }
+	1. \textbf{内部电场为零不等于电势为零}：很多人误以为带电球面内部场强 $E=0$，所以电势 $V=0$。\textbf{实际上，电场为零只代表内部各点之间没有电势差，即内部是一个等势体。}\textcolor{red}{其内部的电势值由边界（球表面）决定，处处等于表面的电势常数。}
+	
+	2. \textbf{积分路径的分段}：在计算球面内部某点的电势时，必须将向外的积分路径在半径 $R$ 处截断分为两段。\textbf{因为在 $R$ 的内外两侧，空间电场的分布函数是完全不同的，不能用同一个公式一积到底。}
+	
+	3. \textbf{场强突变与电势连续}：\textbf{电场强度}在带电球面表面 ($r=R$) 处\textbf{发生突变}（从内侧的 $0$ 瞬间跳跃到外侧的 $\frac{q}{4\pi\varepsilon_0 R^2}$），\textcolor{red}{但电势在整个空间（包括表面）是连续过渡的}。将 $r=R$ 分别代入内外电势公式，得到的数值是相等的。
+	
+	\vspace{2em}
 	
 	\item[\textbf{L7-12}]
 	如图L7-12所示,有两个均匀带电的同心球面,半径分别为 $R_1$、$R_2$,电荷分别为 $+q$、$-q$,求两球面的电势差 $U$.
 	
 	\begin{figure}[H]
 		\centering
-		\includegraphics[width=0.3\linewidth]{figure/L7-12}
+		\includegraphics[width=0.4\linewidth]{figure/L7-12}
 		\caption{例题L7-12图}
 		\label{fig:L7-12}
 	\end{figure}
 	
+	\vspace{1em}
+	
+	\setcounter{equation}{0}
+	\renewcommand{\theHequation}{L7-12.\arabic{equation}}
+	
+	\textbf{答案： }
+	两球面的电势差为 $U = \frac{q}{4\pi\varepsilon_0} \left( \frac{1}{R_1} - \frac{1}{R_2} \right)$。
+	
+	\textbf{解答过程： }
+	
+	\textbf{方法一：电场积分法}
+	根据高斯定理，在两同心球面之间的区域（径向距离 $R_1 < r < R_2$），作一半径为 $r$ 的同心球面作为闭合高斯面。该高斯面内部包围的净电荷仅为内球面的电荷 $+q$（外球面电荷均匀分布，在其内部 $r < R_2$ 空间产生的场强处处为零）。
+	由高斯定理 $\oint \vec{E} \cdot \mathrm{d}\vec{S} = \frac{\sum q_{\text{内}}}{\varepsilon_0}$，得到两球面间区域的电场强度大小为：
+	\begin{equation}\label{eq:L7-12-1}
+		E = \frac{q}{4\pi\varepsilon_0 r^2}
+	\end{equation}
+	方向沿径向向外。
+	根据电势差的定义，两球面的电势差 $U = V_1 - V_2$ 等于将单位正电荷从内球面移至外球面时电场力所作的功：
+	\begin{align*}
+		U &= \int_{R_1}^{R_2} \vec{E} \cdot \mathrm{d}\vec{r} \\
+		&= \int_{R_1}^{R_2} \frac{q}{4\pi\varepsilon_0 r^2} \mathrm{d}r
+	\end{align*}
+	计算该定积分：
+	\begin{equation}\label{eq:L7-12-2}
+		U = \frac{q}{4\pi\varepsilon_0} \left[ -\frac{1}{r} \right]_{R_1}^{R_2} = \frac{q}{4\pi\varepsilon_0} \left( \frac{1}{R_1} - \frac{1}{R_2} \right)
+	\end{equation}
+	
+	\textbf{方法二：电势叠加法}
+	空间中任意一点的电势，等于内外两个带电球面单独存在时在该点产生电势的代数和。
+	设无穷远处为电势零点。
+	内球面（半径 $R_1$，电荷 $+q$）产生的电势分布：在其内部为 $\frac{q}{4\pi\varepsilon_0 R_1}$，在其外部为 $\frac{q}{4\pi\varepsilon_0 r}$。
+	外球面（半径 $R_2$，电荷 $-q$）产生的电势分布：在其内部为 $\frac{-q}{4\pi\varepsilon_0 R_2}$，在其外部为 $\frac{-q}{4\pi\varepsilon_0 r}$。
+	内球面上的电势 $V_1$（此时距球心 $r = R_1$，对内球面在表面，对外球面在内部）：
+	\begin{equation}\label{eq:L7-12-3}
+		V_1 = \frac{q}{4\pi\varepsilon_0 R_1} + \frac{-q}{4\pi\varepsilon_0 R_2}
+	\end{equation}
+	外球面上的电势 $V_2$（此时距球心 $r = R_2$，对内球面在外部，对外球面在表面）：
+	\begin{equation}\label{eq:L7-12-4}
+		V_2 = \frac{q}{4\pi\varepsilon_0 R_2} + \frac{-q}{4\pi\varepsilon_0 R_2} = 0
+	\end{equation}
+	因此，两球面的电势差为：
+	\begin{align*}
+		U &= V_1 - V_2 \\
+		&= \left( \frac{q}{4\pi\varepsilon_0 R_1} - \frac{q}{4\pi\varepsilon_0 R_2} \right) - 0 \\
+		&= \frac{q}{4\pi\varepsilon_0} \left( \frac{1}{R_1} - \frac{1}{R_2} \right)
+	\end{align*}
+	
+	\textbf{易混淆知识点： }
+	1. \textbf{高斯面内包围电荷的误判}：在利用方法一求两球面间的电场时，许多人会不自觉地将外球面的电荷 $-q$ 也一并代入高斯定理。实际上，根据高斯面的几何位置（$R_1 < r < R_2$），它仅仅包围了内球面的 $+q$，外球面的电荷在它的外面，对穿过该高斯面的净电通量毫无贡献。
+	
+	2. \textbf{球壳内部电势并非为零}：在使用方法二叠加电势时，必须牢记均匀带电球壳在其内部产生的电场虽然为零，但内部的电势是一个非零常量（处处等于其表面的电势）。外球面在内球面处（$r=R_1$）贡献的电势是 $\frac{-q}{4\pi\varepsilon_0 R_2}$，而不是 $0$ 或 $\frac{-q}{4\pi\varepsilon_0 R_1}$。
+	
+	3. \textbf{电容器模型的静电屏蔽效应}：计算结果显示外球面电势 $V_2 = 0$，这意味着如果把外球面接地，系统的电荷分布和内外电势差依然保持不变。这是一个典型的球形电容器模型，所有的电场线都起始于内球面并全部终止于外球面的内侧，外部空间完全没有电场（静电屏蔽）。
+	
 \end{enumerate}
 
-
+\newpage
 
 \subsection{第八章}
 
