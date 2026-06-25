@@ -2562,6 +2562,69 @@ $P$ 点的电势为 $V = \frac{q}{8\pi\varepsilon_0 l} \ln\left(1 + \frac{2l}{a}
 	电荷量$\mathbf{Q}$均匀分布在半径为$\mathbf{R}$的球体内，则球内、球外的静电能之比为\underline{\hspace{6em}}.
 \end{enumerate}
 
+\subsection*{习题8题解}
+\textbf{8-5题解： }
+\setcounter{equation}{0}
+\renewcommand{\theHequation}{8-5.\arabic{equation}}
+
+\textbf{答案： }
+$1:5$ （或 $\frac{1}{5}$）
+
+\textbf{解答过程： }
+设均匀带电球体的体电荷密度为 $\rho = \frac{Q}{\frac{4}{3}\pi R^3}$。
+由高斯定理求出空间各点的电场强度分布：
+(1) 在球体内部 ($r < R$)，取半径为 $r$ 的高斯球面，由高斯定理 $\oint \vec{E} \cdot \mathrm{d}\vec{S} = \frac{\sum q_{\text{内}}}{\varepsilon_0}$ 得：
+\begin{align*}
+	E_{\text{内}} \cdot 4\pi r^2 = \frac{1}{\varepsilon_0} \left( \frac{4}{3}\pi r^3 \rho \right) = \frac{Q r^3}{\varepsilon_0 R^3}
+\end{align*}
+解得球内场强：
+\begin{equation}\label{eq:8-5-1}
+	E_{\text{内}} = \frac{Qr}{4\pi\varepsilon_0 R^3}
+\end{equation}
+
+(2) 在球体外部 ($r > R$)，取半径为 $r$ 的高斯球面，其包围的全部电荷为 $Q$：
+\begin{align*}
+	E_{\text{外}} \cdot 4\pi r^2 = \frac{Q}{\varepsilon_0}
+\end{align*}
+解得球外场强：
+\begin{equation}\label{eq:8-5-2}
+	E_{\text{外}} = \frac{Q}{4\pi\varepsilon_0 r^2}
+\end{equation}
+
+静电场的能量密度公式为 $w = \frac{1}{2}\varepsilon_0 E^2$。在具有球对称性的电场中，体积元取微小球壳体积 $\mathrm{d}V = 4\pi r^2 \mathrm{d}r$。
+
+计算球内静电能 $W_{\text{内}}$：
+\begin{align*}
+	W_{\text{内}} &= \int_{V_{\text{内}}} w_{\text{内}} \mathrm{d}V = \int_{0}^{R} \frac{1}{2}\varepsilon_0 E_{\text{内}}^2 (4\pi r^2) \mathrm{d}r \\
+	&= \int_{0}^{R} \frac{1}{2}\varepsilon_0 \left( \frac{Qr}{4\pi\varepsilon_0 R^3} \right)^2 (4\pi r^2) \mathrm{d}r \\
+	&= \frac{Q^2}{8\pi\varepsilon_0 R^6} \int_{0}^{R} r^4 \mathrm{d}r
+\end{align*}
+\begin{equation}\label{eq:8-5-3}
+	W_{\text{内}} = \frac{Q^2}{8\pi\varepsilon_0 R^6} \cdot \frac{R^5}{5} = \frac{Q^2}{40\pi\varepsilon_0 R}
+\end{equation}
+
+计算球外静电能 $W_{\text{外}}$：
+\begin{align*}
+	W_{\text{外}} &= \int_{V_{\text{外}}} w_{\text{外}} \mathrm{d}V = \int_{R}^{\infty} \frac{1}{2}\varepsilon_0 E_{\text{外}}^2 (4\pi r^2) \mathrm{d}r \\
+	&= \int_{R}^{\infty} \frac{1}{2}\varepsilon_0 \left( \frac{Q}{4\pi\varepsilon_0 r^2} \right)^2 (4\pi r^2) \mathrm{d}r \\
+	&= \frac{Q^2}{8\pi\varepsilon_0} \int_{R}^{\infty} \frac{1}{r^2} \mathrm{d}r
+\end{align*}
+\begin{equation}\label{eq:8-5-4}
+	W_{\text{外}} = \frac{Q^2}{8\pi\varepsilon_0} \left[ -\frac{1}{r} \right]_{R}^{\infty} = \frac{Q^2}{8\pi\varepsilon_0 R}
+\end{equation}
+
+求两者的比值：
+\begin{equation}\label{eq:8-5-5}
+	\frac{W_{\text{内}}}{W_{\text{外}}} = \frac{\frac{Q^2}{40\pi\varepsilon_0 R}}{\frac{Q^2}{8\pi\varepsilon_0 R}} = \frac{8}{40} = \frac{1}{5}
+\end{equation}
+
+\textbf{易混淆知识点： }
+1. \textbf{均匀带电球体与球壳的区别}：本题是均匀带电“球体”（体电荷分布），其内部有电场分布，因此球内有静电能。如果题目是均匀带电“球面”或“球壳”，其内部场强恒为零，那么球内静电能将直接为 $0$。
+
+2. \textbf{体积元 $\mathrm{d}V$ 的选取}：在通过能量密度积分求总能量时，积分变量是径向距离 $r$，空间体积元必须是球壳体积 $\mathrm{d}V = 4\pi r^2 \mathrm{d}r$。极易犯的错误是直接将体积元写成 $\mathrm{d}r$，漏掉了 $4\pi r^2$ 这一空间权重项，导致积分结果量纲和数值全错。
+
+3. \textbf{积分上下限的划分}：因为 $r=R$ 处内外场强分布函数发生了改变，所以空间能量积分必须在 $R$ 处断开。球内是对 $r \in [0, R]$ 积分，球外是对 $r \in [R, \infty)$ 积分。
+
 \newpage
 
 \subsection{习题9}
@@ -2572,7 +2635,7 @@ $P$ 点的电势为 $V = \frac{q}{8\pi\varepsilon_0 l} \ln\left(1 + \frac{2l}{a}
 	% TODO: \usepackage{graphicx} required
 	\begin{figure}[H]
 		\centering
-		\includegraphics[width=0.4\linewidth]{figure/9-10}
+		\includegraphics[width=0.35\linewidth]{figure/9-10}
 		\caption{图9-10}
 		\label{fig:9-10}
 	\end{figure}
@@ -2582,7 +2645,7 @@ $P$ 点的电势为 $V = \frac{q}{8\pi\varepsilon_0 l} \ln\left(1 + \frac{2l}{a}
 	% TODO: \usepackage{graphicx} required
 	\begin{figure}[H]
 		\centering
-		\includegraphics[width=0.4\linewidth]{figure/9-12}
+		\includegraphics[width=0.35\linewidth]{figure/9-12}
 		\caption{图9-12}
 		\label{fig:9-12}
 	\end{figure}
@@ -2636,6 +2699,465 @@ $P$ 点的电势为 $V = \frac{q}{8\pi\varepsilon_0 l} \ln\left(1 + \frac{2l}{a}
 
 \newpage
 
+\subsection*{习题9题解}
+
+\textbf{9-10题解： }
+\setcounter{equation}{0}
+\renewcommand{\theHequation}{9-10.\arabic{equation}}
+
+\textbf{答案： }
+$B_O = -\frac{\mu_0 I}{4R} \left( \frac{1}{\pi}\vec{j} + \vec{k} \right)$
+
+\textbf{解答过程： }
+为了求出坐标原点 $O$ 处的总磁感应强度 $B$，我们依然将导线分为 $a$、$c$、$b$ 三个部分分别计算，最后进行矢量叠加。设 $x,y,z$ 轴的单位矢量分别为 $\vec{i},\vec{j},\vec{k}$。
+
+\textbf{1. 线段 $a$ （半无限长直导线）}
+\begin{itemize}
+	\item \textbf{几何与位置：} 平行于 $z$ 轴，落在 $x = -R, y = 0$ 处。电流从 $z = +\infty$ 流向 $z = 0$。
+	\item \textbf{大小：} 它是一根一端延伸到无穷远、另一端刚好与观测点（原点）平齐的半无限长直导线。它到原点的垂直距离为 $R$。其在原点产生的磁场大小为无限长直导线的一半：
+	\begin{equation}\label{eq:9-10-1}
+		B_a = \frac{\mu_0 I}{4\pi R}
+	\end{equation}
+	\item \textbf{方向：} 根据\textbf{右手螺旋定则}，大拇指指向电流方向（向下，即 $-z$ 方向），四指弯曲。在原点 $O$ 处（位于导线的正前方 $+x$ 方向），磁场的切线方向刚好指向 $y$ 轴的负方向。
+	\item \textbf{矢量表示：}
+	\begin{equation}\label{eq:9-10-2}
+		\vec{B}_a = -\frac{\mu_0 I}{4\pi R}\vec{j}
+	\end{equation}
+\end{itemize}
+
+\textbf{2. 线段 $c$ （半圆弧）}
+\begin{itemize}
+	\item \textbf{几何与位置：} 位于 $Oxy$ 平面内，从 $x$ 轴负半轴 ($-R, 0, 0$) 出发，经过 $y$ 轴，到达 $x$ 轴正半轴 ($R, 0, 0$) 的半圆。
+	\item \textbf{大小：} 完整圆环在圆心产生的磁场为 $\frac{\mu_0 I}{2R}$。因为是半圆，所以磁场大小是其一半：
+	\begin{equation}\label{eq:9-10-3}
+		B_c = \frac{1}{2} \times \frac{\mu_0 I}{2R} = \frac{\mu_0 I}{4R}
+	\end{equation}
+	\item \textbf{方向：} 再次使用\textbf{右手螺旋定则}。四指顺着电流方向（从 $-x$ 轴弯向 $+x$ 轴），大拇指垂直于 $Oxy$ 平面向里，即指向 $z$ 轴的负方向。
+	\item \textbf{矢量表示：}
+	\begin{equation}\label{eq:9-10-4}
+		\vec{B}_c = -\frac{\mu_0 I}{4R}\vec{k}
+	\end{equation}
+\end{itemize}
+
+\textbf{3. 线段 $b$ （沿径向的半无限长直导线）}
+\begin{itemize}
+	\item \textbf{几何与位置：} 位于 $x$ 轴正半轴上，从 $x = R$ 延伸至 $+\infty$。
+	\item \textbf{磁场分析：} 观察点 $O$ 刚好位于该导线的反向延长线上。根据毕奥-萨伐尔定律，此时电流元 $dl$ 的方向与从电流元指向原点的位矢 $r$ 平行，它们的叉乘 $dl \times r = 0$。
+	\item \textbf{矢量表示：}
+	\begin{equation}\label{eq:9-10-5}
+		\vec{B}_b = 0
+	\end{equation}
+\end{itemize}
+
+\textbf{最终结果：矢量叠加}
+
+根据磁场的叠加原理，$O$ 点的总磁感应强度为这三部分的矢量和：
+\begin{equation}\label{eq:9-10-6}
+	\vec{B}_O = \vec{B}_a + \vec{B}_c + \vec{B}_b
+\end{equation}
+
+代入上面求得的各分量：
+\begin{equation}\label{eq:9-10-7}
+	\vec{B}_O = -\frac{\mu_0 I}{4\pi R}\vec{j} - \frac{\mu_0 I}{4R}\vec{k}
+\end{equation}
+
+为了结果更加清晰，我们可以提取公因式 $\frac{\mu_0 I}{4R}$，写成如下形式：
+\begin{equation}\label{eq:9-10-8}
+	\vec{B}_O = -\frac{\mu_0 I}{4R} \left( \frac{1}{\pi}\vec{j} + \vec{k} \right)
+\end{equation}
+
+\textbf{易混淆知识点： }
+1. \textbf{空间坐标系与右手定则的匹配}：在三维空间中，判断直导线磁场方向时，需明确导线所在位置到场点的矢径方向（本题中线段 $a$ 到原点是沿着 $+x$ 方向），结合右手定则才能准确得出磁场沿 $-y$ 方向（$\vec{j}$ 的反向）。
+
+2. \textbf{半圆弧的磁场大小}：圆弧磁场的通用公式为 $B = \frac{\mu_0 I}{4\pi R} \theta$（$\theta$ 为圆心角，代入 $\pi$ 即可得到半圆的 $\frac{\mu_0 I}{4R}$），切忌死记硬背而与四分之一圆弧混淆。
+
+\vspace{1em}
+
+\textbf{9-12题解： }
+\setcounter{equation}{0}
+\renewcommand{\theHequation}{9-12.\arabic{equation}}
+
+\textbf{答案： }
+大小为 $B_O = \frac{\mu_0 I}{2R} \left[ \frac{1}{6} + \frac{1}{\pi} \left( 1 - \frac{\sqrt{3}}{2} \right) \right]$，方向垂直纸面向里（$\otimes$）。
+
+\textbf{解答过程： }
+\textbf{1. 线段 $AB$ （水平长直导线）}
+\begin{itemize}
+	\item 依然为 0。电流延长线穿过 $O$ 点，$d\vec{l} \times \vec{r} = 0$。
+\end{itemize}
+
+\textbf{2. 线段 $BC$ （$60^\circ$ 圆弧）}
+\begin{itemize}
+	\item \textbf{大小：} 既然圆心角是 $60^\circ$，那它就是完整圆（$360^\circ$）的 $\frac{1}{6}$。
+	\begin{equation}\label{eq:9-12-1}
+		B_{BC} = \frac{1}{6} \times \frac{\mu_0 I}{2R} = \frac{\mu_0 I}{12R}
+	\end{equation}
+	\item \textbf{方向：} 电流从 $B$ 流向 $C$，也就是绕着 $O$ 点顺时针转动。根据右手螺旋定则，四指顺时针弯曲，大拇指指向纸面向里。设纸面向外为 $\vec{k}$ 轴正向，则：
+	\begin{equation}\label{eq:9-12-2}
+		\vec{B}_{BC} = -\frac{\mu_0 I}{12R}\vec{k}
+	\end{equation}
+\end{itemize}
+
+\textbf{3. 线段 $CD$ （竖直长直导线）}
+\begin{itemize}
+	\item \textbf{几何位置：} 设垂足为 $P$。在直角 $\triangle CPO$ 中，直角边 $OP = R \cos 60^\circ = \frac{R}{2}$。这意味着竖直导线 $CD$ 到观察点 $O$ 的垂直距离 $d = \frac{R}{2}$。并且，\textbf{导线在 $O$ 点的左侧}。
+	\item \textbf{大小计算：} 利用直导线公式 $B = \frac{\mu_0 I}{4\pi d}(\sin \theta_2 - \sin \theta_1)$。
+	\begin{itemize}
+		\item 起点 $C$ 对应的角度 $\theta_1 = 60^\circ$。
+		\item 终点延伸至无穷远，$\theta_2 = 90^\circ$。
+	\end{itemize}
+	\begin{equation}\label{eq:9-12-3}
+		B_{CD} = \frac{\mu_0 I}{4\pi (\frac{R}{2})} (\sin 90^\circ - \sin 60^\circ) = \frac{\mu_0 I}{2\pi R} \left( 1 - \frac{\sqrt{3}}{2} \right)
+	\end{equation}
+	\item \textbf{方向（关键修正）：} 导线 $CD$ 在 $O$ 的左侧，电流方向向上。伸出右手，大拇指朝上，四指在导线的右侧（即 $O$ 点所在位置）会自然地指向\textbf{纸面向里}。
+	\begin{equation}\label{eq:9-12-4}
+		\vec{B}_{CD} = -\frac{\mu_0 I}{2\pi R} \left( 1 - \frac{\sqrt{3}}{2} \right)\vec{k}
+	\end{equation}
+\end{itemize}
+
+\textbf{最终正确结果：同向叠加}
+
+因为圆弧和直导线在 $O$ 点产生的磁场方向\textbf{都是向里}的，所以它们不是相减，而是直接相加：
+\begin{equation}\label{eq:9-12-5}
+	\vec{B}_O = \vec{B}_{BC} + \vec{B}_{CD}
+\end{equation}
+
+\begin{equation}\label{eq:9-12-6}
+	\vec{B}_O = -\frac{\mu_0 I}{12R}\vec{k} - \frac{\mu_0 I}{2\pi R} \left( 1 - \frac{\sqrt{3}}{2} \right)\vec{k}
+\end{equation}
+
+为了美观，提出公因式 $\frac{\mu_0 I}{2R}$ 并去掉负号说明方向：
+
+大小：
+\begin{equation}\label{eq:9-12-7}
+	B_O = \frac{\mu_0 I}{2R} \left[ \frac{1}{6} + \frac{1}{\pi} \left( 1 - \frac{\sqrt{3}}{2} \right) \right]
+\end{equation}
+
+方向：\textbf{垂直纸面向里（$\otimes$）}
+
+\textbf{易混淆知识点： }
+1. \textbf{圆心角的判定}：需明确题目给出的 $60^\circ$ 究竟是圆弧与水平线的夹角还是圆弧本身的张角，结合图中修正的逻辑，确认其为完整圆周的 $\frac{1}{6}$。
+
+2. \textbf{磁场方向的相对位置判定}：\textbf{判断直导线磁场方向时，不仅要看电流方向（如向上），还要极其注意场点位于导线的左侧还是右侧。}本题中 $O$ 点位于向上的直导线 $CD$ 的右侧，故磁场向里，导致两部分磁场同向叠加。\textcolor{red}{注意：算完磁场一定要用右手螺旋检查方向！}
+
+\vspace{1em}
+
+\textbf{9-15题解： }
+\setcounter{equation}{0}
+\renewcommand{\theHequation}{9-15.\arabic{equation}}
+
+\textbf{答案： }
+(1) $A$ 点的磁感应强度大小为 $4 \times 10^{-5}\,\text{T}$，方向垂直纸面向外。\\
+(2) 通过图中方框面积的磁通量为 $10^{-6} \ln 3\,\text{Wb}$ （约 $1.1 \times 10^{-6}\,\text{Wb}$）。
+
+\textbf{解答过程： }
+(1) 由安培环路定理可知，无限长直导线产生的磁场公式为 $B = \frac{\mu_0 I}{2\pi r}$。
+根据题意，点 $A$ 与两导线等距，即距每根导线的距离均为 $r_A = \frac{d}{2} = 20\,\text{cm} = 0.2\,\text{m}$。
+
+左侧导线电流 $I_1$ 向下，根据右手螺旋定则，其在右侧 $A$ 点产生的磁感应强度 $\vec{B}_1$ 方向垂直纸面向外，大小为：
+\begin{equation}\label{eq:9-15-1}
+	B_1 = \frac{\mu_0 I_1}{2\pi (d/2)}
+\end{equation}
+
+右侧导线电流 $I_2$ 向上，根据右手螺旋定则，其在左侧 $A$ 点产生的磁感应强度 $\vec{B}_2$ 方向也垂直纸面向外，大小为：
+\begin{equation}\label{eq:9-15-2}
+	B_2 = \frac{\mu_0 I_2}{2\pi (d/2)}
+\end{equation}
+
+由于 $\vec{B}_1$ 和 $\vec{B}_2$ 方向相同，根据磁场叠加原理，$A$ 点的总磁感应强度 $B_A$ 为两者的代数和。代入 $I_1 = I_2 = 20\,\text{A}$ 以及 $d = 0.4\,\text{m}$：
+\begin{align*}
+	B_A &= B_1 + B_2 = 2 \times \frac{4\pi \times 10^{-7} \times 20}{2\pi \times 0.2} \\
+	&= 4 \times 10^{-5}\,\text{T}
+\end{align*}
+方向垂直纸面向外。
+
+(2) 建立坐标系，设左侧导线所在直线为 $y$ 轴，$x$ 轴水平向右。
+在距左导线距离为 $x$ 处，取宽为 $\mathrm{d}x$、长为 $l$ 的竖直狭长面元 $\mathrm{d}S = l \mathrm{d}x$。
+该处的磁场由两根导线共同产生，且方向均垂直纸面向外，其大小为：
+\begin{equation}\label{eq:9-15-3}
+	B(x) = \frac{\mu_0 I_1}{2\pi x} + \frac{\mu_0 I_2}{2\pi (d-x)} = \frac{\mu_0 I}{2\pi} \left( \frac{1}{x} + \frac{1}{d-x} \right)
+\end{equation}
+
+穿过该狭长面元的微小磁通量为 $\mathrm{d}\Phi = B(x) \mathrm{d}S = B(x) l \mathrm{d}x$。
+根据图中尺寸，方框的左边界坐标为 $x = r_1 = 10\,\text{cm} = 0.1\,\text{m}$，右边界坐标为 $x = r_1 + r_2 = 20\,\text{cm} = 0.2\,\text{m}$。
+对方框面积进行定积分求总磁通量：
+\begin{align*}
+	\Phi &= \int_{r_1}^{r_1+r_2} B(x) l \mathrm{d}x \\
+	&= \int_{0.1}^{0.2} \frac{\mu_0 I l}{2\pi} \left( \frac{1}{x} + \frac{1}{0.4-x} \right) \mathrm{d}x \\
+	&= \frac{\mu_0 I l}{2\pi} \left[ \ln x - \ln(0.4-x) \right]_{0.1}^{0.2} \\
+	&= \frac{\mu_0 I l}{2\pi} \left[ \ln\left(\frac{x}{0.4-x}\right) \right]_{0.1}^{0.2}
+\end{align*}
+
+代入上下限（$I = 20\,\text{A}, l = 0.25\,\text{m}$）：
+\begin{align*}
+	\Phi &= \frac{4\pi \times 10^{-7} \times 20 \times 0.25}{2\pi} \left( \ln\left(\frac{0.2}{0.2}\right) - \ln\left(\frac{0.1}{0.3}\right) \right) \\
+	&= 2 \times 10^{-7} \times 5 \times (\ln 1 - \ln\frac{1}{3}) \\
+	&= 10^{-6} \ln 3 \,\text{Wb} \approx 1.098 \times 10^{-6} \,\text{Wb}
+\end{align*}
+
+\textbf{易混淆知识点： }
+1. \textbf{右手螺旋定则与磁场叠加}：两根导线电流方向相反（一上一下），直觉上有时会误以为它们在中间区域产生的磁场会相互抵消。实际上，\textbf{画一下磁感线就会发现，向下电流在右侧产生的磁场向外，向上电流在左侧产生的磁场也向外}，两者在连线中间区域是\textbf{相互加强}的。\textcolor{red}{一定要学会用右手螺旋定则来判断方向，不要死记硬背！}
+
+2. \textbf{积分区间的坐标对应}：在第二问求磁通量时，图中标注了 $r_1, r_2, r_3$。在代入积分上限时，极易将上限错误地写成 $r_2=0.1$。实际上 $r_2$ 表示的是方框的“宽度”，如果以左侧导线为坐标原点，积分变量 $x$ 应当从方框左边界（$x=r_1=0.1$）一直积到右边界（$x=r_1+r_2=0.2$）。
+
+\vspace{1em}
+
+\textbf{9-16题解： }(\textcolor{red}{本题最后附上了理解图，极易解决抽象问题。})
+\setcounter{equation}{0}
+\renewcommand{\theHequation}{9-16.\arabic{equation}}
+
+\textbf{答案： }
+距轴线为 $r$ 处的磁感应强度大小分布如下：\\
+(1) $0 \le r < R_1$ 时，$B = \frac{\mu_0 I r}{2\pi R_1^2}$；\\
+(2) $R_1 \le r < R_2$ 时，$B = \frac{\mu_0 I}{2\pi r}$；\\
+(3) $R_2 \le r < R_3$ 时，$B = \frac{\mu_0 I}{2\pi r} \frac{R_3^2 - r^2}{R_3^2 - R_2^2}$；\\
+(4) $r \ge R_3$ 时，$B = 0$。
+
+\textbf{解答过程： }
+根据安培环路定理：
+\begin{equation}\label{eq:9-16-1}
+	\oint_L \vec{B} \cdot \mathrm{d}\vec{l} = \mu_0 \sum I_{\text{内}}
+\end{equation}
+由电缆的轴对称性可知，磁场方向垂直于径向且与轴线共面分布，磁感线为以轴线为圆心的同心圆。取半径为 $r$ 的同心圆作为积分回路，则左侧环流恒为 $B \cdot 2\pi r$。
+
+(1) 在内部导体内（$0 \le r < R_1$）：
+内部导体中电流均匀分布，电流密度 $J_1 = \frac{I}{\pi R_1^2}$。
+积分回路包围的电流为：
+\begin{align*}
+	\sum I_{\text{内}} = J_1 \cdot \pi r^2 = I \frac{r^2}{R_1^2}
+\end{align*}
+代入安培环路定理得 $B \cdot 2\pi r = \mu_0 I \frac{r^2}{R_1^2}$，解得：
+\begin{equation}\label{eq:9-16-2}
+	B = \frac{\mu_0 I r}{2\pi R_1^2}
+\end{equation}
+
+(2) 在两导体之间（$R_1 \le r < R_2$）：
+积分回路包围的电流为整个内部导体的电流：
+\begin{align*}
+	\sum I_{\text{内}} = I
+\end{align*}
+代入安培环路定理得 $B \cdot 2\pi r = \mu_0 I$，解得：
+\begin{equation}\label{eq:9-16-3}
+	B = \frac{\mu_0 I}{2\pi r}
+\end{equation}
+
+(3) 在外部导体圆筒内（$R_2 \le r < R_3$）：
+外部圆筒中的电流与内部电流方向相反，外部圆筒的电流密度 $J_2 = \frac{I}{\pi (R_3^2 - R_2^2)}$。
+积分回路包围的总电流等于内部导体正向电流减去外部圆筒被包围部分的反向电流：
+\begin{align*}
+	\sum I_{\text{内}} &= I - J_2 \cdot \pi (r^2 - R_2^2) \\
+	&= I - I \frac{r^2 - R_2^2}{R_3^2 - R_2^2} \\
+	&= I \frac{R_3^2 - r^2}{R_3^2 - R_2^2}
+\end{align*}
+代入安培环路定理得 $B \cdot 2\pi r = \mu_0 I \frac{R_3^2 - r^2}{R_3^2 - R_2^2}$，解得：
+\begin{equation}\label{eq:9-16-4}
+	B = \frac{\mu_0 I}{2\pi r} \frac{R_3^2 - r^2}{R_3^2 - R_2^2}
+\end{equation}
+
+(4) 在电缆外部（$r \ge R_3$）：
+积分回路包围的总电流为内外两导体电流之和（一进一出，大小相等）：
+\begin{align*}
+	\sum I_{\text{内}} = I - I = 0
+\end{align*}
+代入安培环路定理得：
+\begin{equation}\label{eq:9-16-5}
+	B = 0
+\end{equation}
+
+\textbf{易混淆知识点： }
+1. \textbf{外部圆筒区域包围电流的计算}：在 $R_2 \le r < R_3$ 区域求 $\sum I_{\text{内}}$ 时，很多人会错误地只计算外部圆筒本身的电流而忘记加上内层导体的总电流 $I$；或者是计算外层包围面积时用 $\pi r^2$ 减去内层圆的面积。\textbf{务必记住，外层截面积是圆环形 $\pi(R_3^2 - R_2^2)$，被包围的外层面积是 $\pi(r^2 - R_2^2)$。}
+
+2. \textbf{同轴电缆的磁屏蔽效应}：由第(4)问结果可知，对于电流等大反向的同轴电缆，其外部空间磁场严格为零。这是同轴电缆被广泛应用于抗干扰信号传输的物理本质。
+
+% TODO: \usepackage{graphicx} required
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.6\linewidth]{figure/9-16}
+	\caption{9-16辅助做题图}
+	\label{fig:9-16}
+\end{figure}
+
+
+\vspace{1em}
+
+\textbf{9-19题解： }
+\setcounter{equation}{0}
+\renewcommand{\theHequation}{9-19.\arabic{equation}}
+
+\textbf{答案： }
+(1) 线圈所受力矩的大小为 $\tau = \frac{1}{2}\pi R^2 I B$，方向为沿直导线向上（$+y$ 轴方向）。\\
+(2) 力矩做的功为 $A = \frac{1}{2}\pi R^2 I B$。
+
+\textbf{解答过程： }
+为了推导的绝对严谨（明确几何方位对这类题非常重要），我们先建立一个清晰的直角坐标系：
+\begin{itemize}
+	\item 直线段的直边（直径）与 $y$ 轴重合，中点为原点 $O$。
+	\item 半圆弧线圈初始处于 $Oxy$ 平面的右侧（$x \ge 0$ 区域）。
+	\item 匀强磁场水平向右，即沿 $+x$ 轴方向，表示为 $\mathbf{B} = B\mathbf{i}$。
+	\item 观察图中半圆弧下方的箭头，假设电流 $I$ 沿着弧线是由下而上流动的，顺着直边自上而下流回。这是一个逆时针方向的闭合回路。
+\end{itemize}
+
+\textbf{(1) 求线圈所受力矩的大小和方向}
+
+在期末考试中，处理任意形状的平面闭合线圈受力矩问题，“等效磁矩法”是最快捷且不容易出错的方法。
+
+\textbf{步骤 1：计算线圈的磁矩 $\mathbf{p}_m$}
+
+闭合线圈的磁矩定义为 $\mathbf{p}_m = I S \mathbf{n}$。
+\begin{itemize}
+	\item \textbf{面积 $S$：} 半圆的面积为 $S = \frac{1}{2}\pi R^2$。
+	\item \textbf{法向量 $\mathbf{n}$ 的方向：} 使用右手螺旋定则，四指顺着逆时针的电流方向弯曲，大拇指指向纸面向外，即 $+z$ 轴方向，$\mathbf{n} = \mathbf{k}$。
+	\item 因此，初始状态下的磁矩矢量为：
+\end{itemize}
+\begin{equation}\label{eq:9-19-1}
+	\mathbf{p}_m = \frac{1}{2}\pi R^2 I \mathbf{k}
+\end{equation}
+
+\textbf{步骤 2：利用叉乘公式求力矩 $\boldsymbol{\tau}$}
+
+处于均匀磁场中的载流线圈，其受到的磁力矩公式为 $\boldsymbol{\tau} = \mathbf{p}_m \times \mathbf{B}$。(\textcolor{red}{注意：这个磁力矩公式其实还要乘以$\sin\theta$,这里是因为磁力矩垂直向外，B向右，所以$\theta$=90°})代入我们建立的矢量：
+\begin{align*}
+	\boldsymbol{\tau} &= \left( \frac{1}{2}\pi R^2 I \mathbf{k} \right) \times (B\mathbf{i}) \\
+	&= \frac{1}{2}\pi R^2 I B (\mathbf{k} \times \mathbf{i})
+\end{align*}
+由于 $\mathbf{k} \times \mathbf{i} = \mathbf{j}$，所以：
+\begin{equation}\label{eq:9-19-2}
+	\boldsymbol{\tau} = \frac{1}{2}\pi R^2 I B \mathbf{j}
+\end{equation}
+
+\textbf{结论：}
+\begin{itemize}
+	\item \textbf{大小：} $\tau = \frac{1}{2}\pi R^2 I B$
+	\item \textbf{方向：} 沿 $+y$ 轴方向（即沿直导线向上）。物理上的直观体现是：这个力矩会迫使半圆形线圈向纸面外翻转，以直边为转轴转动。
+\end{itemize}
+
+\textbf{(2) 求转到与磁场垂直位置时，力矩做的功}
+
+力矩做功的本质是线圈的磁势能转化成了动能或其他形式的能。我们可以直接利用磁势能的公式来计算，这比计算力矩的积分要简便得多。
+\textbf{线圈在磁场中的势能公式为}：
+\begin{equation}\label{eq:9-19-3}
+	W_p = -\mathbf{p}_m \cdot \mathbf{B} = -p_m B \cos\theta
+\end{equation}
+（其中 $\theta$ 是磁矩 $\mathbf{p}_m$ 与磁场 $\mathbf{B}$ 的夹角）
+
+\textbf{步骤 1：确定初始状态的势能 $W_{p1}$}
+
+初始时，线圈平面与磁场平行，这意味着线圈的法向量（磁矩 $\mathbf{p}_m$）与磁场 $\mathbf{B}$ 垂直。
+$$ \theta_1 = 90^\circ $$
+\begin{equation}\label{eq:9-19-4}
+	W_{p1} = -p_m B \cos 90^\circ = 0
+\end{equation}
+
+\textbf{步骤 2：确定末状态的势能 $W_{p2}$}
+
+当线圈在力矩的作用下自由转动到与磁场垂直的位置时，它是在向“稳定平衡状态”趋近。此时磁矩 $\mathbf{p}_m$ 会与磁场 $\mathbf{B}$ 的方向完全一致（同向）。
+$$ \theta_2 = 0^\circ $$
+\begin{equation}\label{eq:9-19-5}
+	W_{p2} = -p_m B \cos 0^\circ = -p_m B = -\frac{1}{2}\pi R^2 I B
+\end{equation}
+
+\textbf{步骤 3：计算磁场力做功 $A$}
+
+做功等于系统势能的减少量（$A = -\Delta W_p = W_{p1} - W_{p2}$）：
+\begin{align*}
+	A &= 0 - \left( -\frac{1}{2}\pi R^2 I B \right) \\
+	&= \frac{1}{2}\pi R^2 I B
+\end{align*}
+
+\textbf{结论：}
+力矩在此过程中做的正功为 $\frac{1}{2}\pi R^2 I B$。
+
+\vspace{1em}
+
+\textbf{9-20题解： }
+\setcounter{equation}{0}
+\renewcommand{\theHequation}{9-20.\arabic{equation}}
+
+\textbf{答案： }
+(1) 导线 AB 的磁场对矩形线圈每边所作用的力分别为：
+
+左侧边 CD 受力大小为 $8.0 \times 10^{-4}\,\text{N}$，方向水平向左；
+
+右侧边 FE 受力大小为 $8.0 \times 10^{-5}\,\text{N}$，方向水平向右；
+
+上侧边 CF 受力大小约为 $9.21 \times 10^{-5}\,\text{N}$，方向竖直向上；
+
+下侧边 DE 受力大小约为 $9.21 \times 10^{-5}\,\text{N}$，方向竖直向下。\\
+(2) 矩形线圈所受合力大小为 $7.2 \times 10^{-4}\,\text{N}$，方向水平向左（指向导线 AB）；合力矩为 $0$。
+
+\textbf{解答过程： }
+(1) 建立直角坐标系，设长直导线 AB 所在直线为 $y$ 轴，向右为 $x$ 轴正方向。
+由安培环路定理可知，长直导线 AB 在其右侧距离为 $x$ 处产生的磁感应强度大小为：
+\begin{equation}\label{eq:9-20-1}
+	B(x) = \frac{\mu_0 I_1}{2\pi x}
+\end{equation}
+根据右手螺旋定则，线圈所在平面的磁场方向均\textbf{垂直于纸面向里}。
+已知各参数为：$I_1 = 20\,\text{A}, I_2 = 10\,\text{A}, a = 0.09\,\text{m}, b = 0.20\,\text{m}, d = 0.01\,\text{m}, \mu_0 = 4\pi \times 10^{-7}\,\text{T}\cdot\text{m/A}$。
+
+\textbf{对于左侧边 CD：}
+该边距离直导线 $x = d$，所在处的磁场是均匀的。电流方向向上（与 $I_1$ 同向）。
+受到的安培力大小为：
+\begin{align*}
+	F_{CD} &= I_2 b B(d) = \frac{\mu_0 I_1 I_2 b}{2\pi d} \\
+	&= \frac{4\pi \times 10^{-7} \times 20 \times 10 \times 0.20}{2\pi \times 0.01} \\
+	&= 8.0 \times 10^{-4}\,\text{N}
+\end{align*}
+根据左手定则（或同向电流相吸原理），方向为\textbf{水平向左}。
+
+\textbf{对于右侧边 FE：}
+该边距离直导线 $x = d + a = 0.10\,\text{m}$，磁场均匀。电流方向向下（与 $I_1$ 反向）。
+受到的安培力大小为：
+\begin{align*}
+	F_{FE} &= I_2 b B(d+a) = \frac{\mu_0 I_1 I_2 b}{2\pi (d+a)} \\
+	&= \frac{4\pi \times 10^{-7} \times 20 \times 10 \times 0.20}{2\pi \times 0.10} \\
+	&= 8.0 \times 10^{-5}\,\text{N}
+\end{align*}
+根据左手定则（或反向电流相斥原理），方向为\textbf{水平向右}。
+
+\textbf{对于上侧边 CF：}
+该边各点到 AB 的距离 $x$ 随位置变化，磁场为非匀强磁场，需使用微元法积分。
+在距离 AB 为 $x$ 处取微元 $\mathrm{d}x$，其受力为 $\mathrm{d}F = I_2 \mathrm{d}x B(x)$。
+电流方向向右，磁场向里，由左手定则知各微元受力均向上。总安培力为：
+\begin{align*}
+	F_{CF} &= \int_{d}^{d+a} I_2 B(x) \mathrm{d}x = \int_{d}^{d+a} \frac{\mu_0 I_1 I_2}{2\pi x} \mathrm{d}x \\
+	&= \frac{\mu_0 I_1 I_2}{2\pi} \ln\left(\frac{d+a}{d}\right) \\
+	&= \frac{4\pi \times 10^{-7} \times 20 \times 10}{2\pi} \ln\left(\frac{0.10}{0.01}\right) \\
+	&= 4 \times 10^{-5} \ln 10 \approx 9.21 \times 10^{-5}\,\text{N}
+\end{align*}
+方向为\textbf{竖直向上}。
+
+\textbf{对于下侧边 DE：}
+与上侧边对称，电流方向向左，磁场向里，受力方向\textbf{竖直向下}。大小与 CF 边完全相等：
+\begin{equation}\label{eq:9-20-2}
+	F_{DE} = F_{CF} \approx 9.21 \times 10^{-5}\,\text{N}
+\end{equation}
+
+(2) \textbf{求合力：}
+\textcolor{red}{上、下两边受力大小相等、方向相反（且作用在同一条竖直线上），相互抵消}：$\vec{F}_{CF} + \vec{F}_{DE} = 0$。
+左、右两边受力均在水平方向上，合力大小为：
+\begin{align*}
+	F_{\text{合}} &= F_{CD} - F_{FE} \\
+	&= 8.0 \times 10^{-4} - 0.8 \times 10^{-4} \\
+	&= 7.2 \times 10^{-4}\,\text{N}
+\end{align*}
+由于指向左侧的力较大，合力方向为\textbf{水平向左}。
+
+\textbf{求合力矩：}
+矩形线圈中的\textbf{电流为顺时针方向}，由\textbf{右手螺旋定则}可知，该线圈的磁矩 $\vec{p}_m$ 方向为\textbf{垂直于纸面向里}。
+而长直导线 AB 在线圈所在区域产生的磁场 $\vec{B}$ 方向也为\textbf{垂直于纸面向里}。
+因为磁矩 $\vec{p}_m$ 与外磁场 $\vec{B}$ 的方向相互平行(\textcolor{red}{$\theta=0°$,所以$\sin\theta=0$})，根据磁力矩公式：
+\begin{equation}\label{eq:9-20-3}
+	\vec{M} = \vec{p}_m \times \vec{B} = 0
+\end{equation}
+所以线圈所受的合力矩为 $0$。
+
+\textbf{易混淆知识点： }
+1. \textbf{非匀强磁场中的安培力计算}：对于平行于直导线的 CD、FE 边，它们处于等距的匀强磁场线上，可以直接用公式 $F=BIL$ 计算；\textbf{但对于垂直于直导线的 CF、DE 边，磁感应强度 $B$ 随距离 $x$ 呈反比衰减，绝不能直接代入某个定值 $B$，必须写出微元 $\mathrm{d}F = I \mathrm{d}x B(x)$ 后进行定积分求和。}
+
+2. \textbf{合力与合力矩的区别}：本题中线圈所受\textbf{合力不为零（存在向左的平移趋势）}，但\textbf{合力矩为零（不存在翻转趋势）}。许多人在求力矩时试图去寻找转轴并分别计算四个力的力臂，这极易出错。直接利用处于匀强或非匀强磁场中平面线圈的统一力矩公式 $\vec{M} = \vec{p}_m \times \vec{B} · \sin\theta$，通过判断磁矩法向量与磁场矢量的共线关系，可以秒杀绝大多数力矩判断题。
+
+\newpage
+
 \subsection{习题10}
 \begin{enumerate}
 	\item [\textbf{10-20}] 有两根相距为$a$的无限场平行直导线，它们通以大小相等流向相反的电流，且电流均以$\frac{\mathrm{d}I}{\mathrm{d}t}$的变化率增长，若有一边长为$a$的正方形线圈与两导线处于同一平面内，如习题10-20图所示，求线圈中的感应电动势.
@@ -2673,11 +3195,58 @@ $P$ 点的电势为 $V = \frac{q}{8\pi\varepsilon_0 l} \ln\left(1 + \frac{2l}{a}
 
 \newpage
 
+\subsection{习题11}
+\begin{enumerate}
+	\item [\textbf{11-27}] 用白光照射杨氏双缝，已知 $d=1.0\,\mathrm{mm}$，$D=1.0\,\mathrm{m}$，设屏无限大。求：
+	\begin{itemize}
+		\item [(1)] $\lambda=500\,\mathrm{nm}$ 的光第 $4$ 级明条纹位置及明条纹间距；
+		\item [(2)] 求 $\lambda=600\,\mathrm{nm}$ 的光理论上在屏上可呈现的最大级数；
+		\item [(3)] $\lambda=500\,\mathrm{nm}$ 和 $\lambda=600\,\mathrm{nm}$ 的光在屏上什么位置开始发生重叠？
+	\end{itemize}
+	
+	\vspace{0.5em}
+	
+	\item [\textbf{11-43}] 波长 $\lambda=600\,\mathrm{nm}$ 的单色光垂直入射到宽度为 $a=0.01\,\mathrm{mm}$ 的单缝上，观察夫琅禾费衍射图样；透镜焦距 $f=1.0\,\mathrm{m}$，屏幕在透镜的焦平面处，求：
+	\begin{itemize}
+		\item [(1)] 屏上中央明条纹的宽度 $\Delta x_0$ 和半角宽度；
+		\item [(2)] 第二级暗纹所对应的衍射角 $\theta_2$；
+		\item [(3)] 第二级暗纹离透镜焦点的距离 $x_2$。
+	\end{itemize}
+	
+	\vspace{0.5em}
+	
+	\item [\textbf{11-44}] 波长为 $680\,\mathrm{nm}$ 的单色可见光垂直入射到缝宽为 $a=1.25\times 10^{-4}\,\mathrm{cm}$ 的透射光栅上，观察到第四级谱线缺级。求：
+	\begin{itemize}
+		\item [(1)] 此光栅每厘米有多少条狭缝？
+		\item [(2)] 求在屏上呈现的光谱线的全部级次和条纹数。
+	\end{itemize}
+	
+	\vspace{0.5em}
+	
+	\item [\textbf{11-45}] 波长 $\lambda_1$ 的光与波长 $\lambda_2=486.1\,\mathrm{nm}$ 的光均为平行光，它们同时垂直入射到光栅上。若 $\lambda_1$ 光的第三级光谱线与 $\lambda_2$ 光的第四级光谱线恰好重合在离中央明条纹距离为 $5\,\mathrm{mm}$ 处，透镜焦距为 $0.50\,\mathrm{m}$，求：
+	\begin{itemize}
+		\item [(1)] $\lambda_1$ 的值；
+		\item [(2)] 光栅常量。
+	\end{itemize}
+	
+	\vspace{0.5em}
+	
+	\item [\textbf{11-47}] 波长为 $600\,\mathrm{nm}$ 的单色光垂直入射到一光栅上，第二和第三主明条纹分别出现在 $\sin\theta_2=0.20$ 和 $\sin\theta_3=0.30$ 处，第四级缺级。问：
+	\begin{itemize}
+		\item [(1)] 光栅常量是多少？
+		\item [(2)] 狭缝最小可能宽度有多大？
+		\item [(3)] 按上述选定的 $a,b$ 值，实际呈现的全部级次缺级有哪些？
+	\end{itemize}
+	
+\end{enumerate}
+
+\newpage
+
 \section{课本例题重现}
 
 \subsection*{声明：}
 
-课本例题重现由于期末考机制问题，将只整理一、七、八章。\textcolor{red}{特别强调：七八两章为老师勾画的例题极为重要，七八两张的例题一定要复习！}
+课本例题重现由于期末考机制问题，将只整理一、七、八、九、十、十一章。\textcolor{red}{特别强调：七、八、九、十、十一章为老师勾画的例题极为重要，七八两张的例题一定要复习！}
 
 \subsection{第一章}
 
@@ -3376,10 +3945,76 @@ $P$ 点的电势为 $V = \frac{q}{8\pi\varepsilon_0 l} \ln\left(1 + \frac{2l}{a}
 		\item 此导线组单位长度的电容.
 	\end{enumerate}
 	
+	\vspace{1em}
 	
+	\setcounter{equation}{0}
+	\renewcommand{\theHequation}{L8-1.\arabic{equation}}
+	
+	\textbf{答案： }
+	(1) 两导线间电势差为 $U \approx \frac{\lambda}{\pi\varepsilon_0} \ln\frac{d}{a}$ （精确值为 $U = \frac{\lambda}{\pi\varepsilon_0} \ln\frac{d-a}{a}$）。\\
+	(2) 此导线组单位长度的电容为 $C_0 \approx \frac{\pi\varepsilon_0}{\ln\frac{d}{a}}$ （精确值为 $C_0 = \frac{\pi\varepsilon_0}{\ln\frac{d-a}{a}}$）。
+	
+	\textbf{解答过程： }
+	(1) 设想两导线带有等量异号电荷，线电荷密度分别为 $+\lambda$ 和 $-\lambda$。
+	根据高斯定理，无限长均匀带电直导线在距离为 $r$ 处产生的电场强度大小为：
+	\begin{align*}
+		E = \frac{\lambda}{2\pi\varepsilon_0 r}
+	\end{align*}
+	建立如图所示的坐标系，原点 $O$ 位于左侧正极导线轴线上，$x$ 轴垂直于导线向右。
+	在两导线之间（$a \le x \le d-a$），\textbf{左侧正导线产生的电场 $E_A$ 向右，右侧负导线产生的电场 $E_B$ 也向右。}根据电场叠加原理，两导线连线上的总电场为：
+	\begin{equation}\label{eq:L8-1-1}
+		E = E_A + E_B = \frac{\lambda}{2\pi\varepsilon_0 x} + \frac{\lambda}{2\pi\varepsilon_0 (d-x)}
+	\end{equation}
+	两导线间的电势差 $U$ 等于将单位正电荷从正极板表面（$x=a$）移至负极板表面（$x=d-a$）时电场力所做的功：
+	\begin{align*}
+		U &= \int_{a}^{d-a} E \mathrm{d}x \\
+		&= \int_{a}^{d-a} \frac{\lambda}{2\pi\varepsilon_0} \left( \frac{1}{x} + \frac{1}{d-x} \right) \mathrm{d}x \\
+		&= \frac{\lambda}{2\pi\varepsilon_0} \left[ \ln x - \ln(d-x) \right]_{a}^{d-a} \\
+		&= \frac{\lambda}{2\pi\varepsilon_0} \left( (\ln(d-a) - \ln a) - (\ln a - \ln(d-a)) \right) \\
+		&= \frac{\lambda}{2\pi\varepsilon_0} \left( 2\ln(d-a) - 2\ln a \right)
+	\end{align*}
+	化简得到精确的电势差表达式：
+	\begin{equation}\label{eq:L8-1-2}
+		U = \frac{\lambda}{\pi\varepsilon_0} \ln\frac{d-a}{a}
+	\end{equation}
+	考虑到题目给定的条件 $d \gg a$，可作近似 $d-a \approx d$，则有：
+	\begin{equation}\label{eq:L8-1-3}
+		U \approx \frac{\lambda}{\pi\varepsilon_0} \ln\frac{d}{a}
+	\end{equation}
+	
+	(2) 设导线的长度为 $l$，则所带电荷量为 $Q = \lambda l$。
+	该导线组构成的平行双线电容器的总电容为：
+	\begin{align*}
+		C = \frac{Q}{U} = \frac{\lambda l}{U}
+	\end{align*}
+	单位长度的电容 $C_0$ 为：
+	\begin{equation}\label{eq:L8-1-4}
+		C_0 = \frac{C}{l} = \frac{\lambda}{U}
+	\end{equation}
+	将近似电势差公式(\ref{eq:L8-1-3})代入公式(\ref{eq:L8-1-4})中，得到：
+	\begin{equation}\label{eq:L8-1-5}
+		C_0 \approx \frac{\pi\varepsilon_0}{\ln\frac{d}{a}}
+	\end{equation}
+	（若要求精确值，代入公式(\ref{eq:L8-1-2})则为 $C_0 = \frac{\pi\varepsilon_0}{\ln\frac{d-a}{a}}$）
+	
+	\textbf{易混淆知识点： }
+	1. \textbf{电势差积分的上下限}：计算两导线间的电势差时，\textcolor{red}{积分必须从一个导体的\textbf{表面}积到另一个导体的\textbf{表面}（即从 $a$ 到 $d-a$）}。\textbf{绝对不能从轴心积到轴心（从 $0$ 到 $d$），}因为在理想线电荷模型中，$r=0$ 处电场趋于无穷大，积分会发散。\textbf{由于导体是等势体，其内部没有电势差，}电势变化全部集中在它们外部的真空区域。
+	
+	2. \textbf{两电场矢量的叠加方向}：虽然两根导线带异号电荷，但在它们之间的区域，\textbf{正电荷产生的电场排斥向右，负电荷产生的电场吸引也向右。}所以总电场是二者大小\textbf{相加}（$\frac{1}{x} + \frac{1}{d-x}$），而不是相减。
+	
+	3. \textbf{远大于条件的使用}：题目特意加上“$d$ 远远大于 $a$”的条件，\textbf{正是为了在对数项中进行近似化简（$\frac{d-a}{a} \approx \frac{d}{a}$）。}在处理实际工程中的平行双线传输线时，这种近似非常普遍且足够精确。
+	
+	\vspace{2em}
 	
 	\item[\textbf{L8-2}]
 	有一个带电为 $+q$、半径为 $R_1$ 的导体球,与内外半径分别为 $R_3, R_4$、带电荷为 $-q$ 的导体球壳同心,两者之间有两层均匀电介质,内层和外层电介质的电容率分别为 $\varepsilon_1, \varepsilon_2$,且两电介质分界面也是与导体球同心的半径为 $R_2$ 的球面.试求：
+	
+	\begin{enumerate}
+		\item 电位移分布；
+		\item 场强分布；
+		\item 导体球与导体球壳间的电势差；
+		\item 导体球壳构成电容器的电容.
+	\end{enumerate}
 	
 	\begin{figure}[H]
 		\centering
@@ -3388,14 +4023,94 @@ $P$ 点的电势为 $V = \frac{q}{8\pi\varepsilon_0 l} \ln\left(1 + \frac{2l}{a}
 		\label{fig:L8-2}
 	\end{figure}
 	
-	\begin{enumerate}
-		\item 电位移分布；
-		\item 场强分布；
-		\item 导体球与导体球壳间的电势差；
-		\item 导体球壳构成电容器的电容.
-	\end{enumerate}
+	\vspace{1em}
+	
+	\setcounter{equation}{0}
+	\renewcommand{\theHequation}{L8-2.\arabic{equation}}
+	
+	\textbf{答案： }
+	(1) 电位移分布为：在 $R_1 < r < R_3$ 区域，大小为 $D = \frac{q}{4\pi r^2}$；在其他区域（$r < R_1$ 及 $r > R_3$），$D = 0$。方向均沿径向向外。\\
+	(2) 场强分布为：在 $R_1 < r < R_2$ 区域，$E_1 = \frac{q}{4\pi\varepsilon_1 r^2}$；在 $R_2 < r < R_3$ 区域，$E_2 = \frac{q}{4\pi\varepsilon_2 r^2}$；在其他区域，$E = 0$。方向均沿径向向外。\\
+	(3) 导体球与导体球壳间的电势差为 $U = \frac{q}{4\pi} \left[ \frac{1}{\varepsilon_1}\left(\frac{1}{R_1} - \frac{1}{R_2}\right) + \frac{1}{\varepsilon_2}\left(\frac{1}{R_2} - \frac{1}{R_3}\right) \right]$。\\
+	(4) 该电容器的电容为 $C = \frac{4\pi}{\frac{1}{\varepsilon_1}\left(\frac{1}{R_1} - \frac{1}{R_2}\right) + \frac{1}{\varepsilon_2}\left(\frac{1}{R_2} - \frac{1}{R_3}\right)}$。
+	
+	\textbf{解答过程： }
+	(1) 这是一个具有球对称性的静电场问题，由于存在电介质，我们首先应用有电介质时的高斯定理（介质高斯定理）来求解电位移矢量 $\vec{D}$：
+	\begin{equation}\label{eq:L8-2-1}
+		\oint \vec{D} \cdot \mathrm{d}\vec{S} = \sum q_{\text{内0}}
+	\end{equation}
+	其中 $\sum q_{\text{内0}}$ 为高斯面内包围的自由电荷代数和。
+	作一半径为 $r$ 的同心球面作为高斯面：
+	- 当 $r < R_1$ 时，高斯面在导体球内部，内部自由电荷为零且静电平衡，故 $D = 0$。
+	- 当 $R_1 < r < R_3$ 时，高斯面位于电介质中，其包围的自由电荷仅为内层导体球上的 $+q$。由高斯定理有：
+	\begin{align*}
+		D \cdot 4\pi r^2 = q
+	\end{align*}
+	解得电位移大小为：
+	\begin{equation}\label{eq:L8-2-2}
+		D = \frac{q}{4\pi r^2} \quad (R_1 < r < R_3)
+	\end{equation}
+	注意：这个结果表明 $\vec{D}$ 的分布只与自由电荷有关，在两层不同电介质的分界面（$r = R_2$）上，由于没有自由电荷，$\vec{D}$ 是连续的。
+	- 当 $R_3 < r < R_4$ 时，高斯面在导体球壳内部，处于静电平衡状态，场强为零，故 $D = 0$。
+	- 当 $r > R_4$ 时，高斯面包围的总自由电荷为 $+q + (-q) = 0$，故 $D = 0$。
+	
+	(2) 利用电位移与电场强度的本构关系 $\vec{D} = \varepsilon \vec{E}$，即可求得空间各区域的电场强度大小：
+	- 在第一层电介质中（$R_1 < r < R_2$），介电常数为 $\varepsilon_1$：
+	\begin{equation}\label{eq:L8-2-3}
+		E_1 = \frac{D}{\varepsilon_1} = \frac{q}{4\pi\varepsilon_1 r^2}
+	\end{equation}
+	- 在第二层电介质中（$R_2 < r < R_3$），介电常数为 $\varepsilon_2$：
+	\begin{equation}\label{eq:L8-2-4}
+		E_2 = \frac{D}{\varepsilon_2} = \frac{q}{4\pi\varepsilon_2 r^2}
+	\end{equation}
+	- 在导体内及球壳外部，由于 $D=0$，场强 $E=0$。
+	
+	(3) 导体球（正极）与导体球壳（负极）之间的电势差 $U$ 等于电场强度沿径向从内球积分到外球的线积分。由于空间中存在两层不同的电场分布，积分需要分段进行：
+	\begin{align*}
+		U &= \int_{R_1}^{R_3} E \mathrm{d}r \\
+		&= \int_{R_1}^{R_2} E_1 \mathrm{d}r + \int_{R_2}^{R_3} E_2 \mathrm{d}r \\
+		&= \int_{R_1}^{R_2} \frac{q}{4\pi\varepsilon_1 r^2} \mathrm{d}r + \int_{R_2}^{R_3} \frac{q}{4\pi\varepsilon_2 r^2} \mathrm{d}r
+	\end{align*}
+	分别计算定积分：
+	\begin{equation}\label{eq:L8-2-5}
+		U = \frac{q}{4\pi\varepsilon_1} \left( \frac{1}{R_1} - \frac{1}{R_2} \right) + \frac{q}{4\pi\varepsilon_2} \left( \frac{1}{R_2} - \frac{1}{R_3} \right)
+	\end{equation}
+	
+	(4) 根据电容的定义式 $C = \frac{Q}{U}$，将求得的电势差代入，得到该球形电容器的总电容：
+	\begin{equation}\label{eq:L8-2-6}
+		C = \frac{q}{U} = \frac{4\pi}{\frac{1}{\varepsilon_1}\left(\frac{1}{R_1} - \frac{1}{R_2}\right) + \frac{1}{\varepsilon_2}\left(\frac{1}{R_2} - \frac{1}{R_3}\right)}
+	\end{equation}
+	
+	\textbf{易混淆知识点： }
+	1. \textbf{$\vec{D}$ 与 $\vec{E}$ 连续性的区别}：在处理多层电介质问题时，这是最核心的考点。电位移矢量 $\vec{D}$ 的分布仅仅取决于“自由电荷”。因为两层介质分界面（$r=R_2$）上没有自由电荷，所以 $\vec{D}$ 是穿过界面连续变化的。然而，由于极化产生的束缚电荷积累在界面上，电场强度 $\vec{E} = \vec{D}/\varepsilon$ 会因为介电常数的不同而在此界面处发生“阶跃突变”。
+	
+	2. \textbf{串联电容器模型的等效思想}：这个多层介质球形电容器实际上可以等效为两个单层介质球形电容器的“串联”。内层（$R_1$ 到 $R_2$）电容 $C_1 = \frac{4\pi\varepsilon_1}{\frac{1}{R_1} - \frac{1}{R_2}}$，外层（$R_2$ 到 $R_3$）电容 $C_2 = \frac{4\pi\varepsilon_2}{\frac{1}{R_2} - \frac{1}{R_3}}$。由第(4)问的最终结果可以看出，它完美符合串联电容公式 $\frac{1}{C} = \frac{1}{C_1} + \frac{1}{C_2}$，利用这种等效物理图景可以快速检验计算结果的正确性。
+	
+	3. \textbf{介电常数符号的使用}：题目给出的是各介质层的绝对介电常数（也称电容率） $\varepsilon_1$ 和 $\varepsilon_2$，而不是相对介电常数 $\varepsilon_r$。所以在公式中不需要再额外乘以真空介电常数 $\varepsilon_0$。若题目给出的是相对介电常数，则分母需写为 $\varepsilon_0 \varepsilon_{r1}$ 等。
 
 \end{enumerate}
+
+\newpage
+
+\subsection{第九章}
+\begin{enumerate}
+	\item 
+\end{enumerate}
+
+\newpage
+
+\subsection{第十章}
+\begin{enumerate}
+	\item 
+\end{enumerate}
+
+\newpage
+
+\subsection{第十一章}
+\begin{enumerate}
+	\item 
+\end{enumerate}
+
 
 
 
