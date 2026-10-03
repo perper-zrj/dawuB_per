@@ -2191,23 +2191,82 @@ $x_2(t)$ 曲线在 $t=0$ 时刚好通过平衡位置且斜率为正（向正向�
 \begin{enumerate}
 	\item [\textbf{7-9}]
 	一个细玻璃棒被弯成半径为$\mathbf{R}$的半圆形，沿其上半部分均匀分布有电荷$\mathbf{+Q}$,沿其下半部分均匀分布有电荷$\mathbf{-Q}$,如习题7-9图所示。试求圆心$\mathbf{O}$处的电场强度。
-	% TODO: \usepackage{graphicx} required
-	\begin{figure}[H]
-		\centering
-		\includegraphics[width=0.2\linewidth]{figure/7-9}
-		\caption{图7-9}
-		\label{fig:7-9}
-	\end{figure}
+%	% TODO: \usepackage{graphicx} required
+%	\begin{figure}[H]
+%		\centering
+%		\includegraphics[width=0.2\linewidth]{figure/7-9}
+%		\caption{图7-9}
+%		\label{fig:7-9}
+%	\end{figure}
+\begin{figure}[htbp]
+	\centering
+	\begin{tikzpicture}[>=latex, line cap=round, scale=0.85, every node/.style={transform shape}]
+		% 半径参数
+		\def\R{2.0}
+		
+		% 坐标轴
+		\draw[thick] (-\R - 0.8, 0) -- (1.0, 0);
+		\draw[thick, ->] (0, -\R - 0.6) -- (0, \R + 1.0) node[left, pos=1, xshift=-1pt] {$y$};
+		
+		% 原点标号 O
+		\node[below right] at (0, 0) {$O$};
+		
+		% 蓝色半圆环
+		\draw[cyan!85!blue, line width=1.5pt] (0, \R) arc[start angle=90, end angle=270, radius=\R];
+		
+		% 半径连线及标注 R
+		\draw[thick] (0, 0) -- (150:\R) node[midway, above=-1pt, sloped] {$R$};
+		
+		% 正电荷分布及 +Q
+		\node at (105:\R + 0.32) {$+$};
+		\node at (122:\R + 0.32) {$+$};
+		\node at (138:\R + 0.32) {$+$};
+		\node at (158:\R + 0.32) {$+$};
+		\node at (176:\R + 0.32) {$+$};
+		\node at (136:\R + 0.95) {$+Q$};
+		
+		% 负电荷分布及 -Q
+		\node at (184:\R + 0.32) {$-$};
+		\node at (202:\R + 0.32) {$-$};
+		\node at (222:\R + 0.32) {$-$};
+		\node at (240:\R + 0.32) {$-$};
+		\node at (258:\R + 0.32) {$-$};
+		\node at (224:\R + 0.95) {$-Q$};
+	\end{tikzpicture}
+	% \caption 会自动编号（例如：图 15: 带电圆弧受力模型）
+	\caption{图7-9}
+	% \label 用于在正文中通过 \ref{fig:semicircle} 引用该图编号
+	\label{fig:semicircle}
+\end{figure}
 	
 	\item [\textbf{7-11}]
 	如习题7-11图所示两个无限大的平行平面都均匀带电，电荷的面密度分别为$\sigma_1$和$\sigma_2$，试求空间各处场强。
-	% TODO: \usepackage{graphicx} required
-	\begin{figure}[H]
-		\centering
-		\includegraphics[width=0.2\linewidth]{figure/7-11}
-		\caption{图7-11}
-		\label{fig:7-11}
-	\end{figure}
+%	% TODO: \usepackage{graphicx} required
+%	\begin{figure}[H]
+%		\centering
+%		\includegraphics[width=0.2\linewidth]{figure/7-11}
+%		\caption{图7-11}
+%		\label{fig:7-11}
+%	\end{figure}
+\begin{figure}[htbp]
+	\centering
+	\begin{tikzpicture}[line cap=round, scale=1.0]
+		% 定义板长和板间距
+		\def\H{2.0}     % 平板高度
+		\def\d{1.3}     % 两平板之间的间距
+		
+		% 左侧平板及电荷面密度标注 \sigma_1
+		\draw[very thick, line width=1.5pt] (0, 0) -- (0, \H);
+		\node[above=2pt] at (0, \H) {$\sigma_1$};
+		
+		% 右侧平板及电荷面密度标注 \sigma_2
+		\draw[very thick, line width=1.5pt] (\d, 0) -- (\d, \H);
+		\node[above=2pt] at (\d, \H) {$\sigma_2$};
+	\end{tikzpicture}
+	% 自动生成“图 X: 7-11”（避免“图”字重复）
+	\caption{图7-11}
+	\label{fig:two_sheets}
+\end{figure}
 	
 	\item [\textbf{7-13}]
 	如习题7-13图所示，在点电荷$q$的电厂中,选取以$q$为中心、$\mathbf{R}$为半径的球面上一点$\mathbf{P}$作为电势零点,求与点电荷$q$距离为$r$的$\mathbf{P^\prime}$点的电势。
